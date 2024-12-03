@@ -1,1 +1,7 @@
 # delivery-market-analysis-with-SQL
+
+✅ FEATURES
+👥 TEAM
+✨ AI ANALYSIS
+🛠️ INSTALLATION
+📁 FOLDER STRUCTURE
