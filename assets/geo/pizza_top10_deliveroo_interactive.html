@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_0dacade1775333439bebafd13bab6a5f {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_0dacade1775333439bebafd13bab6a5f" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_0dacade1775333439bebafd13bab6a5f = L.map(
+                "map_0dacade1775333439bebafd13bab6a5f",
+                {
+                    center: [51.00626663, 3.89339248],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 9,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_0c5c47a0723adbd48620a086b7f9eca9 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_0c5c47a0723adbd48620a086b7f9eca9.addTo(map_0dacade1775333439bebafd13bab6a5f);
+        
+    
+            var tile_layer_23c4256e1c9ad4618d784f6eb93d7066 = L.tileLayer(
+                "Stamen Toner",
+                {"attribution": "Map tiles by Stamen Design, CC BY 3.0 \u2014 Map data \u00a9 OpenStreetMap", "detectRetina": false, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_23c4256e1c9ad4618d784f6eb93d7066.addTo(map_0dacade1775333439bebafd13bab6a5f);
+        
+    
+            var marker_ea9e07c01c52d4742121071442b8b390 = L.marker(
+                [51.0454889, 3.7299747],
+                {}
+            ).addTo(map_0dacade1775333439bebafd13bab6a5f);
+        
+    
+        var popup_055a212d03e8dee008b7ac7c12c29f7a = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_60f75043fea7f9407621474dc463fcb8 = $(`<div id="html_60f75043fea7f9407621474dc463fcb8" style="width: 100.0%; height: 100.0%;">     Restaurant: De Superette €<br>     Rating: ★★★★☆<br>     </div>`)[0];
+                popup_055a212d03e8dee008b7ac7c12c29f7a.setContent(html_60f75043fea7f9407621474dc463fcb8);
+            
+        
+
+        marker_ea9e07c01c52d4742121071442b8b390.bindPopup(popup_055a212d03e8dee008b7ac7c12c29f7a)
+        ;
+
+        
+    
+    
+            marker_ea9e07c01c52d4742121071442b8b390.bindTooltip(
+                `<div>
+                     De Superette
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c262221a499c7fbfc3b3f14adb258136 = L.marker(
+                [51.1899486, 4.3778715],
+                {}
+            ).addTo(map_0dacade1775333439bebafd13bab6a5f);
+        
+    
+        var popup_02487ae199814747e31d1217b186bd83 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_e6ade175ced1d4cdb7d17a242990e835 = $(`<div id="html_e6ade175ced1d4cdb7d17a242990e835" style="width: 100.0%; height: 100.0%;">     Restaurant: ÖZ AHI €<br>     Rating: ★★★★☆<br>     </div>`)[0];
+                popup_02487ae199814747e31d1217b186bd83.setContent(html_e6ade175ced1d4cdb7d17a242990e835);
+            
+        
+
+        marker_c262221a499c7fbfc3b3f14adb258136.bindPopup(popup_02487ae199814747e31d1217b186bd83)
+        ;
+
+        
+    
+    
+            marker_c262221a499c7fbfc3b3f14adb258136.bindTooltip(
+                `<div>
+                     ÖZ AHI
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_dd0e0b810306f13f842f7763316e6033 = L.marker(
+                [51.2096443, 3.2266609],
+                {}
+            ).addTo(map_0dacade1775333439bebafd13bab6a5f);
+        
+    
+        var popup_830bf2dcc80229e55ea3e8a57713e8eb = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_ee1d848c5aa5b4a6458c786b588dfce6 = $(`<div id="html_ee1d848c5aa5b4a6458c786b588dfce6" style="width: 100.0%; height: 100.0%;">     Restaurant: Trattoria Murano €<br>     Rating: ★★★★☆<br>     </div>`)[0];
+                popup_830bf2dcc80229e55ea3e8a57713e8eb.setContent(html_ee1d848c5aa5b4a6458c786b588dfce6);
+            
+        
+
+        marker_dd0e0b810306f13f842f7763316e6033.bindPopup(popup_830bf2dcc80229e55ea3e8a57713e8eb)
+        ;
+
+        
+    
+    
+            marker_dd0e0b810306f13f842f7763316e6033.bindTooltip(
+                `<div>
+                     Trattoria Murano
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ee10f675b0616cfb3e838c73996a8d5c = L.marker(
+                [50.9483796, 3.1296242],
+                {}
+            ).addTo(map_0dacade1775333439bebafd13bab6a5f);
+        
+    
+        var popup_aea0c8876bbfbf997cec5a80c6a343bd = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_8845c236a3f070b2356c50863d3aa75d = $(`<div id="html_8845c236a3f070b2356c50863d3aa75d" style="width: 100.0%; height: 100.0%;">     Restaurant: Place 2 Eat €<br>     Rating: ★★★★☆<br>     </div>`)[0];
+                popup_aea0c8876bbfbf997cec5a80c6a343bd.setContent(html_8845c236a3f070b2356c50863d3aa75d);
+            
+        
+
+        marker_ee10f675b0616cfb3e838c73996a8d5c.bindPopup(popup_aea0c8876bbfbf997cec5a80c6a343bd)
+        ;
+
+        
+    
+    
+            marker_ee10f675b0616cfb3e838c73996a8d5c.bindTooltip(
+                `<div>
+                     Place 2 Eat
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_93fb0384cc1c0f710685157d13d055af = L.marker(
+                [50.9025108, 4.3614917],
+                {}
+            ).addTo(map_0dacade1775333439bebafd13bab6a5f);
+        
+    
+        var popup_d35f15bf0786a2665e32d85209a689db = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_b5da48f7c89b13abbdfb6ebd0befcb28 = $(`<div id="html_b5da48f7c89b13abbdfb6ebd0befcb28" style="width: 100.0%; height: 100.0%;">     Restaurant: Pizza Hut Strombeek-Bever €<br>     Rating: ★★★★☆<br>     </div>`)[0];
+                popup_d35f15bf0786a2665e32d85209a689db.setContent(html_b5da48f7c89b13abbdfb6ebd0befcb28);
+            
+        
+
+        marker_93fb0384cc1c0f710685157d13d055af.bindPopup(popup_d35f15bf0786a2665e32d85209a689db)
+        ;
+
+        
+    
+    
+            marker_93fb0384cc1c0f710685157d13d055af.bindTooltip(
+                `<div>
+                     Pizza Hut Strombeek-Bever
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_07965e56250e1cea78e9da0a52f79673 = L.marker(
+                [50.8408117, 4.4636603],
+                {}
+            ).addTo(map_0dacade1775333439bebafd13bab6a5f);
+        
+    
+        var popup_4126a228564c283bfaae38bf71ea81e1 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_18cf1e04d09c5bf22cb56ad6b044411f = $(`<div id="html_18cf1e04d09c5bf22cb56ad6b044411f" style="width: 100.0%; height: 100.0%;">     Restaurant: La Barchetta €<br>     Rating: ★★★★☆<br>     </div>`)[0];
+                popup_4126a228564c283bfaae38bf71ea81e1.setContent(html_18cf1e04d09c5bf22cb56ad6b044411f);
+            
+        
+
+        marker_07965e56250e1cea78e9da0a52f79673.bindPopup(popup_4126a228564c283bfaae38bf71ea81e1)
+        ;
+
+        
+    
+    
+            marker_07965e56250e1cea78e9da0a52f79673.bindTooltip(
+                `<div>
+                     La Barchetta
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ac1f11c09e7f724a3c475156fe01d2bd = L.marker(
+                [50.9480685, 3.122127],
+                {}
+            ).addTo(map_0dacade1775333439bebafd13bab6a5f);
+        
+    
+        var popup_b872326a9007c2e16db01c0c317b9e42 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_a4d936866d233eabee022a74c37c8507 = $(`<div id="html_a4d936866d233eabee022a74c37c8507" style="width: 100.0%; height: 100.0%;">     Restaurant: Pretzel King €<br>     Rating: ★★★★☆<br>     </div>`)[0];
+                popup_b872326a9007c2e16db01c0c317b9e42.setContent(html_a4d936866d233eabee022a74c37c8507);
+            
+        
+
+        marker_ac1f11c09e7f724a3c475156fe01d2bd.bindPopup(popup_b872326a9007c2e16db01c0c317b9e42)
+        ;
+
+        
+    
+    
+            marker_ac1f11c09e7f724a3c475156fe01d2bd.bindTooltip(
+                `<div>
+                     Pretzel King
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2eeee77bcf631a96c045007a8d5fbae8 = L.marker(
+                [51.2065906, 4.4040435],
+                {}
+            ).addTo(map_0dacade1775333439bebafd13bab6a5f);
+        
+    
+        var popup_d50777c2ddf97b728946355e584be68c = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_16848d4cff4c004ae6adf0508ec39186 = $(`<div id="html_16848d4cff4c004ae6adf0508ec39186" style="width: 100.0%; height: 100.0%;">     Restaurant: Keurslager Michielsen €<br>     Rating: ★★★★☆<br>     </div>`)[0];
+                popup_d50777c2ddf97b728946355e584be68c.setContent(html_16848d4cff4c004ae6adf0508ec39186);
+            
+        
+
+        marker_2eeee77bcf631a96c045007a8d5fbae8.bindPopup(popup_d50777c2ddf97b728946355e584be68c)
+        ;
+
+        
+    
+    
+            marker_2eeee77bcf631a96c045007a8d5fbae8.bindTooltip(
+                `<div>
+                     Keurslager Michielsen
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_aab3f99c0b8517cccacb5426c59b2f23 = L.marker(
+                [50.7145089, 4.3989591],
+                {}
+            ).addTo(map_0dacade1775333439bebafd13bab6a5f);
+        
+    
+        var popup_f26dfd8dc80bf84687cd95404a3a0b52 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_9745db3a84dccf56ad5c69f60d446852 = $(`<div id="html_9745db3a84dccf56ad5c69f60d446852" style="width: 100.0%; height: 100.0%;">     Restaurant: Strombolino €<br>     Rating: ★★★★☆<br>     </div>`)[0];
+                popup_f26dfd8dc80bf84687cd95404a3a0b52.setContent(html_9745db3a84dccf56ad5c69f60d446852);
+            
+        
+
+        marker_aab3f99c0b8517cccacb5426c59b2f23.bindPopup(popup_f26dfd8dc80bf84687cd95404a3a0b52)
+        ;
+
+        
+    
+    
+            marker_aab3f99c0b8517cccacb5426c59b2f23.bindTooltip(
+                `<div>
+                     Strombolino
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1359a52ebe222345c38d72b35139ef97 = L.marker(
+                [51.0567144, 3.7195119],
+                {}
+            ).addTo(map_0dacade1775333439bebafd13bab6a5f);
+        
+    
+        var popup_8f9d706dad7328ace52c9f5a3a80076b = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_51a4ed8e17742da78dda11b87681f505 = $(`<div id="html_51a4ed8e17742da78dda11b87681f505" style="width: 100.0%; height: 100.0%;">     Restaurant: Epiphany's kitchen €<br>     Rating: ★★★★☆<br>     </div>`)[0];
+                popup_8f9d706dad7328ace52c9f5a3a80076b.setContent(html_51a4ed8e17742da78dda11b87681f505);
+            
+        
+
+        marker_1359a52ebe222345c38d72b35139ef97.bindPopup(popup_8f9d706dad7328ace52c9f5a3a80076b)
+        ;
+
+        
+    
+    
+            marker_1359a52ebe222345c38d72b35139ef97.bindTooltip(
+                `<div>
+                     Epiphany's kitchen
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
