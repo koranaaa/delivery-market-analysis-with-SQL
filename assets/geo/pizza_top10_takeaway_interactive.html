@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_c084108f758ab5ea055e8dcb4e839fe7 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_c084108f758ab5ea055e8dcb4e839fe7" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_c084108f758ab5ea055e8dcb4e839fe7 = L.map(
+                "map_c084108f758ab5ea055e8dcb4e839fe7",
+                {
+                    center: [51.03653526, 4.679075999999999],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 9,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_6de600a1e804e784daa50591d2aca20f = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_6de600a1e804e784daa50591d2aca20f.addTo(map_c084108f758ab5ea055e8dcb4e839fe7);
+        
+    
+            var tile_layer_524d8355df56d4265a09efa11ab4eea6 = L.tileLayer(
+                "Stamen Toner",
+                {"attribution": "Map tiles by Stamen Design, CC BY 3.0 \u2014 Map data \u00a9 OpenStreetMap", "detectRetina": false, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_524d8355df56d4265a09efa11ab4eea6.addTo(map_c084108f758ab5ea055e8dcb4e839fe7);
+        
+    
+            var marker_1940aff7eaee8d128ad7951acfaec0f2 = L.marker(
+                [51.0940817, 5.7923279],
+                {}
+            ).addTo(map_c084108f758ab5ea055e8dcb4e839fe7);
+        
+    
+        var popup_ffa25c5f4d839825e2e5f6394502ddfb = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_b4cc44bbeacf5b1b6e1f4dc07e265c6f = $(`<div id="html_b4cc44bbeacf5b1b6e1f4dc07e265c6f" style="width: 100.0%; height: 100.0%;">     Restaurant: Trend Kebab & Pizzeria €<br>     Rating: ★★★★★<br>     </div>`)[0];
+                popup_ffa25c5f4d839825e2e5f6394502ddfb.setContent(html_b4cc44bbeacf5b1b6e1f4dc07e265c6f);
+            
+        
+
+        marker_1940aff7eaee8d128ad7951acfaec0f2.bindPopup(popup_ffa25c5f4d839825e2e5f6394502ddfb)
+        ;
+
+        
+    
+    
+            marker_1940aff7eaee8d128ad7951acfaec0f2.bindTooltip(
+                `<div>
+                     Trend Kebab & Pizzeria
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f45a5065f6c63069b55c4107ee9438bb = L.marker(
+                [51.3253587, 4.9383671],
+                {}
+            ).addTo(map_c084108f758ab5ea055e8dcb4e839fe7);
+        
+    
+        var popup_65af0cdffb312e81ed294e347cbced8b = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_c910bf73d371f77025c8b600cf8e41da = $(`<div id="html_c910bf73d371f77025c8b600cf8e41da" style="width: 100.0%; height: 100.0%;">     Restaurant: Snack-It €<br>     Rating: ★★★★★<br>     </div>`)[0];
+                popup_65af0cdffb312e81ed294e347cbced8b.setContent(html_c910bf73d371f77025c8b600cf8e41da);
+            
+        
+
+        marker_f45a5065f6c63069b55c4107ee9438bb.bindPopup(popup_65af0cdffb312e81ed294e347cbced8b)
+        ;
+
+        
+    
+    
+            marker_f45a5065f6c63069b55c4107ee9438bb.bindTooltip(
+                `<div>
+                     Snack-It
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c98ed54a4c681288bd6c76f6a4b33291 = L.marker(
+                [50.8507025, 2.8851024],
+                {}
+            ).addTo(map_c084108f758ab5ea055e8dcb4e839fe7);
+        
+    
+        var popup_6b67fe381d9d973683b86ae6ee64a0d1 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_3a269ef64c3c5b16b4ad4fec1f3037bf = $(`<div id="html_3a269ef64c3c5b16b4ad4fec1f3037bf" style="width: 100.0%; height: 100.0%;">     Restaurant: Munchies Ieper €<br>     Rating: ★★★★★<br>     </div>`)[0];
+                popup_6b67fe381d9d973683b86ae6ee64a0d1.setContent(html_3a269ef64c3c5b16b4ad4fec1f3037bf);
+            
+        
+
+        marker_c98ed54a4c681288bd6c76f6a4b33291.bindPopup(popup_6b67fe381d9d973683b86ae6ee64a0d1)
+        ;
+
+        
+    
+    
+            marker_c98ed54a4c681288bd6c76f6a4b33291.bindTooltip(
+                `<div>
+                     Munchies Ieper
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b2464770d9f9ca9e81e4938b9b91d19f = L.marker(
+                [50.8441446, 4.4204038],
+                {}
+            ).addTo(map_c084108f758ab5ea055e8dcb4e839fe7);
+        
+    
+        var popup_a4643c1b26ecdbc728594ddb81986cbd = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_ffd177767486afed648900c0bd5e5ed0 = $(`<div id="html_ffd177767486afed648900c0bd5e5ed0" style="width: 100.0%; height: 100.0%;">     Restaurant: La Trinacria Bottega €<br>     Rating: ★★★★★<br>     </div>`)[0];
+                popup_a4643c1b26ecdbc728594ddb81986cbd.setContent(html_ffd177767486afed648900c0bd5e5ed0);
+            
+        
+
+        marker_b2464770d9f9ca9e81e4938b9b91d19f.bindPopup(popup_a4643c1b26ecdbc728594ddb81986cbd)
+        ;
+
+        
+    
+    
+            marker_b2464770d9f9ca9e81e4938b9b91d19f.bindTooltip(
+                `<div>
+                     La Trinacria Bottega
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_de259eb186fa523e80c56956b374600a = L.marker(
+                [51.0023083, 4.8359204],
+                {}
+            ).addTo(map_c084108f758ab5ea055e8dcb4e839fe7);
+        
+    
+        var popup_becb6b1729fcdf2512caf2cc93948835 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_43be14eeea66a698a59f5cbbca8a7795 = $(`<div id="html_43be14eeea66a698a59f5cbbca8a7795" style="width: 100.0%; height: 100.0%;">     Restaurant: De Echte Eethuis Carlos €<br>     Rating: ★★★★★<br>     </div>`)[0];
+                popup_becb6b1729fcdf2512caf2cc93948835.setContent(html_43be14eeea66a698a59f5cbbca8a7795);
+            
+        
+
+        marker_de259eb186fa523e80c56956b374600a.bindPopup(popup_becb6b1729fcdf2512caf2cc93948835)
+        ;
+
+        
+    
+    
+            marker_de259eb186fa523e80c56956b374600a.bindTooltip(
+                `<div>
+                     De Echte Eethuis Carlos
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6f7b9be7705204a792e1bb1f08b37f95 = L.marker(
+                [51.0758523, 4.7251002],
+                {}
+            ).addTo(map_c084108f758ab5ea055e8dcb4e839fe7);
+        
+    
+        var popup_cb898191e4b09f2d681a6c8319a4b660 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_b12846b8d4dacb41acc70bf60d52875c = $(`<div id="html_b12846b8d4dacb41acc70bf60d52875c" style="width: 100.0%; height: 100.0%;">     Restaurant: The Black Horse €<br>     Rating: ★★★★☆<br>     </div>`)[0];
+                popup_cb898191e4b09f2d681a6c8319a4b660.setContent(html_b12846b8d4dacb41acc70bf60d52875c);
+            
+        
+
+        marker_6f7b9be7705204a792e1bb1f08b37f95.bindPopup(popup_cb898191e4b09f2d681a6c8319a4b660)
+        ;
+
+        
+    
+    
+            marker_6f7b9be7705204a792e1bb1f08b37f95.bindTooltip(
+                `<div>
+                     The Black Horse
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e41c2dd2b039b204cc3332d060b3b033 = L.marker(
+                [51.0933414, 4.0163172],
+                {}
+            ).addTo(map_c084108f758ab5ea055e8dcb4e839fe7);
+        
+    
+        var popup_ae4ba9b312d41c58f224568648b2e3e4 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_c59c6069c52a5470615e1fbe4ca4a2c1 = $(`<div id="html_c59c6069c52a5470615e1fbe4ca4a2c1" style="width: 100.0%; height: 100.0%;">     Restaurant: Royal Donuts & Bagels €<br>     Rating: ★★★★☆<br>     </div>`)[0];
+                popup_ae4ba9b312d41c58f224568648b2e3e4.setContent(html_c59c6069c52a5470615e1fbe4ca4a2c1);
+            
+        
+
+        marker_e41c2dd2b039b204cc3332d060b3b033.bindPopup(popup_ae4ba9b312d41c58f224568648b2e3e4)
+        ;
+
+        
+    
+    
+            marker_e41c2dd2b039b204cc3332d060b3b033.bindTooltip(
+                `<div>
+                     Royal Donuts & Bagels
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_565814e9a5b586f22ec27e19768fd82c = L.marker(
+                [51.24612, 5.54582],
+                {}
+            ).addTo(map_c084108f758ab5ea055e8dcb4e839fe7);
+        
+    
+        var popup_73dfae95a069d40bf7c035c7433ec818 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_bc253602bf03d55bd271121c8072a6cf = $(`<div id="html_bc253602bf03d55bd271121c8072a6cf" style="width: 100.0%; height: 100.0%;">     Restaurant: Pyramide €<br>     Rating: ★★★★☆<br>     </div>`)[0];
+                popup_73dfae95a069d40bf7c035c7433ec818.setContent(html_bc253602bf03d55bd271121c8072a6cf);
+            
+        
+
+        marker_565814e9a5b586f22ec27e19768fd82c.bindPopup(popup_73dfae95a069d40bf7c035c7433ec818)
+        ;
+
+        
+    
+    
+            marker_565814e9a5b586f22ec27e19768fd82c.bindTooltip(
+                `<div>
+                     Pyramide
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_33a512ed0ce76760b072a0a3b66ea14f = L.marker(
+                [51.0229785, 5.3137589],
+                {}
+            ).addTo(map_c084108f758ab5ea055e8dcb4e839fe7);
+        
+    
+        var popup_8e7b4b4aeab2eb8b2995185fa36b032d = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_e96b28518c91e5c4d58dd3a08819442e = $(`<div id="html_e96b28518c91e5c4d58dd3a08819442e" style="width: 100.0%; height: 100.0%;">     Restaurant: Plaza Snacks €<br>     Rating: ★★★★☆<br>     </div>`)[0];
+                popup_8e7b4b4aeab2eb8b2995185fa36b032d.setContent(html_e96b28518c91e5c4d58dd3a08819442e);
+            
+        
+
+        marker_33a512ed0ce76760b072a0a3b66ea14f.bindPopup(popup_8e7b4b4aeab2eb8b2995185fa36b032d)
+        ;
+
+        
+    
+    
+            marker_33a512ed0ce76760b072a0a3b66ea14f.bindTooltip(
+                `<div>
+                     Plaza Snacks
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3e7f50d5312676374638639d7f2740d8 = L.marker(
+                [50.8104646, 4.3176421],
+                {}
+            ).addTo(map_c084108f758ab5ea055e8dcb4e839fe7);
+        
+    
+        var popup_20aefbf2f7bcd9c000f3b67f9f0ce550 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_8d4825c47a5c21b61b7e655099d5ca35 = $(`<div id="html_8d4825c47a5c21b61b7e655099d5ca35" style="width: 100.0%; height: 100.0%;">     Restaurant: Pizzeria Zirar Saint-Denis €<br>     Rating: ★★★★☆<br>     </div>`)[0];
+                popup_20aefbf2f7bcd9c000f3b67f9f0ce550.setContent(html_8d4825c47a5c21b61b7e655099d5ca35);
+            
+        
+
+        marker_3e7f50d5312676374638639d7f2740d8.bindPopup(popup_20aefbf2f7bcd9c000f3b67f9f0ce550)
+        ;
+
+        
+    
+    
+            marker_3e7f50d5312676374638639d7f2740d8.bindTooltip(
+                `<div>
+                     Pizzeria Zirar Saint-Denis
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
