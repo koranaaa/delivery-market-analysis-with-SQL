@@ -1,0 +1,3170 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_bd3ff79d338435c7b593fef709593d63 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_bd3ff79d338435c7b593fef709593d63" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_bd3ff79d338435c7b593fef709593d63 = L.map(
+                "map_bd3ff79d338435c7b593fef709593d63",
+                {
+                    center: [51.02804780556587, 4.478784607950115],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 9,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_83f6a6a4ea641a649e93e03269b362a7 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_83f6a6a4ea641a649e93e03269b362a7.addTo(map_bd3ff79d338435c7b593fef709593d63);
+        
+    
+            var circle_marker_18e2fcfef0c3fa5cc08503b8eb150505 = L.circleMarker(
+                [51.2181571, 4.4200142],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bd3ff79d338435c7b593fef709593d63);
+        
+    
+        var popup_f84781e76622468c09f077477315043b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b64fa769b670e32b3dce9fa2e0422061 = $(`<div id="html_b64fa769b670e32b3dce9fa2e0422061" style="width: 100.0%; height: 100.0%;">Resto: Eala Kayfik<br>Price: 15.99<br>Nr of options: 1</div>`)[0];
+                popup_f84781e76622468c09f077477315043b.setContent(html_b64fa769b670e32b3dce9fa2e0422061);
+            
+        
+
+        circle_marker_18e2fcfef0c3fa5cc08503b8eb150505.bindPopup(popup_f84781e76622468c09f077477315043b)
+        ;
+
+        
+    
+    
+            var circle_marker_407cef7ed4f91b5c6e32126d018b2709 = L.circleMarker(
+                [51.02431250000001, 4.4775937],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bd3ff79d338435c7b593fef709593d63);
+        
+    
+        var popup_2295eddfd225879521c26632bf9f102e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a457a0cafd27d9c3822a5f3ac9a9f4dd = $(`<div id="html_a457a0cafd27d9c3822a5f3ac9a9f4dd" style="width: 100.0%; height: 100.0%;">Resto: PITAWAN<br>Price: 15.9<br>Nr of options: 10</div>`)[0];
+                popup_2295eddfd225879521c26632bf9f102e.setContent(html_a457a0cafd27d9c3822a5f3ac9a9f4dd);
+            
+        
+
+        circle_marker_407cef7ed4f91b5c6e32126d018b2709.bindPopup(popup_2295eddfd225879521c26632bf9f102e)
+        ;
+
+        
+    
+    
+            var circle_marker_1a23bae50328b2f0238278327d86c026 = L.circleMarker(
+                [51.038816, 3.7262825],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bd3ff79d338435c7b593fef709593d63);
+        
+    
+        var popup_5db77cceb42f1d317dc65a33a74a4207 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ac50e79326547d2840f7b5ee48412771 = $(`<div id="html_ac50e79326547d2840f7b5ee48412771" style="width: 100.0%; height: 100.0%;">Resto: The Ribhouse Gent<br>Price: 15.0<br>Nr of options: 1</div>`)[0];
+                popup_5db77cceb42f1d317dc65a33a74a4207.setContent(html_ac50e79326547d2840f7b5ee48412771);
+            
+        
+
+        circle_marker_1a23bae50328b2f0238278327d86c026.bindPopup(popup_5db77cceb42f1d317dc65a33a74a4207)
+        ;
+
+        
+    
+    
+            var circle_marker_d5a7fa07c891f4009f3d3995cc3af3d0 = L.circleMarker(
+                [51.171145, 4.127612],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bd3ff79d338435c7b593fef709593d63);
+        
+    
+        var popup_d1cb0990bddf38ac8b2132c2c995ef19 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6a2cf4cd43f98040c9e13425758820ef = $(`<div id="html_6a2cf4cd43f98040c9e13425758820ef" style="width: 100.0%; height: 100.0%;">Resto: Frituur Conny & Franky<br>Price: 14.9<br>Nr of options: 2</div>`)[0];
+                popup_d1cb0990bddf38ac8b2132c2c995ef19.setContent(html_6a2cf4cd43f98040c9e13425758820ef);
+            
+        
+
+        circle_marker_d5a7fa07c891f4009f3d3995cc3af3d0.bindPopup(popup_d1cb0990bddf38ac8b2132c2c995ef19)
+        ;
+
+        
+    
+    
+            var circle_marker_785542af9372733b725697cdafcbf419 = L.circleMarker(
+                [51.037505, 3.714077],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bd3ff79d338435c7b593fef709593d63);
+        
+    
+        var popup_e57c6d652e6e15985ab17bb40f90359f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bef354fd77505a6c07464653224f768a = $(`<div id="html_bef354fd77505a6c07464653224f768a" style="width: 100.0%; height: 100.0%;">Resto: Pitta Sena <br>Price: 14.67<br>Nr of options: 3</div>`)[0];
+                popup_e57c6d652e6e15985ab17bb40f90359f.setContent(html_bef354fd77505a6c07464653224f768a);
+            
+        
+
+        circle_marker_785542af9372733b725697cdafcbf419.bindPopup(popup_e57c6d652e6e15985ab17bb40f90359f)
+        ;
+
+        
+    
+    
+            var circle_marker_5f8890dd468386a5f2ecbcfcb19e466d = L.circleMarker(
+                [51.200648, 4.4444544],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bd3ff79d338435c7b593fef709593d63);
+        
+    
+        var popup_7b51bcf854734245379102812ed21357 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_63145f8f0202794309421b5991985721 = $(`<div id="html_63145f8f0202794309421b5991985721" style="width: 100.0%; height: 100.0%;">Resto: Golden Spice<br>Price: 14.25<br>Nr of options: 4</div>`)[0];
+                popup_7b51bcf854734245379102812ed21357.setContent(html_63145f8f0202794309421b5991985721);
+            
+        
+
+        circle_marker_5f8890dd468386a5f2ecbcfcb19e466d.bindPopup(popup_7b51bcf854734245379102812ed21357)
+        ;
+
+        
+    
+    
+            var circle_marker_fb950d2be3d46849731c992d22da2053 = L.circleMarker(
+                [50.82850819999999, 3.2649605],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bd3ff79d338435c7b593fef709593d63);
+        
+    
+        var popup_f78f24dec19487af25403c49ee121a9c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f025f86d5fcd224f92169c01996dbdb6 = $(`<div id="html_f025f86d5fcd224f92169c01996dbdb6" style="width: 100.0%; height: 100.0%;">Resto: Sesam<br>Price: 14.0<br>Nr of options: 1</div>`)[0];
+                popup_f78f24dec19487af25403c49ee121a9c.setContent(html_f025f86d5fcd224f92169c01996dbdb6);
+            
+        
+
+        circle_marker_fb950d2be3d46849731c992d22da2053.bindPopup(popup_f78f24dec19487af25403c49ee121a9c)
+        ;
+
+        
+    
+    
+            var circle_marker_07c22a139404ba851d28bdd44253b7c1 = L.circleMarker(
+                [51.1994999, 4.4303691],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bd3ff79d338435c7b593fef709593d63);
+        
+    
+        var popup_8d81b03bdba50e195ae4e5f3e096ce9d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8398acf46474e69adf3cb2b06eb957a1 = $(`<div id="html_8398acf46474e69adf3cb2b06eb957a1" style="width: 100.0%; height: 100.0%;">Resto: Emir Baba Köfte & Kebab<br>Price: 13.67<br>Nr of options: 3</div>`)[0];
+                popup_8d81b03bdba50e195ae4e5f3e096ce9d.setContent(html_8398acf46474e69adf3cb2b06eb957a1);
+            
+        
+
+        circle_marker_07c22a139404ba851d28bdd44253b7c1.bindPopup(popup_8d81b03bdba50e195ae4e5f3e096ce9d)
+        ;
+
+        
+    
+    
+            var circle_marker_cb67442324798e2970019e772e5c0e1e = L.circleMarker(
+                [50.81315130000001, 3.2494097],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bd3ff79d338435c7b593fef709593d63);
+        
+    
+        var popup_50a172d1399bd750bb0324fa246f584c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3913691480eac0ff811f5b6a096f6a04 = $(`<div id="html_3913691480eac0ff811f5b6a096f6a04" style="width: 100.0%; height: 100.0%;">Resto: Frituur Bossuwé Pottelberg<br>Price: 12.83<br>Nr of options: 3</div>`)[0];
+                popup_50a172d1399bd750bb0324fa246f584c.setContent(html_3913691480eac0ff811f5b6a096f6a04);
+            
+        
+
+        circle_marker_cb67442324798e2970019e772e5c0e1e.bindPopup(popup_50a172d1399bd750bb0324fa246f584c)
+        ;
+
+        
+    
+    
+            var circle_marker_b8575a4c2a705b1f4ec7b1e311d6aab6 = L.circleMarker(
+                [50.9935238, 5.5186852],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bd3ff79d338435c7b593fef709593d63);
+        
+    
+        var popup_991c1bee7e882c746f2d1a2b6c772517 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_59413306f931e195f382256f32160351 = $(`<div id="html_59413306f931e195f382256f32160351" style="width: 100.0%; height: 100.0%;">Resto: Ali Baba Stalenstraat<br>Price: 12.33<br>Nr of options: 3</div>`)[0];
+                popup_991c1bee7e882c746f2d1a2b6c772517.setContent(html_59413306f931e195f382256f32160351);
+            
+        
+
+        circle_marker_b8575a4c2a705b1f4ec7b1e311d6aab6.bindPopup(popup_991c1bee7e882c746f2d1a2b6c772517)
+        ;
+
+        
+    
+    
+            var circle_marker_dda572740803464322af42b4293acc88 = L.circleMarker(
+                [51.2110818, 3.2424745],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bd3ff79d338435c7b593fef709593d63);
+        
+    
+        var popup_2bdcca5bb32193e74a0f449432d086ba = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3f0df7b7e20df07f96a26b99eb990129 = $(`<div id="html_3f0df7b7e20df07f96a26b99eb990129" style="width: 100.0%; height: 100.0%;">Resto: Dailyslice<br>Price: 12.25<br>Nr of options: 2</div>`)[0];
+                popup_2bdcca5bb32193e74a0f449432d086ba.setContent(html_3f0df7b7e20df07f96a26b99eb990129);
+            
+        
+
+        circle_marker_dda572740803464322af42b4293acc88.bindPopup(popup_2bdcca5bb32193e74a0f449432d086ba)
+        ;
+
+        
+    
+    
+            var circle_marker_263ffb0516911d2152e8eae4c139c3fb = L.circleMarker(
+                [50.9369842, 4.0271876],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bd3ff79d338435c7b593fef709593d63);
+        
+    
+        var popup_62186a6774633412532a63d8eead475f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ab83f19e597ec79b3f2ef4694c90659c = $(`<div id="html_ab83f19e597ec79b3f2ef4694c90659c" style="width: 100.0%; height: 100.0%;">Resto: Kebab@home<br>Price: 12.25<br>Nr of options: 4</div>`)[0];
+                popup_62186a6774633412532a63d8eead475f.setContent(html_ab83f19e597ec79b3f2ef4694c90659c);
+            
+        
+
+        circle_marker_263ffb0516911d2152e8eae4c139c3fb.bindPopup(popup_62186a6774633412532a63d8eead475f)
+        ;
+
+        
+    
+    
+            var circle_marker_8c98ec08d5ef15e1ecf35c3a95797652 = L.circleMarker(
+                [50.816322, 4.4281378],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bd3ff79d338435c7b593fef709593d63);
+        
+    
+        var popup_766c9d2b71f5456b427242040fc94a82 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ecb6fab96dcbb305b4df6b5cd2aeb921 = $(`<div id="html_ecb6fab96dcbb305b4df6b5cd2aeb921" style="width: 100.0%; height: 100.0%;">Resto: Bosphorus Snack<br>Price: 12.14<br>Nr of options: 7</div>`)[0];
+                popup_766c9d2b71f5456b427242040fc94a82.setContent(html_ecb6fab96dcbb305b4df6b5cd2aeb921);
+            
+        
+
+        circle_marker_8c98ec08d5ef15e1ecf35c3a95797652.bindPopup(popup_766c9d2b71f5456b427242040fc94a82)
+        ;
+
+        
+    
+    
+            var circle_marker_e16c997dfd20c5143d2a8b2dca90ccb4 = L.circleMarker(
+                [51.0288925, 4.098554600000001],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bd3ff79d338435c7b593fef709593d63);
+        
+    
+        var popup_247062130782de33ced0c81a444a9b02 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e82e4dcc30aaaeca0da139176632f2fe = $(`<div id="html_e82e4dcc30aaaeca0da139176632f2fe" style="width: 100.0%; height: 100.0%;">Resto: Karine Dendermonde<br>Price: 12.0<br>Nr of options: 5</div>`)[0];
+                popup_247062130782de33ced0c81a444a9b02.setContent(html_e82e4dcc30aaaeca0da139176632f2fe);
+            
+        
+
+        circle_marker_e16c997dfd20c5143d2a8b2dca90ccb4.bindPopup(popup_247062130782de33ced0c81a444a9b02)
+        ;
+
+        
+    
+    
+            var circle_marker_96060ba436962d3a1c340a3f21e3661b = L.circleMarker(
+                [51.0448385, 4.1056225],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bd3ff79d338435c7b593fef709593d63);
+        
+    
+        var popup_a6d8c994aa3c47dbfbb5c40473711cc0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8bd91805ef6230bc6cd69d269d9239f8 = $(`<div id="html_8bd91805ef6230bc6cd69d269d9239f8" style="width: 100.0%; height: 100.0%;">Resto: Karine Grembergen<br>Price: 12.0<br>Nr of options: 5</div>`)[0];
+                popup_a6d8c994aa3c47dbfbb5c40473711cc0.setContent(html_8bd91805ef6230bc6cd69d269d9239f8);
+            
+        
+
+        circle_marker_96060ba436962d3a1c340a3f21e3661b.bindPopup(popup_a6d8c994aa3c47dbfbb5c40473711cc0)
+        ;
+
+        
+    
+    
+            var circle_marker_1c2470a582098097f1b04903bed1c42b = L.circleMarker(
+                [50.9380499, 5.3404621],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bd3ff79d338435c7b593fef709593d63);
+        
+    
+        var popup_81921e39e3c1671b374b941755682759 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2f5345cfd15a21e73dd9f1e89e140641 = $(`<div id="html_2f5345cfd15a21e73dd9f1e89e140641" style="width: 100.0%; height: 100.0%;">Resto: Aleppo food<br>Price: 12.0<br>Nr of options: 2</div>`)[0];
+                popup_81921e39e3c1671b374b941755682759.setContent(html_2f5345cfd15a21e73dd9f1e89e140641);
+            
+        
+
+        circle_marker_1c2470a582098097f1b04903bed1c42b.bindPopup(popup_81921e39e3c1671b374b941755682759)
+        ;
+
+        
+    
+    
+            var circle_marker_544842046744898653dfb7fa7c8b1f50 = L.circleMarker(
+                [50.93804249999999, 4.0319657],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bd3ff79d338435c7b593fef709593d63);
+        
+    
+        var popup_d7eca36a481e925646bd8e89b07eeb2d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_25c0fede2d540414ad78dde5e092a3b9 = $(`<div id="html_25c0fede2d540414ad78dde5e092a3b9" style="width: 100.0%; height: 100.0%;">Resto: Pita Piramide Aalst<br>Price: 12.0<br>Nr of options: 3</div>`)[0];
+                popup_d7eca36a481e925646bd8e89b07eeb2d.setContent(html_25c0fede2d540414ad78dde5e092a3b9);
+            
+        
+
+        circle_marker_544842046744898653dfb7fa7c8b1f50.bindPopup(popup_d7eca36a481e925646bd8e89b07eeb2d)
+        ;
+
+        
+    
+    
+            var circle_marker_cedd74fd0d2c86e2107e30dee8373769 = L.circleMarker(
+                [50.92572759999999, 5.3260064],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bd3ff79d338435c7b593fef709593d63);
+        
+    
+        var popup_4202cfe26cd28f7bcdeceb669f5157fb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d72f648da7d988a27ef785b6b5047294 = $(`<div id="html_d72f648da7d988a27ef785b6b5047294" style="width: 100.0%; height: 100.0%;">Resto: Snack Marhaba<br>Price: 12.0<br>Nr of options: 2</div>`)[0];
+                popup_4202cfe26cd28f7bcdeceb669f5157fb.setContent(html_d72f648da7d988a27ef785b6b5047294);
+            
+        
+
+        circle_marker_cedd74fd0d2c86e2107e30dee8373769.bindPopup(popup_4202cfe26cd28f7bcdeceb669f5157fb)
+        ;
+
+        
+    
+    
+            var circle_marker_db198247a5b38fbbe797d215999b7d09 = L.circleMarker(
+                [51.206015, 3.2177265],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bd3ff79d338435c7b593fef709593d63);
+        
+    
+        var popup_a1aff3f049ce43519ba22c625703566e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_78480ab6523385fa3e133472293fd100 = $(`<div id="html_78480ab6523385fa3e133472293fd100" style="width: 100.0%; height: 100.0%;">Resto: Pita Efes 2<br>Price: 12.0<br>Nr of options: 2</div>`)[0];
+                popup_a1aff3f049ce43519ba22c625703566e.setContent(html_78480ab6523385fa3e133472293fd100);
+            
+        
+
+        circle_marker_db198247a5b38fbbe797d215999b7d09.bindPopup(popup_a1aff3f049ce43519ba22c625703566e)
+        ;
+
+        
+    
+    
+            var circle_marker_060d198d02de9e36eeddfaddd3774626 = L.circleMarker(
+                [50.9292419, 5.3373425],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bd3ff79d338435c7b593fef709593d63);
+        
+    
+        var popup_6ea6c9172cad6cafd073982422f3a62d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bd93d529db9f2a91dd93d992a11d6ab2 = $(`<div id="html_bd93d529db9f2a91dd93d992a11d6ab2" style="width: 100.0%; height: 100.0%;">Resto:  Delifranco<br>Price: 11.99<br>Nr of options: 1</div>`)[0];
+                popup_6ea6c9172cad6cafd073982422f3a62d.setContent(html_bd93d529db9f2a91dd93d992a11d6ab2);
+            
+        
+
+        circle_marker_060d198d02de9e36eeddfaddd3774626.bindPopup(popup_6ea6c9172cad6cafd073982422f3a62d)
+        ;
+
+        
+    
+    
+            var circle_marker_f363bde796c9c5c2cdec459393274156 = L.circleMarker(
+                [50.8260794, 3.2378919],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bd3ff79d338435c7b593fef709593d63);
+        
+    
+        var popup_c81a4327416479f0f096916ddaa8de36 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_62f11cb3b8a3280d44a8e6f12b722740 = $(`<div id="html_62f11cb3b8a3280d44a8e6f12b722740" style="width: 100.0%; height: 100.0%;">Resto: CaCo<br>Price: 11.9<br>Nr of options: 3</div>`)[0];
+                popup_c81a4327416479f0f096916ddaa8de36.setContent(html_62f11cb3b8a3280d44a8e6f12b722740);
+            
+        
+
+        circle_marker_f363bde796c9c5c2cdec459393274156.bindPopup(popup_c81a4327416479f0f096916ddaa8de36)
+        ;
+
+        
+    
+    
+            var circle_marker_6f00a9de592a4c4b2d098966af672ffc = L.circleMarker(
+                [51.049376, 3.730604],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bd3ff79d338435c7b593fef709593d63);
+        
+    
+        var popup_aeeb572f17b43bb35ff45713045d16ed = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5a59d75360617b4f6aaec01bece7f76b = $(`<div id="html_5a59d75360617b4f6aaec01bece7f76b" style="width: 100.0%; height: 100.0%;">Resto: Q'bap Gent<br>Price: 11.9<br>Nr of options: 3</div>`)[0];
+                popup_aeeb572f17b43bb35ff45713045d16ed.setContent(html_5a59d75360617b4f6aaec01bece7f76b);
+            
+        
+
+        circle_marker_6f00a9de592a4c4b2d098966af672ffc.bindPopup(popup_aeeb572f17b43bb35ff45713045d16ed)
+        ;
+
+        
+    
+    
+            var circle_marker_5922ee56b712d6181c77f55760ac56a4 = L.circleMarker(
+                [51.1968333, 4.4580978],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bd3ff79d338435c7b593fef709593d63);
+        
+    
+        var popup_4bdfd2f3a21983e3c9b876113985da57 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b86b694e82626ea7978b835ec2f7ca7d = $(`<div id="html_b86b694e82626ea7978b835ec2f7ca7d" style="width: 100.0%; height: 100.0%;">Resto: Doy Doys<br>Price: 11.62<br>Nr of options: 9</div>`)[0];
+                popup_4bdfd2f3a21983e3c9b876113985da57.setContent(html_b86b694e82626ea7978b835ec2f7ca7d);
+            
+        
+
+        circle_marker_5922ee56b712d6181c77f55760ac56a4.bindPopup(popup_4bdfd2f3a21983e3c9b876113985da57)
+        ;
+
+        
+    
+    
+            var circle_marker_2ef2b022484d43ed802cc016d2e31816 = L.circleMarker(
+                [51.1987497, 3.1889283],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bd3ff79d338435c7b593fef709593d63);
+        
+    
+        var popup_5367a7f2ecb52eb0433deec9422afd5c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4b00e8eca29f97c8f0654278c206e734 = $(`<div id="html_4b00e8eca29f97c8f0654278c206e734" style="width: 100.0%; height: 100.0%;">Resto: Pitta Roos<br>Price: 11.5<br>Nr of options: 6</div>`)[0];
+                popup_5367a7f2ecb52eb0433deec9422afd5c.setContent(html_4b00e8eca29f97c8f0654278c206e734);
+            
+        
+
+        circle_marker_2ef2b022484d43ed802cc016d2e31816.bindPopup(popup_5367a7f2ecb52eb0433deec9422afd5c)
+        ;
+
+        
+    
+    
+            var circle_marker_9c5041e3633c1c5728f5043813c9b0ec = L.circleMarker(
+                [50.9313569, 5.3401621],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bd3ff79d338435c7b593fef709593d63);
+        
+    
+        var popup_b49dcfe289bc4482ec19e58a1ea7e45f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c9bb65f415eb5b8e4b0c920648a01389 = $(`<div id="html_c9bb65f415eb5b8e4b0c920648a01389" style="width: 100.0%; height: 100.0%;">Resto: El assyl<br>Price: 11.5<br>Nr of options: 2</div>`)[0];
+                popup_b49dcfe289bc4482ec19e58a1ea7e45f.setContent(html_c9bb65f415eb5b8e4b0c920648a01389);
+            
+        
+
+        circle_marker_9c5041e3633c1c5728f5043813c9b0ec.bindPopup(popup_b49dcfe289bc4482ec19e58a1ea7e45f)
+        ;
+
+        
+    
+    
+            var circle_marker_1a7b3f86a2651a6e5be63d4edcb3d2ac = L.circleMarker(
+                [50.93069190000001, 5.3396605],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bd3ff79d338435c7b593fef709593d63);
+        
+    
+        var popup_e529496fde942be15e6a08c992b0ed44 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f3e4b0b3ba6238bad8e118301df4872b = $(`<div id="html_f3e4b0b3ba6238bad8e118301df4872b" style="width: 100.0%; height: 100.0%;">Resto: Botanique<br>Price: 11.5<br>Nr of options: 3</div>`)[0];
+                popup_e529496fde942be15e6a08c992b0ed44.setContent(html_f3e4b0b3ba6238bad8e118301df4872b);
+            
+        
+
+        circle_marker_1a7b3f86a2651a6e5be63d4edcb3d2ac.bindPopup(popup_e529496fde942be15e6a08c992b0ed44)
+        ;
+
+        
+    
+    
+            var circle_marker_c00471d4cd98e7c1cc1c9d3f4899da20 = L.circleMarker(
+                [51.0268966, 3.7218444],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bd3ff79d338435c7b593fef709593d63);
+        
+    
+        var popup_38650d1e87e9677d63f1015b13743375 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4a29817a1106bd3a6246cdab9a81d225 = $(`<div id="html_4a29817a1106bd3a6246cdab9a81d225" style="width: 100.0%; height: 100.0%;">Resto: Uniq Kebab Gent<br>Price: 11.45<br>Nr of options: 3</div>`)[0];
+                popup_38650d1e87e9677d63f1015b13743375.setContent(html_4a29817a1106bd3a6246cdab9a81d225);
+            
+        
+
+        circle_marker_c00471d4cd98e7c1cc1c9d3f4899da20.bindPopup(popup_38650d1e87e9677d63f1015b13743375)
+        ;
+
+        
+    
+    
+            var circle_marker_23db18f7ee2f87d6dddb857f0760168f = L.circleMarker(
+                [50.98023200000001, 5.4917294],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bd3ff79d338435c7b593fef709593d63);
+        
+    
+        var popup_5d491e1c60464e9a98599ab8d848fe2e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bc1967472c637244d249fef85f1de530 = $(`<div id="html_bc1967472c637244d249fef85f1de530" style="width: 100.0%; height: 100.0%;">Resto: Ali Baba Vennestraat<br>Price: 11.33<br>Nr of options: 3</div>`)[0];
+                popup_5d491e1c60464e9a98599ab8d848fe2e.setContent(html_bc1967472c637244d249fef85f1de530);
+            
+        
+
+        circle_marker_23db18f7ee2f87d6dddb857f0760168f.bindPopup(popup_5d491e1c60464e9a98599ab8d848fe2e)
+        ;
+
+        
+    
+    
+            var circle_marker_1aedd6c3703af65e6dce3680668c352a = L.circleMarker(
+                [51.1735923, 4.4444482],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bd3ff79d338435c7b593fef709593d63);
+        
+    
+        var popup_ca650ec2ba1684a12a65d04615b9c633 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4390ebc4d6c1e5e70b5f4d84b21a5b3e = $(`<div id="html_4390ebc4d6c1e5e70b5f4d84b21a5b3e" style="width: 100.0%; height: 100.0%;">Resto: Pita Cleopatra<br>Price: 11.2<br>Nr of options: 2</div>`)[0];
+                popup_ca650ec2ba1684a12a65d04615b9c633.setContent(html_4390ebc4d6c1e5e70b5f4d84b21a5b3e);
+            
+        
+
+        circle_marker_1aedd6c3703af65e6dce3680668c352a.bindPopup(popup_ca650ec2ba1684a12a65d04615b9c633)
+        ;
+
+        
+    
+    
+            var circle_marker_eef1ca1d5250c15f3e0791445bc0a90e = L.circleMarker(
+                [51.0535273, 3.7217288],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bd3ff79d338435c7b593fef709593d63);
+        
+    
+        var popup_94259f313e3e404cf9f77344bef6d2fc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_207e1ae45eeb6de5b32abd24ae77c4af = $(`<div id="html_207e1ae45eeb6de5b32abd24ae77c4af" style="width: 100.0%; height: 100.0%;">Resto: Kubaba<br>Price: 11.17<br>Nr of options: 3</div>`)[0];
+                popup_94259f313e3e404cf9f77344bef6d2fc.setContent(html_207e1ae45eeb6de5b32abd24ae77c4af);
+            
+        
+
+        circle_marker_eef1ca1d5250c15f3e0791445bc0a90e.bindPopup(popup_94259f313e3e404cf9f77344bef6d2fc)
+        ;
+
+        
+    
+    
+            var circle_marker_908d4b339f20b9e457147ae2dd785512 = L.circleMarker(
+                [51.06218699999999, 3.7498953],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bd3ff79d338435c7b593fef709593d63);
+        
+    
+        var popup_2a5e001e224bad17320ed6a371e9d2ac = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_80fea62da3228df2a1595fddd60f176c = $(`<div id="html_80fea62da3228df2a1595fddd60f176c" style="width: 100.0%; height: 100.0%;">Resto: Pitta Can <br>Price: 11.0<br>Nr of options: 2</div>`)[0];
+                popup_2a5e001e224bad17320ed6a371e9d2ac.setContent(html_80fea62da3228df2a1595fddd60f176c);
+            
+        
+
+        circle_marker_908d4b339f20b9e457147ae2dd785512.bindPopup(popup_2a5e001e224bad17320ed6a371e9d2ac)
+        ;
+
+        
+    
+    
+            var circle_marker_31c2f8a920bf96b09d940c73c48e7e08 = L.circleMarker(
+                [51.20622773, 3.218068992],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bd3ff79d338435c7b593fef709593d63);
+        
+    
+        var popup_60c17e0cdfa60d79940ea25ae99e6235 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bfce390ea38cd644ca9faab6750e83fd = $(`<div id="html_bfce390ea38cd644ca9faab6750e83fd" style="width: 100.0%; height: 100.0%;">Resto: Saba snack<br>Price: 11.0<br>Nr of options: 1</div>`)[0];
+                popup_60c17e0cdfa60d79940ea25ae99e6235.setContent(html_bfce390ea38cd644ca9faab6750e83fd);
+            
+        
+
+        circle_marker_31c2f8a920bf96b09d940c73c48e7e08.bindPopup(popup_60c17e0cdfa60d79940ea25ae99e6235)
+        ;
+
+        
+    
+    
+            var circle_marker_1e1a3e09a90bbaad9ae805e1a3058420 = L.circleMarker(
+                [51.203775, 3.208446],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bd3ff79d338435c7b593fef709593d63);
+        
+    
+        var popup_02f441aa8bd63492da940fe27af7f77c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c59fa6439bbfa780f08eb3944cd2d741 = $(`<div id="html_c59fa6439bbfa780f08eb3944cd2d741" style="width: 100.0%; height: 100.0%;">Resto: Iran Chicken Grill <br>Price: 11.0<br>Nr of options: 1</div>`)[0];
+                popup_02f441aa8bd63492da940fe27af7f77c.setContent(html_c59fa6439bbfa780f08eb3944cd2d741);
+            
+        
+
+        circle_marker_1e1a3e09a90bbaad9ae805e1a3058420.bindPopup(popup_02f441aa8bd63492da940fe27af7f77c)
+        ;
+
+        
+    
+    
+            var circle_marker_9045a3d8f4ed2923b4a8b501e40ad177 = L.circleMarker(
+                [51.2192348, 4.4203085],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bd3ff79d338435c7b593fef709593d63);
+        
+    
+        var popup_98afd0740f88708c818c980f9b697c78 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_785ff23713c4d25442bc44a0fa1a4b71 = $(`<div id="html_785ff23713c4d25442bc44a0fa1a4b71" style="width: 100.0%; height: 100.0%;">Resto: Mixor Kebab<br>Price: 10.95<br>Nr of options: 4</div>`)[0];
+                popup_98afd0740f88708c818c980f9b697c78.setContent(html_785ff23713c4d25442bc44a0fa1a4b71);
+            
+        
+
+        circle_marker_9045a3d8f4ed2923b4a8b501e40ad177.bindPopup(popup_98afd0740f88708c818c980f9b697c78)
+        ;
+
+        
+    
+    
+            var circle_marker_9376acd46d53d6e158d36561ee0d66ef = L.circleMarker(
+                [50.9666456, 5.5002103],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bd3ff79d338435c7b593fef709593d63);
+        
+    
+        var popup_bd882fc275b51071a468f36fe9c88882 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2a49a6a452be0bf8a42809c307d1d9f5 = $(`<div id="html_2a49a6a452be0bf8a42809c307d1d9f5" style="width: 100.0%; height: 100.0%;">Resto: Jerusalem Pita-Shoarma-Pizzeria<br>Price: 10.67<br>Nr of options: 3</div>`)[0];
+                popup_bd882fc275b51071a468f36fe9c88882.setContent(html_2a49a6a452be0bf8a42809c307d1d9f5);
+            
+        
+
+        circle_marker_9376acd46d53d6e158d36561ee0d66ef.bindPopup(popup_bd882fc275b51071a468f36fe9c88882)
+        ;
+
+        
+    
+    
+            var circle_marker_4e221334877218c0d6a083440d87ad6b = L.circleMarker(
+                [51.0415614, 3.7294274],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bd3ff79d338435c7b593fef709593d63);
+        
+    
+        var popup_e23ab90101e84bcd53a4020a128e7c55 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_407bcd6b5de963bb224975ec4c55cc82 = $(`<div id="html_407bcd6b5de963bb224975ec4c55cc82" style="width: 100.0%; height: 100.0%;">Resto: Frituur Pita de Brug<br>Price: 10.67<br>Nr of options: 12</div>`)[0];
+                popup_e23ab90101e84bcd53a4020a128e7c55.setContent(html_407bcd6b5de963bb224975ec4c55cc82);
+            
+        
+
+        circle_marker_4e221334877218c0d6a083440d87ad6b.bindPopup(popup_e23ab90101e84bcd53a4020a128e7c55)
+        ;
+
+        
+    
+    
+            var circle_marker_1473bd14ed762b53ac3bc07bbec51173 = L.circleMarker(
+                [51.2251981, 3.2314266],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bd3ff79d338435c7b593fef709593d63);
+        
+    
+        var popup_803ab9951f68aee5c189bfd1198073a4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_df0075e4da526184b5981fe785188d0f = $(`<div id="html_df0075e4da526184b5981fe785188d0f" style="width: 100.0%; height: 100.0%;">Resto: Pizzaria Mr. Sebino<br>Price: 10.62<br>Nr of options: 4</div>`)[0];
+                popup_803ab9951f68aee5c189bfd1198073a4.setContent(html_df0075e4da526184b5981fe785188d0f);
+            
+        
+
+        circle_marker_1473bd14ed762b53ac3bc07bbec51173.bindPopup(popup_803ab9951f68aee5c189bfd1198073a4)
+        ;
+
+        
+    
+    
+            var circle_marker_47a82546821089229d606133846b5ce3 = L.circleMarker(
+                [51.2078309, 4.389232199999999],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bd3ff79d338435c7b593fef709593d63);
+        
+    
+        var popup_dee5be7984d32b85abd330f6383f8b00 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b81f6e6511d6a3f5db1dd25ea855bba6 = $(`<div id="html_b81f6e6511d6a3f5db1dd25ea855bba6" style="width: 100.0%; height: 100.0%;">Resto: Pita Ster Antwerpen<br>Price: 10.6<br>Nr of options: 3</div>`)[0];
+                popup_dee5be7984d32b85abd330f6383f8b00.setContent(html_b81f6e6511d6a3f5db1dd25ea855bba6);
+            
+        
+
+        circle_marker_47a82546821089229d606133846b5ce3.bindPopup(popup_dee5be7984d32b85abd330f6383f8b00)
+        ;
+
+        
+    
+    
+            var circle_marker_001c42e31263a7d1c480bc03234704c2 = L.circleMarker(
+                [50.8686357, 4.3122373],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bd3ff79d338435c7b593fef709593d63);
+        
+    
+        var popup_e93c18e66c953b95547658664811f8e5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f8353c9ee52e030cb96bdc2e052474ff = $(`<div id="html_f8353c9ee52e030cb96bdc2e052474ff" style="width: 100.0%; height: 100.0%;">Resto: Chez Hakan<br>Price: 10.47<br>Nr of options: 14</div>`)[0];
+                popup_e93c18e66c953b95547658664811f8e5.setContent(html_f8353c9ee52e030cb96bdc2e052474ff);
+            
+        
+
+        circle_marker_001c42e31263a7d1c480bc03234704c2.bindPopup(popup_e93c18e66c953b95547658664811f8e5)
+        ;
+
+        
+    
+    
+            var circle_marker_fef4c230b835c8abf7620414a40468b1 = L.circleMarker(
+                [51.0290669, 4.4883672],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bd3ff79d338435c7b593fef709593d63);
+        
+    
+        var popup_a96c2b51c06686701d9b65ccd9ec3eba = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9d046208a9a83217d647186b3445a853 = $(`<div id="html_9d046208a9a83217d647186b3445a853" style="width: 100.0%; height: 100.0%;">Resto: Adana Kebab BBQ<br>Price: 10.29<br>Nr of options: 7</div>`)[0];
+                popup_a96c2b51c06686701d9b65ccd9ec3eba.setContent(html_9d046208a9a83217d647186b3445a853);
+            
+        
+
+        circle_marker_fef4c230b835c8abf7620414a40468b1.bindPopup(popup_a96c2b51c06686701d9b65ccd9ec3eba)
+        ;
+
+        
+    
+    
+            var circle_marker_5df0fcfd6f62d2be8c3a3e4e64c6f934 = L.circleMarker(
+                [50.7871651, 4.3295849],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bd3ff79d338435c7b593fef709593d63);
+        
+    
+        var popup_3f07183590827422b62ff503c0dd4da3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6485d422cacf64754d795e37eb990e0c = $(`<div id="html_6485d422cacf64754d795e37eb990e0c" style="width: 100.0%; height: 100.0%;">Resto: Couleur Safran<br>Price: 10.22<br>Nr of options: 2</div>`)[0];
+                popup_3f07183590827422b62ff503c0dd4da3.setContent(html_6485d422cacf64754d795e37eb990e0c);
+            
+        
+
+        circle_marker_5df0fcfd6f62d2be8c3a3e4e64c6f934.bindPopup(popup_3f07183590827422b62ff503c0dd4da3)
+        ;
+
+        
+    
+    
+            var circle_marker_f0ea3d8cd30eeff9fa3a32cfe1135681 = L.circleMarker(
+                [51.0402795, 3.7254889],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bd3ff79d338435c7b593fef709593d63);
+        
+    
+        var popup_a6759a10c5ad8d2ac04d732c037e1570 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e300569aabfbe12ca504d418b0147b97 = $(`<div id="html_e300569aabfbe12ca504d418b0147b97" style="width: 100.0%; height: 100.0%;">Resto: Andromeda<br>Price: 10.2<br>Nr of options: 6</div>`)[0];
+                popup_a6759a10c5ad8d2ac04d732c037e1570.setContent(html_e300569aabfbe12ca504d418b0147b97);
+            
+        
+
+        circle_marker_f0ea3d8cd30eeff9fa3a32cfe1135681.bindPopup(popup_a6759a10c5ad8d2ac04d732c037e1570)
+        ;
+
+        
+    
+    
+            var circle_marker_449767b91a374b5beff9785ad9ef57fd = L.circleMarker(
+                [51.0361601, 4.475635899999999],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bd3ff79d338435c7b593fef709593d63);
+        
+    
+        var popup_b39dc538526f67ce7bbc2357511f8a9e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bcd4b66d4c7339fea0c4af850b537ccf = $(`<div id="html_bcd4b66d4c7339fea0c4af850b537ccf" style="width: 100.0%; height: 100.0%;">Resto: Pizza Roma <br>Price: 10.07<br>Nr of options: 14</div>`)[0];
+                popup_b39dc538526f67ce7bbc2357511f8a9e.setContent(html_bcd4b66d4c7339fea0c4af850b537ccf);
+            
+        
+
+        circle_marker_449767b91a374b5beff9785ad9ef57fd.bindPopup(popup_b39dc538526f67ce7bbc2357511f8a9e)
+        ;
+
+        
+    
+    
+            var circle_marker_ff620d94c3278dbd06b91de2b2674431 = L.circleMarker(
+                [50.8252362, 3.2645729],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bd3ff79d338435c7b593fef709593d63);
+        
+    
+        var popup_7c0c82279961ba8d660ee6e252201d8c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fb8e476972c34308f2e3c7cfb9edd8c4 = $(`<div id="html_fb8e476972c34308f2e3c7cfb9edd8c4" style="width: 100.0%; height: 100.0%;">Resto: MY PIZZA (KOR)<br>Price: 10.0<br>Nr of options: 2</div>`)[0];
+                popup_7c0c82279961ba8d660ee6e252201d8c.setContent(html_fb8e476972c34308f2e3c7cfb9edd8c4);
+            
+        
+
+        circle_marker_ff620d94c3278dbd06b91de2b2674431.bindPopup(popup_7c0c82279961ba8d660ee6e252201d8c)
+        ;
+
+        
+    
+    
+            var circle_marker_badb5152ebb1154c584ff99461dda345 = L.circleMarker(
+                [50.8820908, 4.713553999999999],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bd3ff79d338435c7b593fef709593d63);
+        
+    
+        var popup_2dfff301ebbc6b6512f25e3ae4da59c6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_569f3a4749ff68faaaa1b9caa7205632 = $(`<div id="html_569f3a4749ff68faaaa1b9caa7205632" style="width: 100.0%; height: 100.0%;">Resto: Grill&service<br>Price: 10.0<br>Nr of options: 3</div>`)[0];
+                popup_2dfff301ebbc6b6512f25e3ae4da59c6.setContent(html_569f3a4749ff68faaaa1b9caa7205632);
+            
+        
+
+        circle_marker_badb5152ebb1154c584ff99461dda345.bindPopup(popup_2dfff301ebbc6b6512f25e3ae4da59c6)
+        ;
+
+        
+    
+    
+            var circle_marker_ce30c09a92fa6abb7e55a72b6c50b4f2 = L.circleMarker(
+                [50.8039908, 4.3364598],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bd3ff79d338435c7b593fef709593d63);
+        
+    
+        var popup_39d9b68d4faa4cbb9ce23d6e66cd2e52 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c5d51131f30873afe1f03b7ba3c615bd = $(`<div id="html_c5d51131f30873afe1f03b7ba3c615bd" style="width: 100.0%; height: 100.0%;">Resto: Snack Délice Halal<br>Price: 10.0<br>Nr of options: 1</div>`)[0];
+                popup_39d9b68d4faa4cbb9ce23d6e66cd2e52.setContent(html_c5d51131f30873afe1f03b7ba3c615bd);
+            
+        
+
+        circle_marker_ce30c09a92fa6abb7e55a72b6c50b4f2.bindPopup(popup_39d9b68d4faa4cbb9ce23d6e66cd2e52)
+        ;
+
+        
+    
+    
+            var circle_marker_4e14720ff82f0f726d5c6c3b8004e026 = L.circleMarker(
+                [51.2077784, 4.3887721],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bd3ff79d338435c7b593fef709593d63);
+        
+    
+        var popup_748f2a90104d9485683de233cdd82433 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7ae7890ebb6fb73067d514d958763c31 = $(`<div id="html_7ae7890ebb6fb73067d514d958763c31" style="width: 100.0%; height: 100.0%;">Resto: pita pizza waterpoort<br>Price: 10.0<br>Nr of options: 7</div>`)[0];
+                popup_748f2a90104d9485683de233cdd82433.setContent(html_7ae7890ebb6fb73067d514d958763c31);
+            
+        
+
+        circle_marker_4e14720ff82f0f726d5c6c3b8004e026.bindPopup(popup_748f2a90104d9485683de233cdd82433)
+        ;
+
+        
+    
+    
+            var circle_marker_6268368e8566a70153ea9e41fe1626b8 = L.circleMarker(
+                [51.2094748, 3.22894],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bd3ff79d338435c7b593fef709593d63);
+        
+    
+        var popup_ab119591e6ba4f279fe954a7567c850b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d3e2091c0871490654cb9e0f32325802 = $(`<div id="html_d3e2091c0871490654cb9e0f32325802" style="width: 100.0%; height: 100.0%;">Resto: King kebab<br>Price: 10.0<br>Nr of options: 2</div>`)[0];
+                popup_ab119591e6ba4f279fe954a7567c850b.setContent(html_d3e2091c0871490654cb9e0f32325802);
+            
+        
+
+        circle_marker_6268368e8566a70153ea9e41fe1626b8.bindPopup(popup_ab119591e6ba4f279fe954a7567c850b)
+        ;
+
+        
+    
+    
+            var circle_marker_136e61b927e521a99e6298156303c1ac = L.circleMarker(
+                [51.060491, 3.7103738],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bd3ff79d338435c7b593fef709593d63);
+        
+    
+        var popup_682ce452be9fd3b006a391acdfcb6190 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cadca44b7f57a7d7af4ab0fc0d7a64a0 = $(`<div id="html_cadca44b7f57a7d7af4ab0fc0d7a64a0" style="width: 100.0%; height: 100.0%;">Resto: Barbercue Duhok<br>Price: 10.0<br>Nr of options: 1</div>`)[0];
+                popup_682ce452be9fd3b006a391acdfcb6190.setContent(html_cadca44b7f57a7d7af4ab0fc0d7a64a0);
+            
+        
+
+        circle_marker_136e61b927e521a99e6298156303c1ac.bindPopup(popup_682ce452be9fd3b006a391acdfcb6190)
+        ;
+
+        
+    
+    
+            var circle_marker_079473207fa9532b365cda17915e07e7 = L.circleMarker(
+                [51.2190249, 2.9078665],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bd3ff79d338435c7b593fef709593d63);
+        
+    
+        var popup_9936cb335f9bf87abf59bc796cf07f87 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7d7bd9b2f25e273f39ba36e6d4dab016 = $(`<div id="html_7d7bd9b2f25e273f39ba36e6d4dab016" style="width: 100.0%; height: 100.0%;">Resto: 	 Samoo Baba Tacos Kebab & Grill<br>Price: 10.0<br>Nr of options: 1</div>`)[0];
+                popup_9936cb335f9bf87abf59bc796cf07f87.setContent(html_7d7bd9b2f25e273f39ba36e6d4dab016);
+            
+        
+
+        circle_marker_079473207fa9532b365cda17915e07e7.bindPopup(popup_9936cb335f9bf87abf59bc796cf07f87)
+        ;
+
+        
+    
+    
+            var circle_marker_b0e989d6b16ee3195ff81ec7d1f9aa73 = L.circleMarker(
+                [51.23376400000001, 2.9161473],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bd3ff79d338435c7b593fef709593d63);
+        
+    
+        var popup_bf296044f66b3cfc24da1a0571fd6052 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_70f3c25df2c916856b83c797b3547be7 = $(`<div id="html_70f3c25df2c916856b83c797b3547be7" style="width: 100.0%; height: 100.0%;">Resto: Pitta Corner Oostende<br>Price: 10.0<br>Nr of options: 1</div>`)[0];
+                popup_bf296044f66b3cfc24da1a0571fd6052.setContent(html_70f3c25df2c916856b83c797b3547be7);
+            
+        
+
+        circle_marker_b0e989d6b16ee3195ff81ec7d1f9aa73.bindPopup(popup_bf296044f66b3cfc24da1a0571fd6052)
+        ;
+
+        
+    
+    
+            var circle_marker_1fcdc8421a0709405d34e730b4602626 = L.circleMarker(
+                [51.20080978, 3.245848471],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bd3ff79d338435c7b593fef709593d63);
+        
+    
+        var popup_4a260a1e5ae2bda117f690c43b602571 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1abebcde1b9d054d023d6b88248aa70d = $(`<div id="html_1abebcde1b9d054d023d6b88248aa70d" style="width: 100.0%; height: 100.0%;">Resto: Pitta efes Assebroek<br>Price: 10.0<br>Nr of options: 2</div>`)[0];
+                popup_4a260a1e5ae2bda117f690c43b602571.setContent(html_1abebcde1b9d054d023d6b88248aa70d);
+            
+        
+
+        circle_marker_1fcdc8421a0709405d34e730b4602626.bindPopup(popup_4a260a1e5ae2bda117f690c43b602571)
+        ;
+
+        
+    
+    
+            var circle_marker_fe4b221816fcbf711a76bcfe43fd04cf = L.circleMarker(
+                [50.8773949, 4.703391],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bd3ff79d338435c7b593fef709593d63);
+        
+    
+        var popup_2cfa6e5c7e9136e753c6595205ea2d43 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cc8107b8c944a20f65ded189dea917cd = $(`<div id="html_cc8107b8c944a20f65ded189dea917cd" style="width: 100.0%; height: 100.0%;">Resto: Damasco Leuven<br>Price: 10.0<br>Nr of options: 1</div>`)[0];
+                popup_2cfa6e5c7e9136e753c6595205ea2d43.setContent(html_cc8107b8c944a20f65ded189dea917cd);
+            
+        
+
+        circle_marker_fe4b221816fcbf711a76bcfe43fd04cf.bindPopup(popup_2cfa6e5c7e9136e753c6595205ea2d43)
+        ;
+
+        
+    
+    
+            var circle_marker_6ba2d0dea5041119a8a7c1e9c25fe156 = L.circleMarker(
+                [51.2100923, 3.2231422],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bd3ff79d338435c7b593fef709593d63);
+        
+    
+        var popup_6f145c698eda25548d1cc992ab486f70 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d5450b74fa14fd8c872374b0e15d5ea3 = $(`<div id="html_d5450b74fa14fd8c872374b0e15d5ea3" style="width: 100.0%; height: 100.0%;">Resto: Brugge Kebab<br>Price: 9.88<br>Nr of options: 6</div>`)[0];
+                popup_6f145c698eda25548d1cc992ab486f70.setContent(html_d5450b74fa14fd8c872374b0e15d5ea3);
+            
+        
+
+        circle_marker_6ba2d0dea5041119a8a7c1e9c25fe156.bindPopup(popup_6f145c698eda25548d1cc992ab486f70)
+        ;
+
+        
+    
+    
+            var circle_marker_eada2bee8d3f2702063948b9a8113874 = L.circleMarker(
+                [51.2069524, 4.415094799999999],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bd3ff79d338435c7b593fef709593d63);
+        
+    
+        var popup_2537c9fd0111577b033246f44c19f23c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fffe9f2b28089273c341972e4154d18c = $(`<div id="html_fffe9f2b28089273c341972e4154d18c" style="width: 100.0%; height: 100.0%;">Resto: La Dany<br>Price: 9.86<br>Nr of options: 7</div>`)[0];
+                popup_2537c9fd0111577b033246f44c19f23c.setContent(html_fffe9f2b28089273c341972e4154d18c);
+            
+        
+
+        circle_marker_eada2bee8d3f2702063948b9a8113874.bindPopup(popup_2537c9fd0111577b033246f44c19f23c)
+        ;
+
+        
+    
+    
+            var circle_marker_87f8ee8c7e1ec8b9183fa0b1848673e8 = L.circleMarker(
+                [51.2124675, 4.4076701],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bd3ff79d338435c7b593fef709593d63);
+        
+    
+        var popup_e831f13079eec0e3a63bfbd9a604c2cd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e26dda481f3f8ee2eb3dff783db548f4 = $(`<div id="html_e26dda481f3f8ee2eb3dff783db548f4" style="width: 100.0%; height: 100.0%;">Resto: t Stad Kebab<br>Price: 9.81<br>Nr of options: 8</div>`)[0];
+                popup_e831f13079eec0e3a63bfbd9a604c2cd.setContent(html_e26dda481f3f8ee2eb3dff783db548f4);
+            
+        
+
+        circle_marker_87f8ee8c7e1ec8b9183fa0b1848673e8.bindPopup(popup_e831f13079eec0e3a63bfbd9a604c2cd)
+        ;
+
+        
+    
+    
+            var circle_marker_6bc5241c2270524ad3581160afa1cab1 = L.circleMarker(
+                [51.2221673, 4.435703],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bd3ff79d338435c7b593fef709593d63);
+        
+    
+        var popup_bfec74ba2efb7ec65d6a8c108090b799 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_97f6b632eb005ad476c7b8da4bed6788 = $(`<div id="html_97f6b632eb005ad476c7b8da4bed6788" style="width: 100.0%; height: 100.0%;">Resto: EL BARAKA antwerp<br>Price: 9.75<br>Nr of options: 2</div>`)[0];
+                popup_bfec74ba2efb7ec65d6a8c108090b799.setContent(html_97f6b632eb005ad476c7b8da4bed6788);
+            
+        
+
+        circle_marker_6bc5241c2270524ad3581160afa1cab1.bindPopup(popup_bfec74ba2efb7ec65d6a8c108090b799)
+        ;
+
+        
+    
+    
+            var circle_marker_eeccedcfaf69e8631b3d6b3489119a2a = L.circleMarker(
+                [50.9008021, 4.3607906],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bd3ff79d338435c7b593fef709593d63);
+        
+    
+        var popup_4db46196030155b50b71a52c9e25b987 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2fda98d4a2adbfff1bbe4d95e1fda545 = $(`<div id="html_2fda98d4a2adbfff1bbe4d95e1fda545" style="width: 100.0%; height: 100.0%;">Resto: Mam's burger<br>Price: 9.75<br>Nr of options: 1</div>`)[0];
+                popup_4db46196030155b50b71a52c9e25b987.setContent(html_2fda98d4a2adbfff1bbe4d95e1fda545);
+            
+        
+
+        circle_marker_eeccedcfaf69e8631b3d6b3489119a2a.bindPopup(popup_4db46196030155b50b71a52c9e25b987)
+        ;
+
+        
+    
+    
+            var circle_marker_9852851b8764c88f6eeeacac74d2e7e0 = L.circleMarker(
+                [51.050273, 3.730271],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bd3ff79d338435c7b593fef709593d63);
+        
+    
+        var popup_7583346201979a43b975db67ab1803d5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b6994926e3cfc361e21bd80d77d4ec98 = $(`<div id="html_b6994926e3cfc361e21bd80d77d4ec98" style="width: 100.0%; height: 100.0%;">Resto: grillmixcentrum<br>Price: 9.7<br>Nr of options: 5</div>`)[0];
+                popup_7583346201979a43b975db67ab1803d5.setContent(html_b6994926e3cfc361e21bd80d77d4ec98);
+            
+        
+
+        circle_marker_9852851b8764c88f6eeeacac74d2e7e0.bindPopup(popup_7583346201979a43b975db67ab1803d5)
+        ;
+
+        
+    
+    
+            var circle_marker_06fadff5a7a6da8a00c80d45fe2a9834 = L.circleMarker(
+                [50.83481310000001, 3.2514619],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bd3ff79d338435c7b593fef709593d63);
+        
+    
+        var popup_e2dca8fb0db5d5ad158e526ed557f3cb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_887c5b143958b0d06b8b000ecc9cfc1c = $(`<div id="html_887c5b143958b0d06b8b000ecc9cfc1c" style="width: 100.0%; height: 100.0%;">Resto: ROYAL PIZZA (Kortrijk 2022)<br>Price: 9.67<br>Nr of options: 3</div>`)[0];
+                popup_e2dca8fb0db5d5ad158e526ed557f3cb.setContent(html_887c5b143958b0d06b8b000ecc9cfc1c);
+            
+        
+
+        circle_marker_06fadff5a7a6da8a00c80d45fe2a9834.bindPopup(popup_e2dca8fb0db5d5ad158e526ed557f3cb)
+        ;
+
+        
+    
+    
+            var circle_marker_a5f555c858620ce1707cb59095bec2f7 = L.circleMarker(
+                [51.2251116, 4.4047447],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bd3ff79d338435c7b593fef709593d63);
+        
+    
+        var popup_4ec687e73213e13bb26e40f8784e3b45 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9ec6ec154c6867a5cee7cfca6e33dd48 = $(`<div id="html_9ec6ec154c6867a5cee7cfca6e33dd48" style="width: 100.0%; height: 100.0%;">Resto: Tito<br>Price: 9.62<br>Nr of options: 34</div>`)[0];
+                popup_4ec687e73213e13bb26e40f8784e3b45.setContent(html_9ec6ec154c6867a5cee7cfca6e33dd48);
+            
+        
+
+        circle_marker_a5f555c858620ce1707cb59095bec2f7.bindPopup(popup_4ec687e73213e13bb26e40f8784e3b45)
+        ;
+
+        
+    
+    
+            var circle_marker_fe7dbf93f7949b6fefe3ca9bfcbd2fdc = L.circleMarker(
+                [51.20610413, 3.21791429],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bd3ff79d338435c7b593fef709593d63);
+        
+    
+        var popup_a0225b65e85edf5763c9814b2af1186c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_93dd463f2bea26468a0933a89c067819 = $(`<div id="html_93dd463f2bea26468a0933a89c067819" style="width: 100.0%; height: 100.0%;">Resto: Pita Efes<br>Price: 9.5<br>Nr of options: 2</div>`)[0];
+                popup_a0225b65e85edf5763c9814b2af1186c.setContent(html_93dd463f2bea26468a0933a89c067819);
+            
+        
+
+        circle_marker_fe7dbf93f7949b6fefe3ca9bfcbd2fdc.bindPopup(popup_a0225b65e85edf5763c9814b2af1186c)
+        ;
+
+        
+    
+    
+            var circle_marker_c8dd65daad214da41a48c479dabcee8d = L.circleMarker(
+                [51.2094817, 3.2289341],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bd3ff79d338435c7b593fef709593d63);
+        
+    
+        var popup_f66e0795eb3c73c33205b1aa73cc1d9e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ff99f19f380eebd6ba3f0a18bec5a0c3 = $(`<div id="html_ff99f19f380eebd6ba3f0a18bec5a0c3" style="width: 100.0%; height: 100.0%;">Resto: King Kebab<br>Price: 9.5<br>Nr of options: 2</div>`)[0];
+                popup_f66e0795eb3c73c33205b1aa73cc1d9e.setContent(html_ff99f19f380eebd6ba3f0a18bec5a0c3);
+            
+        
+
+        circle_marker_c8dd65daad214da41a48c479dabcee8d.bindPopup(popup_f66e0795eb3c73c33205b1aa73cc1d9e)
+        ;
+
+        
+    
+    
+            var circle_marker_a037b8e946c48e6834259b8b5e3a7794 = L.circleMarker(
+                [51.2074982, 4.4135897],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bd3ff79d338435c7b593fef709593d63);
+        
+    
+        var popup_04716ee82839a76c230d19065cb0836c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_75bd0ac1a400135c425c9743ed1eb0df = $(`<div id="html_75bd0ac1a400135c425c9743ed1eb0df" style="width: 100.0%; height: 100.0%;">Resto: Pita Huis Blauwwater<br>Price: 9.5<br>Nr of options: 3</div>`)[0];
+                popup_04716ee82839a76c230d19065cb0836c.setContent(html_75bd0ac1a400135c425c9743ed1eb0df);
+            
+        
+
+        circle_marker_a037b8e946c48e6834259b8b5e3a7794.bindPopup(popup_04716ee82839a76c230d19065cb0836c)
+        ;
+
+        
+    
+    
+            var circle_marker_1da415492218c2a027df2f7a6e40bdc2 = L.circleMarker(
+                [50.8252855, 3.2649506],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bd3ff79d338435c7b593fef709593d63);
+        
+    
+        var popup_02de3b6047352f8e5ecdfa85754db71d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_710ac7ed4bf952a30e3e1256db139c2b = $(`<div id="html_710ac7ed4bf952a30e3e1256db139c2b" style="width: 100.0%; height: 100.0%;">Resto: Pitta House<br>Price: 9.45<br>Nr of options: 4</div>`)[0];
+                popup_02de3b6047352f8e5ecdfa85754db71d.setContent(html_710ac7ed4bf952a30e3e1256db139c2b);
+            
+        
+
+        circle_marker_1da415492218c2a027df2f7a6e40bdc2.bindPopup(popup_02de3b6047352f8e5ecdfa85754db71d)
+        ;
+
+        
+    
+    
+            var circle_marker_b0bebad9c400c5639e8b27ce12ee8591 = L.circleMarker(
+                [51.203775, 3.208446],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bd3ff79d338435c7b593fef709593d63);
+        
+    
+        var popup_0bf2378d50931180ff889ece98c0a60a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b7648ddc63f1827e7a0803aef78083cc = $(`<div id="html_b7648ddc63f1827e7a0803aef78083cc" style="width: 100.0%; height: 100.0%;">Resto: Master Kebab<br>Price: 9.4<br>Nr of options: 4</div>`)[0];
+                popup_0bf2378d50931180ff889ece98c0a60a.setContent(html_b7648ddc63f1827e7a0803aef78083cc);
+            
+        
+
+        circle_marker_b0bebad9c400c5639e8b27ce12ee8591.bindPopup(popup_0bf2378d50931180ff889ece98c0a60a)
+        ;
+
+        
+    
+    
+            var circle_marker_438f461c1f83d9a42b739b4174ba9456 = L.circleMarker(
+                [51.2085448, 3.2226075],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bd3ff79d338435c7b593fef709593d63);
+        
+    
+        var popup_524f1ad57730bcd1d3a58ae6c995fed2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_362484738af069b7b2ef5143bbe4d526 = $(`<div id="html_362484738af069b7b2ef5143bbe4d526" style="width: 100.0%; height: 100.0%;">Resto: Pita Xander <br>Price: 9.33<br>Nr of options: 3</div>`)[0];
+                popup_524f1ad57730bcd1d3a58ae6c995fed2.setContent(html_362484738af069b7b2ef5143bbe4d526);
+            
+        
+
+        circle_marker_438f461c1f83d9a42b739b4174ba9456.bindPopup(popup_524f1ad57730bcd1d3a58ae6c995fed2)
+        ;
+
+        
+    
+    
+            var circle_marker_3c1bb197de1a7a5adc5d3e3aa8bd5b39 = L.circleMarker(
+                [51.018772, 4.4831088],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bd3ff79d338435c7b593fef709593d63);
+        
+    
+        var popup_eb2e9dbe792f4d93968ca31184c218a9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_26b85523c4af8e4a4f7319fc0170849f = $(`<div id="html_26b85523c4af8e4a4f7319fc0170849f" style="width: 100.0%; height: 100.0%;">Resto: Sultan kebab <br>Price: 9.29<br>Nr of options: 7</div>`)[0];
+                popup_eb2e9dbe792f4d93968ca31184c218a9.setContent(html_26b85523c4af8e4a4f7319fc0170849f);
+            
+        
+
+        circle_marker_3c1bb197de1a7a5adc5d3e3aa8bd5b39.bindPopup(popup_eb2e9dbe792f4d93968ca31184c218a9)
+        ;
+
+        
+    
+    
+            var circle_marker_893e011bd32f4fee9c1006ccb72da694 = L.circleMarker(
+                [50.88036899999999, 4.7055851],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bd3ff79d338435c7b593fef709593d63);
+        
+    
+        var popup_8d529819222e4b78cc5e036f39d46f3e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4ae35fca1b906c2d1cd619817f3180eb = $(`<div id="html_4ae35fca1b906c2d1cd619817f3180eb" style="width: 100.0%; height: 100.0%;">Resto: Kebab Leuven<br>Price: 9.25<br>Nr of options: 4</div>`)[0];
+                popup_8d529819222e4b78cc5e036f39d46f3e.setContent(html_4ae35fca1b906c2d1cd619817f3180eb);
+            
+        
+
+        circle_marker_893e011bd32f4fee9c1006ccb72da694.bindPopup(popup_8d529819222e4b78cc5e036f39d46f3e)
+        ;
+
+        
+    
+    
+            var circle_marker_0c65060a6df15686b47af062c3c38aff = L.circleMarker(
+                [51.20767739999999, 4.4650981],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bd3ff79d338435c7b593fef709593d63);
+        
+    
+        var popup_cf326636d3b971c117d2651fec58c261 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e18c2a6e5df56fec89746f03afb6fd85 = $(`<div id="html_e18c2a6e5df56fec89746f03afb6fd85" style="width: 100.0%; height: 100.0%;">Resto: Arabesque <br>Price: 9.21<br>Nr of options: 12</div>`)[0];
+                popup_cf326636d3b971c117d2651fec58c261.setContent(html_e18c2a6e5df56fec89746f03afb6fd85);
+            
+        
+
+        circle_marker_0c65060a6df15686b47af062c3c38aff.bindPopup(popup_cf326636d3b971c117d2651fec58c261)
+        ;
+
+        
+    
+    
+            var circle_marker_c833482bb5c53df714bdf0fb174dc4af = L.circleMarker(
+                [51.22128, 4.4026248],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bd3ff79d338435c7b593fef709593d63);
+        
+    
+        var popup_cf68d5660e003e11720f6dc79c22767f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_088562bf34eedb5bec53a4bcef0d862c = $(`<div id="html_088562bf34eedb5bec53a4bcef0d862c" style="width: 100.0%; height: 100.0%;">Resto: Only Kebab<br>Price: 9.15<br>Nr of options: 4</div>`)[0];
+                popup_cf68d5660e003e11720f6dc79c22767f.setContent(html_088562bf34eedb5bec53a4bcef0d862c);
+            
+        
+
+        circle_marker_c833482bb5c53df714bdf0fb174dc4af.bindPopup(popup_cf68d5660e003e11720f6dc79c22767f)
+        ;
+
+        
+    
+    
+            var circle_marker_b453696c9608bf4aa64ddbf4f7e6920a = L.circleMarker(
+                [51.0392768, 3.725784],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bd3ff79d338435c7b593fef709593d63);
+        
+    
+        var popup_51380466eaeddd5cf8d96a4e38c19675 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_41ae0e61e404388eb9d46509d375f540 = $(`<div id="html_41ae0e61e404388eb9d46509d375f540" style="width: 100.0%; height: 100.0%;">Resto: Snack Halte<br>Price: 9.12<br>Nr of options: 4</div>`)[0];
+                popup_51380466eaeddd5cf8d96a4e38c19675.setContent(html_41ae0e61e404388eb9d46509d375f540);
+            
+        
+
+        circle_marker_b453696c9608bf4aa64ddbf4f7e6920a.bindPopup(popup_51380466eaeddd5cf8d96a4e38c19675)
+        ;
+
+        
+    
+    
+            var circle_marker_46108d7f4652900cba70a9dd9b380f3e = L.circleMarker(
+                [51.2137655, 4.3978625],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bd3ff79d338435c7b593fef709593d63);
+        
+    
+        var popup_103722b5b2a3994b12ede2a5bb834ab7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a29ec9d2a1f277caefc247b56ca32a1c = $(`<div id="html_a29ec9d2a1f277caefc247b56ca32a1c" style="width: 100.0%; height: 100.0%;">Resto: Frituur Nationale<br>Price: 9.1<br>Nr of options: 7</div>`)[0];
+                popup_103722b5b2a3994b12ede2a5bb834ab7.setContent(html_a29ec9d2a1f277caefc247b56ca32a1c);
+            
+        
+
+        circle_marker_46108d7f4652900cba70a9dd9b380f3e.bindPopup(popup_103722b5b2a3994b12ede2a5bb834ab7)
+        ;
+
+        
+    
+    
+            var circle_marker_6d12c8ecd45f58d9a0f02cc2e124ebd2 = L.circleMarker(
+                [50.9304853, 5.343439099999999],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bd3ff79d338435c7b593fef709593d63);
+        
+    
+        var popup_81970e62947eecb4d6568951b7b0c12d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bd3eaa34966bb66d88a579e9bd201abe = $(`<div id="html_bd3eaa34966bb66d88a579e9bd201abe" style="width: 100.0%; height: 100.0%;">Resto: Broodjeszaak PAINDOR<br>Price: 9.0<br>Nr of options: 3</div>`)[0];
+                popup_81970e62947eecb4d6568951b7b0c12d.setContent(html_bd3eaa34966bb66d88a579e9bd201abe);
+            
+        
+
+        circle_marker_6d12c8ecd45f58d9a0f02cc2e124ebd2.bindPopup(popup_81970e62947eecb4d6568951b7b0c12d)
+        ;
+
+        
+    
+    
+            var circle_marker_4b86421c35b6cb5869a8ae4e76e34de9 = L.circleMarker(
+                [51.3220649, 4.952329],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bd3ff79d338435c7b593fef709593d63);
+        
+    
+        var popup_7935ab4863936f0bc28f34bf1a3f4d0c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_680e3e6fb619abfc77d39b534ea7dcb5 = $(`<div id="html_680e3e6fb619abfc77d39b534ea7dcb5" style="width: 100.0%; height: 100.0%;">Resto: Sfinx Turnhout<br>Price: 9.0<br>Nr of options: 4</div>`)[0];
+                popup_7935ab4863936f0bc28f34bf1a3f4d0c.setContent(html_680e3e6fb619abfc77d39b534ea7dcb5);
+            
+        
+
+        circle_marker_4b86421c35b6cb5869a8ae4e76e34de9.bindPopup(popup_7935ab4863936f0bc28f34bf1a3f4d0c)
+        ;
+
+        
+    
+    
+            var circle_marker_65c2b8bf368f63c61947f47de1766ccd = L.circleMarker(
+                [50.929419, 4.4221315],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bd3ff79d338435c7b593fef709593d63);
+        
+    
+        var popup_85c6e1976a6955cf560cf521db29f170 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_609d3811188830838f78bd22d090234b = $(`<div id="html_609d3811188830838f78bd22d090234b" style="width: 100.0%; height: 100.0%;">Resto: Snack Canlar<br>Price: 9.0<br>Nr of options: 1</div>`)[0];
+                popup_85c6e1976a6955cf560cf521db29f170.setContent(html_609d3811188830838f78bd22d090234b);
+            
+        
+
+        circle_marker_65c2b8bf368f63c61947f47de1766ccd.bindPopup(popup_85c6e1976a6955cf560cf521db29f170)
+        ;
+
+        
+    
+    
+            var circle_marker_0641d55cd6bef431cdcc1eb558712a76 = L.circleMarker(
+                [51.22195439999999, 3.2077884],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bd3ff79d338435c7b593fef709593d63);
+        
+    
+        var popup_7444e92af3bf040b30d6c03f18b68d0e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_73659c0eb41606a2a81e8af6cbb9c1e3 = $(`<div id="html_73659c0eb41606a2a81e8af6cbb9c1e3" style="width: 100.0%; height: 100.0%;">Resto: Grand Basha<br>Price: 9.0<br>Nr of options: 1</div>`)[0];
+                popup_7444e92af3bf040b30d6c03f18b68d0e.setContent(html_73659c0eb41606a2a81e8af6cbb9c1e3);
+            
+        
+
+        circle_marker_0641d55cd6bef431cdcc1eb558712a76.bindPopup(popup_7444e92af3bf040b30d6c03f18b68d0e)
+        ;
+
+        
+    
+    
+            var circle_marker_4c3ea54cdc5ee7fd4297e0c99adbd071 = L.circleMarker(
+                [50.8083945, 3.279237],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bd3ff79d338435c7b593fef709593d63);
+        
+    
+        var popup_553276361c7f87ca722dc3d47c8240b7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cde8dd58f12e132410e4c2223a96e351 = $(`<div id="html_cde8dd58f12e132410e4c2223a96e351" style="width: 100.0%; height: 100.0%;">Resto: Masala Express<br>Price: 9.0<br>Nr of options: 1</div>`)[0];
+                popup_553276361c7f87ca722dc3d47c8240b7.setContent(html_cde8dd58f12e132410e4c2223a96e351);
+            
+        
+
+        circle_marker_4c3ea54cdc5ee7fd4297e0c99adbd071.bindPopup(popup_553276361c7f87ca722dc3d47c8240b7)
+        ;
+
+        
+    
+    
+            var circle_marker_e67cf9c04d6613a5ae18a80ac3c566ad = L.circleMarker(
+                [51.2207499, 4.4266288],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bd3ff79d338435c7b593fef709593d63);
+        
+    
+        var popup_0f5da77d84841a9d9a8b79f261376417 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_284dc09abe0dfd4ed21651e244b3521c = $(`<div id="html_284dc09abe0dfd4ed21651e244b3521c" style="width: 100.0%; height: 100.0%;">Resto: Damasveneto<br>Price: 8.99<br>Nr of options: 3</div>`)[0];
+                popup_0f5da77d84841a9d9a8b79f261376417.setContent(html_284dc09abe0dfd4ed21651e244b3521c);
+            
+        
+
+        circle_marker_e67cf9c04d6613a5ae18a80ac3c566ad.bindPopup(popup_0f5da77d84841a9d9a8b79f261376417)
+        ;
+
+        
+    
+    
+            var circle_marker_92f79f282df4f71f7d489fda13d040db = L.circleMarker(
+                [50.8252119, 3.2646587],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bd3ff79d338435c7b593fef709593d63);
+        
+    
+        var popup_d6363b2e6004f3b5569588ae88cf7191 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7c53a90ba6636242c82adb3b9d173ade = $(`<div id="html_7c53a90ba6636242c82adb3b9d173ade" style="width: 100.0%; height: 100.0%;">Resto: Pitta <br>Price: 8.95<br>Nr of options: 1</div>`)[0];
+                popup_d6363b2e6004f3b5569588ae88cf7191.setContent(html_7c53a90ba6636242c82adb3b9d173ade);
+            
+        
+
+        circle_marker_92f79f282df4f71f7d489fda13d040db.bindPopup(popup_d6363b2e6004f3b5569588ae88cf7191)
+        ;
+
+        
+    
+    
+            var circle_marker_e087922b7814553b9946f9dadbc8a027 = L.circleMarker(
+                [50.94920579999999, 3.1317448],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bd3ff79d338435c7b593fef709593d63);
+        
+    
+        var popup_6b1e754faea957897ba33f44591e022d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_01fb0a1f27c8cf05d9c8f201a156cef7 = $(`<div id="html_01fb0a1f27c8cf05d9c8f201a156cef7" style="width: 100.0%; height: 100.0%;">Resto: Bogaz Kebab<br>Price: 8.92<br>Nr of options: 6</div>`)[0];
+                popup_6b1e754faea957897ba33f44591e022d.setContent(html_01fb0a1f27c8cf05d9c8f201a156cef7);
+            
+        
+
+        circle_marker_e087922b7814553b9946f9dadbc8a027.bindPopup(popup_6b1e754faea957897ba33f44591e022d)
+        ;
+
+        
+    
+    
+            var circle_marker_c4bad98a86ce00c7896fb9b67d7228b9 = L.circleMarker(
+                [50.878939, 4.700267999999999],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bd3ff79d338435c7b593fef709593d63);
+        
+    
+        var popup_adadcf56245412e394cab1d89dc9c6ad = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c9810beb8ccb46608b8469e2fe9e149c = $(`<div id="html_c9810beb8ccb46608b8469e2fe9e149c" style="width: 100.0%; height: 100.0%;">Resto: Pizza Sole Mio<br>Price: 8.9<br>Nr of options: 5</div>`)[0];
+                popup_adadcf56245412e394cab1d89dc9c6ad.setContent(html_c9810beb8ccb46608b8469e2fe9e149c);
+            
+        
+
+        circle_marker_c4bad98a86ce00c7896fb9b67d7228b9.bindPopup(popup_adadcf56245412e394cab1d89dc9c6ad)
+        ;
+
+        
+    
+    
+            var circle_marker_911aabfe7cc341d890c790671e3a8090 = L.circleMarker(
+                [51.0268966, 3.7218444],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bd3ff79d338435c7b593fef709593d63);
+        
+    
+        var popup_2605da319c4013a20af6804e92a9ef90 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fd74562ede4d1e8ab304d39573c1f484 = $(`<div id="html_fd74562ede4d1e8ab304d39573c1f484" style="width: 100.0%; height: 100.0%;">Resto: Uniq Kebab<br>Price: 8.88<br>Nr of options: 4</div>`)[0];
+                popup_2605da319c4013a20af6804e92a9ef90.setContent(html_fd74562ede4d1e8ab304d39573c1f484);
+            
+        
+
+        circle_marker_911aabfe7cc341d890c790671e3a8090.bindPopup(popup_2605da319c4013a20af6804e92a9ef90)
+        ;
+
+        
+    
+    
+            var circle_marker_fe4c816d2ee896aaf7d52f5ee8a1025d = L.circleMarker(
+                [50.8788881, 4.700082999999999],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bd3ff79d338435c7b593fef709593d63);
+        
+    
+        var popup_3e1fa0480b8ced5d9bbdfb191529e239 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c90b288dc5c798422403e5333712772c = $(`<div id="html_c90b288dc5c798422403e5333712772c" style="width: 100.0%; height: 100.0%;">Resto: Ali Baba<br>Price: 8.88<br>Nr of options: 8</div>`)[0];
+                popup_3e1fa0480b8ced5d9bbdfb191529e239.setContent(html_c90b288dc5c798422403e5333712772c);
+            
+        
+
+        circle_marker_fe4c816d2ee896aaf7d52f5ee8a1025d.bindPopup(popup_3e1fa0480b8ced5d9bbdfb191529e239)
+        ;
+
+        
+    
+    
+            var circle_marker_09e59505878c801500842dc57c549cc5 = L.circleMarker(
+                [50.94283, 3.124207],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bd3ff79d338435c7b593fef709593d63);
+        
+    
+        var popup_733cc83b153dbef3112a6385c03dc240 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_11ab7eaa452da32c7b94b8373aaa9bd9 = $(`<div id="html_11ab7eaa452da32c7b94b8373aaa9bd9" style="width: 100.0%; height: 100.0%;">Resto: yalcin snacks<br>Price: 8.75<br>Nr of options: 4</div>`)[0];
+                popup_733cc83b153dbef3112a6385c03dc240.setContent(html_11ab7eaa452da32c7b94b8373aaa9bd9);
+            
+        
+
+        circle_marker_09e59505878c801500842dc57c549cc5.bindPopup(popup_733cc83b153dbef3112a6385c03dc240)
+        ;
+
+        
+    
+    
+            var circle_marker_929533090304e9b273e7d1a61b70eba1 = L.circleMarker(
+                [51.2179812, 4.428862899999999],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bd3ff79d338435c7b593fef709593d63);
+        
+    
+        var popup_6e2b3966f01370617bbe3cf393e53f97 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4457aee969ca4bd5aac9135ed7a68f8d = $(`<div id="html_4457aee969ca4bd5aac9135ed7a68f8d" style="width: 100.0%; height: 100.0%;">Resto: Snack Nakhil<br>Price: 8.68<br>Nr of options: 4</div>`)[0];
+                popup_6e2b3966f01370617bbe3cf393e53f97.setContent(html_4457aee969ca4bd5aac9135ed7a68f8d);
+            
+        
+
+        circle_marker_929533090304e9b273e7d1a61b70eba1.bindPopup(popup_6e2b3966f01370617bbe3cf393e53f97)
+        ;
+
+        
+    
+    
+            var circle_marker_f991363bdae29dd6e2095de9c398c116 = L.circleMarker(
+                [51.2274273, 4.4547623],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bd3ff79d338435c7b593fef709593d63);
+        
+    
+        var popup_5f16246aa15e130199429fd84ed1f7bf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_516efedefe733436e8a5e88f55a9fa35 = $(`<div id="html_516efedefe733436e8a5e88f55a9fa35" style="width: 100.0%; height: 100.0%;">Resto: Snack Ayouni<br>Price: 8.62<br>Nr of options: 8</div>`)[0];
+                popup_5f16246aa15e130199429fd84ed1f7bf.setContent(html_516efedefe733436e8a5e88f55a9fa35);
+            
+        
+
+        circle_marker_f991363bdae29dd6e2095de9c398c116.bindPopup(popup_5f16246aa15e130199429fd84ed1f7bf)
+        ;
+
+        
+    
+    
+            var circle_marker_434dc71468066c4ad7ffc8bb04d431dc = L.circleMarker(
+                [51.2152661, 4.4378506],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bd3ff79d338435c7b593fef709593d63);
+        
+    
+        var popup_9efb6204d2554cea667057fea02714f7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_213b08cb602b90853cb3235582f109f6 = $(`<div id="html_213b08cb602b90853cb3235582f109f6" style="width: 100.0%; height: 100.0%;">Resto: eetcafé panorama<br>Price: 8.56<br>Nr of options: 8</div>`)[0];
+                popup_9efb6204d2554cea667057fea02714f7.setContent(html_213b08cb602b90853cb3235582f109f6);
+            
+        
+
+        circle_marker_434dc71468066c4ad7ffc8bb04d431dc.bindPopup(popup_9efb6204d2554cea667057fea02714f7)
+        ;
+
+        
+    
+    
+            var circle_marker_60b20ed6492644d1eb4425038dc220f5 = L.circleMarker(
+                [50.88035559999999, 4.7055925],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bd3ff79d338435c7b593fef709593d63);
+        
+    
+        var popup_9bdbfade5d6bc6b8e5e623683f603f8c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f3b968e124290dfe41c1ef96a3933956 = $(`<div id="html_f3b968e124290dfe41c1ef96a3933956" style="width: 100.0%; height: 100.0%;">Resto: kebab Leuven Diestsestraat<br>Price: 8.5<br>Nr of options: 1</div>`)[0];
+                popup_9bdbfade5d6bc6b8e5e623683f603f8c.setContent(html_f3b968e124290dfe41c1ef96a3933956);
+            
+        
+
+        circle_marker_60b20ed6492644d1eb4425038dc220f5.bindPopup(popup_9bdbfade5d6bc6b8e5e623683f603f8c)
+        ;
+
+        
+    
+    
+            var circle_marker_93384e5a4e9bfdb353ad4dd962ca72fb = L.circleMarker(
+                [50.7174088, 4.3962768],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bd3ff79d338435c7b593fef709593d63);
+        
+    
+        var popup_f4d6b600327216be5cf44e7cab75d035 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e5e707523a21c387593b744803db56a0 = $(`<div id="html_e5e707523a21c387593b744803db56a0" style="width: 100.0%; height: 100.0%;">Resto: Memo's<br>Price: 8.5<br>Nr of options: 1</div>`)[0];
+                popup_f4d6b600327216be5cf44e7cab75d035.setContent(html_e5e707523a21c387593b744803db56a0);
+            
+        
+
+        circle_marker_93384e5a4e9bfdb353ad4dd962ca72fb.bindPopup(popup_f4d6b600327216be5cf44e7cab75d035)
+        ;
+
+        
+    
+    
+            var circle_marker_203d229e75593d9de601633ee8d160cc = L.circleMarker(
+                [50.87126980000001, 4.399716199999999],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bd3ff79d338435c7b593fef709593d63);
+        
+    
+        var popup_8cefe0504f02ffaa5dac9b10442e2f5f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_78df21b0966cfcec633ecc4842e8a802 = $(`<div id="html_78df21b0966cfcec633ecc4842e8a802" style="width: 100.0%; height: 100.0%;">Resto: Samet snack grill<br>Price: 8.5<br>Nr of options: 1</div>`)[0];
+                popup_8cefe0504f02ffaa5dac9b10442e2f5f.setContent(html_78df21b0966cfcec633ecc4842e8a802);
+            
+        
+
+        circle_marker_203d229e75593d9de601633ee8d160cc.bindPopup(popup_8cefe0504f02ffaa5dac9b10442e2f5f)
+        ;
+
+        
+    
+    
+            var circle_marker_61bada944f9337e82252ab504b29d997 = L.circleMarker(
+                [51.2257173, 4.4233361],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bd3ff79d338435c7b593fef709593d63);
+        
+    
+        var popup_3dbf4b3a373d26229a63c4ac8f8fa6e8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3d1eb0395d22d18133d713e7bd907fb5 = $(`<div id="html_3d1eb0395d22d18133d713e7bd907fb5" style="width: 100.0%; height: 100.0%;">Resto: Bawabet Demashq<br>Price: 8.5<br>Nr of options: 2</div>`)[0];
+                popup_3dbf4b3a373d26229a63c4ac8f8fa6e8.setContent(html_3d1eb0395d22d18133d713e7bd907fb5);
+            
+        
+
+        circle_marker_61bada944f9337e82252ab504b29d997.bindPopup(popup_3dbf4b3a373d26229a63c4ac8f8fa6e8)
+        ;
+
+        
+    
+    
+            var circle_marker_854d9e4690a11be2cb769fbfaa025c1d = L.circleMarker(
+                [51.2220568, 4.4131116],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bd3ff79d338435c7b593fef709593d63);
+        
+    
+        var popup_a2b2778399d9784552dcafdefec879e4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e036463f19caffc4a53fcacd0b7311fa = $(`<div id="html_e036463f19caffc4a53fcacd0b7311fa" style="width: 100.0%; height: 100.0%;">Resto: Antwerp Kebab<br>Price: 8.33<br>Nr of options: 3</div>`)[0];
+                popup_a2b2778399d9784552dcafdefec879e4.setContent(html_e036463f19caffc4a53fcacd0b7311fa);
+            
+        
+
+        circle_marker_854d9e4690a11be2cb769fbfaa025c1d.bindPopup(popup_a2b2778399d9784552dcafdefec879e4)
+        ;
+
+        
+    
+    
+            var circle_marker_cd1916b738dc717469f41e8ed2d7ad47 = L.circleMarker(
+                [51.2003843, 4.4406962],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bd3ff79d338435c7b593fef709593d63);
+        
+    
+        var popup_c790fa631a15fd19743ddbf9234bba88 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_afd89896d3111dafaebddf57be94cf7a = $(`<div id="html_afd89896d3111dafaebddf57be94cf7a" style="width: 100.0%; height: 100.0%;">Resto: Frituur De Gitschotel<br>Price: 8.25<br>Nr of options: 4</div>`)[0];
+                popup_c790fa631a15fd19743ddbf9234bba88.setContent(html_afd89896d3111dafaebddf57be94cf7a);
+            
+        
+
+        circle_marker_cd1916b738dc717469f41e8ed2d7ad47.bindPopup(popup_c790fa631a15fd19743ddbf9234bba88)
+        ;
+
+        
+    
+    
+            var circle_marker_50b712ed9aa44befb23ce67e77fb273e = L.circleMarker(
+                [51.20390399999999, 4.394543],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bd3ff79d338435c7b593fef709593d63);
+        
+    
+        var popup_04e836c357ddebc3fe1dec3e832777cb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e6464931150e0822e9ea2b00fc8d15db = $(`<div id="html_e6464931150e0822e9ea2b00fc8d15db" style="width: 100.0%; height: 100.0%;">Resto: Snackbar 109<br>Price: 8.17<br>Nr of options: 3</div>`)[0];
+                popup_04e836c357ddebc3fe1dec3e832777cb.setContent(html_e6464931150e0822e9ea2b00fc8d15db);
+            
+        
+
+        circle_marker_50b712ed9aa44befb23ce67e77fb273e.bindPopup(popup_04e836c357ddebc3fe1dec3e832777cb)
+        ;
+
+        
+    
+    
+            var circle_marker_e55267b0067824b081b0414cdc6512ee = L.circleMarker(
+                [51.031079, 3.7061828],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bd3ff79d338435c7b593fef709593d63);
+        
+    
+        var popup_4b061fdb32cf8c920dc88137a05cad05 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cf45bb80967752e1d031afd429b1eaa4 = $(`<div id="html_cf45bb80967752e1d031afd429b1eaa4" style="width: 100.0%; height: 100.0%;">Resto: Pitta-Snack Magic<br>Price: 8.12<br>Nr of options: 4</div>`)[0];
+                popup_4b061fdb32cf8c920dc88137a05cad05.setContent(html_cf45bb80967752e1d031afd429b1eaa4);
+            
+        
+
+        circle_marker_e55267b0067824b081b0414cdc6512ee.bindPopup(popup_4b061fdb32cf8c920dc88137a05cad05)
+        ;
+
+        
+    
+    
+            var circle_marker_908337adcfc1a24d599ddef7de424678 = L.circleMarker(
+                [51.2189432, 4.4203149],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bd3ff79d338435c7b593fef709593d63);
+        
+    
+        var popup_f6f95bbc0913bec7c4332179aeb4e92a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_33c4a731ac42a45b70a10c3ac1cdc164 = $(`<div id="html_33c4a731ac42a45b70a10c3ac1cdc164" style="width: 100.0%; height: 100.0%;">Resto: Solav kabab<br>Price: 8.12<br>Nr of options: 4</div>`)[0];
+                popup_f6f95bbc0913bec7c4332179aeb4e92a.setContent(html_33c4a731ac42a45b70a10c3ac1cdc164);
+            
+        
+
+        circle_marker_908337adcfc1a24d599ddef7de424678.bindPopup(popup_f6f95bbc0913bec7c4332179aeb4e92a)
+        ;
+
+        
+    
+    
+            var circle_marker_0f7e2579e009dc0c78f0d0ca0482d756 = L.circleMarker(
+                [51.2021287, 4.3928709],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bd3ff79d338435c7b593fef709593d63);
+        
+    
+        var popup_2a449b765fa48b32c22643ee0ac2b695 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c2d097ec3b08652d7a35cfac4ebd366f = $(`<div id="html_c2d097ec3b08652d7a35cfac4ebd366f" style="width: 100.0%; height: 100.0%;">Resto: Kokorecci Antwerpen<br>Price: 8.0<br>Nr of options: 1</div>`)[0];
+                popup_2a449b765fa48b32c22643ee0ac2b695.setContent(html_c2d097ec3b08652d7a35cfac4ebd366f);
+            
+        
+
+        circle_marker_0f7e2579e009dc0c78f0d0ca0482d756.bindPopup(popup_2a449b765fa48b32c22643ee0ac2b695)
+        ;
+
+        
+    
+    
+            var circle_marker_ad0e1da2bcc3d418f3b292ab22a69172 = L.circleMarker(
+                [50.8107376, 3.2995754],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bd3ff79d338435c7b593fef709593d63);
+        
+    
+        var popup_e7d3a1edebc08d47301d4c7542ae9c30 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_34396c78b87a76075d7ac050ae0643c8 = $(`<div id="html_34396c78b87a76075d7ac050ae0643c8" style="width: 100.0%; height: 100.0%;">Resto: Fratello KORTRIJK<br>Price: 8.0<br>Nr of options: 3</div>`)[0];
+                popup_e7d3a1edebc08d47301d4c7542ae9c30.setContent(html_34396c78b87a76075d7ac050ae0643c8);
+            
+        
+
+        circle_marker_ad0e1da2bcc3d418f3b292ab22a69172.bindPopup(popup_e7d3a1edebc08d47301d4c7542ae9c30)
+        ;
+
+        
+    
+    
+            var circle_marker_ec5ee9fd66619d6c2f764c07dca273b1 = L.circleMarker(
+                [51.196372, 4.4434889],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bd3ff79d338435c7b593fef709593d63);
+        
+    
+        var popup_87e57fccaa71b10cde08ce348112c248 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4ae6da5473e6edc1e42fdfe4c216d1f7 = $(`<div id="html_4ae6da5473e6edc1e42fdfe4c216d1f7" style="width: 100.0%; height: 100.0%;">Resto: Ghoshto Eethuis<br>Price: 8.0<br>Nr of options: 5</div>`)[0];
+                popup_87e57fccaa71b10cde08ce348112c248.setContent(html_4ae6da5473e6edc1e42fdfe4c216d1f7);
+            
+        
+
+        circle_marker_ec5ee9fd66619d6c2f764c07dca273b1.bindPopup(popup_87e57fccaa71b10cde08ce348112c248)
+        ;
+
+        
+    
+    
+            var circle_marker_5e30065d488e1a8fa2f13d11db009857 = L.circleMarker(
+                [50.9399256, 4.0258409],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bd3ff79d338435c7b593fef709593d63);
+        
+    
+        var popup_d78d8d39427ad97f77bb7f5d2df681ae = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cb8f9f7853830a6d2827ca743c3d4eca = $(`<div id="html_cb8f9f7853830a6d2827ca743c3d4eca" style="width: 100.0%; height: 100.0%;">Resto: Snack Aalst<br>Price: 8.0<br>Nr of options: 8</div>`)[0];
+                popup_d78d8d39427ad97f77bb7f5d2df681ae.setContent(html_cb8f9f7853830a6d2827ca743c3d4eca);
+            
+        
+
+        circle_marker_5e30065d488e1a8fa2f13d11db009857.bindPopup(popup_d78d8d39427ad97f77bb7f5d2df681ae)
+        ;
+
+        
+    
+    
+            var circle_marker_95cd05d6b5288ac1b8cc1211c92784c0 = L.circleMarker(
+                [50.9332903, 5.3331392],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bd3ff79d338435c7b593fef709593d63);
+        
+    
+        var popup_fb58685e0c087acc5a5c91654facc6e0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_42a7df1b3f56b7b91b6ed19501a07ff2 = $(`<div id="html_42a7df1b3f56b7b91b6ed19501a07ff2" style="width: 100.0%; height: 100.0%;">Resto: Shaam<br>Price: 8.0<br>Nr of options: 1</div>`)[0];
+                popup_fb58685e0c087acc5a5c91654facc6e0.setContent(html_42a7df1b3f56b7b91b6ed19501a07ff2);
+            
+        
+
+        circle_marker_95cd05d6b5288ac1b8cc1211c92784c0.bindPopup(popup_fb58685e0c087acc5a5c91654facc6e0)
+        ;
+
+        
+    
+    
+            var circle_marker_bda4827beac4336bfba03bea397c807b = L.circleMarker(
+                [51.06084329999999, 3.7102631],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bd3ff79d338435c7b593fef709593d63);
+        
+    
+        var popup_5cd86fab8f85a945fe9686c16d1959e7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f19c439355599a7d1feb016f9f457a97 = $(`<div id="html_f19c439355599a7d1feb016f9f457a97" style="width: 100.0%; height: 100.0%;">Resto: Kulba Kabul ( Afghan restaurant)<br>Price: 8.0<br>Nr of options: 2</div>`)[0];
+                popup_5cd86fab8f85a945fe9686c16d1959e7.setContent(html_f19c439355599a7d1feb016f9f457a97);
+            
+        
+
+        circle_marker_bda4827beac4336bfba03bea397c807b.bindPopup(popup_5cd86fab8f85a945fe9686c16d1959e7)
+        ;
+
+        
+    
+    
+            var circle_marker_98fc46665a2a98bb9991d875c9d635fd = L.circleMarker(
+                [51.2078277, 4.4643244],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bd3ff79d338435c7b593fef709593d63);
+        
+    
+        var popup_d152ea2ebe36aa37ca275332ccb49df6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_65fcb8ac3462f4aaba5341dffff1b9e5 = $(`<div id="html_65fcb8ac3462f4aaba5341dffff1b9e5" style="width: 100.0%; height: 100.0%;">Resto: Dejeuner Delice<br>Price: 8.0<br>Nr of options: 3</div>`)[0];
+                popup_d152ea2ebe36aa37ca275332ccb49df6.setContent(html_65fcb8ac3462f4aaba5341dffff1b9e5);
+            
+        
+
+        circle_marker_98fc46665a2a98bb9991d875c9d635fd.bindPopup(popup_d152ea2ebe36aa37ca275332ccb49df6)
+        ;
+
+        
+    
+    
+            var circle_marker_55c8533bf82715d784596272f225588e = L.circleMarker(
+                [51.2176988, 4.427042999999999],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bd3ff79d338435c7b593fef709593d63);
+        
+    
+        var popup_b300ef5d5e43f25a3a6cdf68761bd3d8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8a9ccfb0f72843f34641a0f5717458e3 = $(`<div id="html_8a9ccfb0f72843f34641a0f5717458e3" style="width: 100.0%; height: 100.0%;">Resto: Sabito's Pizza<br>Price: 8.0<br>Nr of options: 2</div>`)[0];
+                popup_b300ef5d5e43f25a3a6cdf68761bd3d8.setContent(html_8a9ccfb0f72843f34641a0f5717458e3);
+            
+        
+
+        circle_marker_55c8533bf82715d784596272f225588e.bindPopup(popup_b300ef5d5e43f25a3a6cdf68761bd3d8)
+        ;
+
+        
+    
+    
+            var circle_marker_44f1aeb86aefaf1e82125cb0e5678fbd = L.circleMarker(
+                [51.2131824, 3.2182781],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bd3ff79d338435c7b593fef709593d63);
+        
+    
+        var popup_d53489a333dc2c64dfa690430e40aba9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0f4101fa0d6e3bef0fedf5f290377423 = $(`<div id="html_0f4101fa0d6e3bef0fedf5f290377423" style="width: 100.0%; height: 100.0%;">Resto: Belfort Fast Food<br>Price: 8.0<br>Nr of options: 2</div>`)[0];
+                popup_d53489a333dc2c64dfa690430e40aba9.setContent(html_0f4101fa0d6e3bef0fedf5f290377423);
+            
+        
+
+        circle_marker_44f1aeb86aefaf1e82125cb0e5678fbd.bindPopup(popup_d53489a333dc2c64dfa690430e40aba9)
+        ;
+
+        
+    
+    
+            var circle_marker_bc232f5d86a7b6ef38fef34277c292ca = L.circleMarker(
+                [51.0405731, 3.725505],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bd3ff79d338435c7b593fef709593d63);
+        
+    
+        var popup_77bde5bb5be5ddc447a7750717faeaad = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8dd500f2c59056c889e4b66a207385c1 = $(`<div id="html_8dd500f2c59056c889e4b66a207385c1" style="width: 100.0%; height: 100.0%;">Resto: FRITUUR OVERPOORT<br>Price: 8.0<br>Nr of options: 2</div>`)[0];
+                popup_77bde5bb5be5ddc447a7750717faeaad.setContent(html_8dd500f2c59056c889e4b66a207385c1);
+            
+        
+
+        circle_marker_bc232f5d86a7b6ef38fef34277c292ca.bindPopup(popup_77bde5bb5be5ddc447a7750717faeaad)
+        ;
+
+        
+    
+    
+            var circle_marker_510f7de1462234c0bade6244e5b3d361 = L.circleMarker(
+                [50.868771, 4.6990148],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bd3ff79d338435c7b593fef709593d63);
+        
+    
+        var popup_7e8ee2d2b04caa28cad7ad395fbe44f4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9926a22240367dc1b64e4c12ca19efc9 = $(`<div id="html_9926a22240367dc1b64e4c12ca19efc9" style="width: 100.0%; height: 100.0%;">Resto: Ada Pizza<br>Price: 8.0<br>Nr of options: 4</div>`)[0];
+                popup_7e8ee2d2b04caa28cad7ad395fbe44f4.setContent(html_9926a22240367dc1b64e4c12ca19efc9);
+            
+        
+
+        circle_marker_510f7de1462234c0bade6244e5b3d361.bindPopup(popup_7e8ee2d2b04caa28cad7ad395fbe44f4)
+        ;
+
+        
+    
+    
+            var circle_marker_bf26578ae08bba4a0b02428858697e04 = L.circleMarker(
+                [50.868771, 4.6990148],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bd3ff79d338435c7b593fef709593d63);
+        
+    
+        var popup_8ba20e42d0f75ff7e5ab9e2860f77497 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_004caa134a8d2ac844165f8bf7c759de = $(`<div id="html_004caa134a8d2ac844165f8bf7c759de" style="width: 100.0%; height: 100.0%;">Resto: Ada Eethuis<br>Price: 8.0<br>Nr of options: 4</div>`)[0];
+                popup_8ba20e42d0f75ff7e5ab9e2860f77497.setContent(html_004caa134a8d2ac844165f8bf7c759de);
+            
+        
+
+        circle_marker_bf26578ae08bba4a0b02428858697e04.bindPopup(popup_8ba20e42d0f75ff7e5ab9e2860f77497)
+        ;
+
+        
+    
+    
+            var circle_marker_af10be2e74eb947b3dd6715f1a35af65 = L.circleMarker(
+                [50.8249196, 3.2722017],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bd3ff79d338435c7b593fef709593d63);
+        
+    
+        var popup_00e5060dad89ff0f22c5d7482b291b5c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_86b29bcd1608bfbd1b010fc750df2a6d = $(`<div id="html_86b29bcd1608bfbd1b010fc750df2a6d" style="width: 100.0%; height: 100.0%;">Resto: Lezziz<br>Price: 7.9<br>Nr of options: 3</div>`)[0];
+                popup_00e5060dad89ff0f22c5d7482b291b5c.setContent(html_86b29bcd1608bfbd1b010fc750df2a6d);
+            
+        
+
+        circle_marker_af10be2e74eb947b3dd6715f1a35af65.bindPopup(popup_00e5060dad89ff0f22c5d7482b291b5c)
+        ;
+
+        
+    
+    
+            var circle_marker_6a505c2bf2267543d54b84e1b7709409 = L.circleMarker(
+                [51.06783069999999, 3.7290914],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bd3ff79d338435c7b593fef709593d63);
+        
+    
+        var popup_c31045abad58cfc00eef036c787806e7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d95566977d1d5561c519b3f4580f1779 = $(`<div id="html_d95566977d1d5561c519b3f4580f1779" style="width: 100.0%; height: 100.0%;">Resto: Pizza Mia Ghent<br>Price: 7.75<br>Nr of options: 4</div>`)[0];
+                popup_c31045abad58cfc00eef036c787806e7.setContent(html_d95566977d1d5561c519b3f4580f1779);
+            
+        
+
+        circle_marker_6a505c2bf2267543d54b84e1b7709409.bindPopup(popup_c31045abad58cfc00eef036c787806e7)
+        ;
+
+        
+    
+    
+            var circle_marker_4fbb81a9efe8bd09253986340c167ae8 = L.circleMarker(
+                [51.0497458, 3.7322255],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bd3ff79d338435c7b593fef709593d63);
+        
+    
+        var popup_f5235ae05b3e24910fd0f5748e3e91c5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9e8286786043b475012b048f3acef03e = $(`<div id="html_9e8286786043b475012b048f3acef03e" style="width: 100.0%; height: 100.0%;">Resto: Kebab love <br>Price: 7.67<br>Nr of options: 3</div>`)[0];
+                popup_f5235ae05b3e24910fd0f5748e3e91c5.setContent(html_9e8286786043b475012b048f3acef03e);
+            
+        
+
+        circle_marker_4fbb81a9efe8bd09253986340c167ae8.bindPopup(popup_f5235ae05b3e24910fd0f5748e3e91c5)
+        ;
+
+        
+    
+    
+            var circle_marker_6ba8d3d7d440b906cb14faa914515c09 = L.circleMarker(
+                [51.072137, 3.7100586],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bd3ff79d338435c7b593fef709593d63);
+        
+    
+        var popup_34ec6da89d00fd73d9db5bf7a04cc668 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1efa108425db01cb3bafbba3b0a5ac3e = $(`<div id="html_1efa108425db01cb3bafbba3b0a5ac3e" style="width: 100.0%; height: 100.0%;">Resto: Arif Usta<br>Price: 7.67<br>Nr of options: 6</div>`)[0];
+                popup_34ec6da89d00fd73d9db5bf7a04cc668.setContent(html_1efa108425db01cb3bafbba3b0a5ac3e);
+            
+        
+
+        circle_marker_6ba8d3d7d440b906cb14faa914515c09.bindPopup(popup_34ec6da89d00fd73d9db5bf7a04cc668)
+        ;
+
+        
+    
+    
+            var circle_marker_3eb622f2dc0d562e9fabee1df6cfbda6 = L.circleMarker(
+                [51.208929, 4.4491621],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bd3ff79d338435c7b593fef709593d63);
+        
+    
+        var popup_a68fd4bbc1906ec475a1be060c81d75a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5b7472289f7d87eca5c56f1408452006 = $(`<div id="html_5b7472289f7d87eca5c56f1408452006" style="width: 100.0%; height: 100.0%;">Resto: samo bakkerij<br>Price: 7.65<br>Nr of options: 2</div>`)[0];
+                popup_a68fd4bbc1906ec475a1be060c81d75a.setContent(html_5b7472289f7d87eca5c56f1408452006);
+            
+        
+
+        circle_marker_3eb622f2dc0d562e9fabee1df6cfbda6.bindPopup(popup_a68fd4bbc1906ec475a1be060c81d75a)
+        ;
+
+        
+    
+    
+            var circle_marker_ab9c6a5a7b1801f9e6deeafd24149627 = L.circleMarker(
+                [51.2329817, 4.4531407],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bd3ff79d338435c7b593fef709593d63);
+        
+    
+        var popup_8714630173fad89f338cb432e5ceb3f0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_781bb12e8927855840671a8225dd2565 = $(`<div id="html_781bb12e8927855840671a8225dd2565" style="width: 100.0%; height: 100.0%;">Resto: Frituur het kroontje<br>Price: 7.64<br>Nr of options: 7</div>`)[0];
+                popup_8714630173fad89f338cb432e5ceb3f0.setContent(html_781bb12e8927855840671a8225dd2565);
+            
+        
+
+        circle_marker_ab9c6a5a7b1801f9e6deeafd24149627.bindPopup(popup_8714630173fad89f338cb432e5ceb3f0)
+        ;
+
+        
+    
+    
+            var circle_marker_ded1916b83a22d9cac592451e35abe99 = L.circleMarker(
+                [50.8952141, 4.3720045],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bd3ff79d338435c7b593fef709593d63);
+        
+    
+        var popup_d694871b4baaafa69ce9f4e78fe9e22f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e543431e5ac09242f8268b2afe61d210 = $(`<div id="html_e543431e5ac09242f8268b2afe61d210" style="width: 100.0%; height: 100.0%;">Resto: Friterie Ylli<br>Price: 7.62<br>Nr of options: 4</div>`)[0];
+                popup_d694871b4baaafa69ce9f4e78fe9e22f.setContent(html_e543431e5ac09242f8268b2afe61d210);
+            
+        
+
+        circle_marker_ded1916b83a22d9cac592451e35abe99.bindPopup(popup_d694871b4baaafa69ce9f4e78fe9e22f)
+        ;
+
+        
+    
+    
+            var circle_marker_80e364c270f746e4f02660abe317e038 = L.circleMarker(
+                [51.2191294, 4.4193314],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bd3ff79d338435c7b593fef709593d63);
+        
+    
+        var popup_ec7f4cbc9d4492846a3602612865e833 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_42aa28429c49d4204ed88606be3e1d0b = $(`<div id="html_42aa28429c49d4204ed88606be3e1d0b" style="width: 100.0%; height: 100.0%;">Resto: Shoarma Baghdad<br>Price: 7.5<br>Nr of options: 2</div>`)[0];
+                popup_ec7f4cbc9d4492846a3602612865e833.setContent(html_42aa28429c49d4204ed88606be3e1d0b);
+            
+        
+
+        circle_marker_80e364c270f746e4f02660abe317e038.bindPopup(popup_ec7f4cbc9d4492846a3602612865e833)
+        ;
+
+        
+    
+    
+            var circle_marker_afe86da861b0e98c6ff0d8d053668226 = L.circleMarker(
+                [51.1746364, 4.3662012],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bd3ff79d338435c7b593fef709593d63);
+        
+    
+        var popup_e78bd913ed63e023d61dfbef9d1a6a52 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_983450c13d758cc58ed9b9dcce884adf = $(`<div id="html_983450c13d758cc58ed9b9dcce884adf" style="width: 100.0%; height: 100.0%;">Resto: ANATOLIA hoboken<br>Price: 7.5<br>Nr of options: 2</div>`)[0];
+                popup_e78bd913ed63e023d61dfbef9d1a6a52.setContent(html_983450c13d758cc58ed9b9dcce884adf);
+            
+        
+
+        circle_marker_afe86da861b0e98c6ff0d8d053668226.bindPopup(popup_e78bd913ed63e023d61dfbef9d1a6a52)
+        ;
+
+        
+    
+    
+            var circle_marker_9c39a4aa263d21ec46f917810ca47595 = L.circleMarker(
+                [51.0375788, 3.7423194],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bd3ff79d338435c7b593fef709593d63);
+        
+    
+        var popup_8e96d2ea750e7c36a345d41413ea01e1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_da9dff7b168927b6b04cf0949803692a = $(`<div id="html_da9dff7b168927b6b04cf0949803692a" style="width: 100.0%; height: 100.0%;">Resto: Snack ozzy<br>Price: 7.5<br>Nr of options: 1</div>`)[0];
+                popup_8e96d2ea750e7c36a345d41413ea01e1.setContent(html_da9dff7b168927b6b04cf0949803692a);
+            
+        
+
+        circle_marker_9c39a4aa263d21ec46f917810ca47595.bindPopup(popup_8e96d2ea750e7c36a345d41413ea01e1)
+        ;
+
+        
+    
+    
+            var circle_marker_65a6bf462f0f50abdb24e0bbea0da789 = L.circleMarker(
+                [51.0579276, 3.7067908],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bd3ff79d338435c7b593fef709593d63);
+        
+    
+        var popup_4d555b8791330b9cbcd73e97d6d0ab97 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_efafcc400b180bd473cd60bc85f9255b = $(`<div id="html_efafcc400b180bd473cd60bc85f9255b" style="width: 100.0%; height: 100.0%;">Resto: Hot Pizza<br>Price: 7.5<br>Nr of options: 7</div>`)[0];
+                popup_4d555b8791330b9cbcd73e97d6d0ab97.setContent(html_efafcc400b180bd473cd60bc85f9255b);
+            
+        
+
+        circle_marker_65a6bf462f0f50abdb24e0bbea0da789.bindPopup(popup_4d555b8791330b9cbcd73e97d6d0ab97)
+        ;
+
+        
+    
+    
+            var circle_marker_30fab8b20333999433a7afd06b433032 = L.circleMarker(
+                [50.8771289, 4.7004385],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bd3ff79d338435c7b593fef709593d63);
+        
+    
+        var popup_07235eeaa2d8f057aad23a20ed66c287 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fe2ceae8a5307e4e2c25886143bc8b48 = $(`<div id="html_fe2ceae8a5307e4e2c25886143bc8b48" style="width: 100.0%; height: 100.0%;">Resto: Het Hoekske<br>Price: 7.5<br>Nr of options: 3</div>`)[0];
+                popup_07235eeaa2d8f057aad23a20ed66c287.setContent(html_fe2ceae8a5307e4e2c25886143bc8b48);
+            
+        
+
+        circle_marker_30fab8b20333999433a7afd06b433032.bindPopup(popup_07235eeaa2d8f057aad23a20ed66c287)
+        ;
+
+        
+    
+    
+            var circle_marker_a5b1d159307f4ad1ab5e6048cc51c555 = L.circleMarker(
+                [51.2251546, 4.4048148],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bd3ff79d338435c7b593fef709593d63);
+        
+    
+        var popup_1b3f9ea99932b7605049d8f7917028d1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b6cab5ac45bbb2d58c6280394a086bdc = $(`<div id="html_b6cab5ac45bbb2d58c6280394a086bdc" style="width: 100.0%; height: 100.0%;">Resto: TCHITCHI KEBAB PIZZERIA<br>Price: 7.47<br>Nr of options: 16</div>`)[0];
+                popup_1b3f9ea99932b7605049d8f7917028d1.setContent(html_b6cab5ac45bbb2d58c6280394a086bdc);
+            
+        
+
+        circle_marker_a5b1d159307f4ad1ab5e6048cc51c555.bindPopup(popup_1b3f9ea99932b7605049d8f7917028d1)
+        ;
+
+        
+    
+    
+            var circle_marker_cb8ea93f484e7e6c583139ef56505171 = L.circleMarker(
+                [51.0611441, 3.7011711],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bd3ff79d338435c7b593fef709593d63);
+        
+    
+        var popup_5133c7cb01fe4c84be3cf122e18dcb53 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b69466b97cdbf145b775f69005ec2e15 = $(`<div id="html_b69466b97cdbf145b775f69005ec2e15" style="width: 100.0%; height: 100.0%;">Resto: That's Kebap<br>Price: 7.46<br>Nr of options: 5</div>`)[0];
+                popup_5133c7cb01fe4c84be3cf122e18dcb53.setContent(html_b69466b97cdbf145b775f69005ec2e15);
+            
+        
+
+        circle_marker_cb8ea93f484e7e6c583139ef56505171.bindPopup(popup_5133c7cb01fe4c84be3cf122e18dcb53)
+        ;
+
+        
+    
+    
+            var circle_marker_069acfc18fe0ee0eec8f843f001cc316 = L.circleMarker(
+                [51.3216267, 4.9368617],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bd3ff79d338435c7b593fef709593d63);
+        
+    
+        var popup_be3d1f38dab00b605cab6a601b4ca7a9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d64ded384b57666d8b88c8e9d4702943 = $(`<div id="html_d64ded384b57666d8b88c8e9d4702943" style="width: 100.0%; height: 100.0%;">Resto: Star Kebab<br>Price: 7.43<br>Nr of options: 14</div>`)[0];
+                popup_be3d1f38dab00b605cab6a601b4ca7a9.setContent(html_d64ded384b57666d8b88c8e9d4702943);
+            
+        
+
+        circle_marker_069acfc18fe0ee0eec8f843f001cc316.bindPopup(popup_be3d1f38dab00b605cab6a601b4ca7a9)
+        ;
+
+        
+    
+    
+            var circle_marker_15adf58a3f6cfa6c85cf810da49dbb22 = L.circleMarker(
+                [50.8788052, 4.7001891],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bd3ff79d338435c7b593fef709593d63);
+        
+    
+        var popup_7faa5c324dda8b9dd979565a92c103d7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8d09434faf663ed171fb3993ba48af22 = $(`<div id="html_8d09434faf663ed171fb3993ba48af22" style="width: 100.0%; height: 100.0%;">Resto: Istanbul leuven<br>Price: 7.38<br>Nr of options: 8</div>`)[0];
+                popup_7faa5c324dda8b9dd979565a92c103d7.setContent(html_8d09434faf663ed171fb3993ba48af22);
+            
+        
+
+        circle_marker_15adf58a3f6cfa6c85cf810da49dbb22.bindPopup(popup_7faa5c324dda8b9dd979565a92c103d7)
+        ;
+
+        
+    
+    
+            var circle_marker_fc6e1a22f758461a8445b8bcf2744cd0 = L.circleMarker(
+                [50.8771943, 4.700696],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bd3ff79d338435c7b593fef709593d63);
+        
+    
+        var popup_516df7292efaf30f89ae81759416dfb7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_46c739c006656823cf6031ac7867dd7e = $(`<div id="html_46c739c006656823cf6031ac7867dd7e" style="width: 100.0%; height: 100.0%;">Resto: Grill Leuven<br>Price: 7.33<br>Nr of options: 3</div>`)[0];
+                popup_516df7292efaf30f89ae81759416dfb7.setContent(html_46c739c006656823cf6031ac7867dd7e);
+            
+        
+
+        circle_marker_fc6e1a22f758461a8445b8bcf2744cd0.bindPopup(popup_516df7292efaf30f89ae81759416dfb7)
+        ;
+
+        
+    
+    
+            var circle_marker_83254c68494ee7f3ee8c6dbe8aa3d5f0 = L.circleMarker(
+                [50.942187, 4.046648],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bd3ff79d338435c7b593fef709593d63);
+        
+    
+        var popup_1ea833200be0d1b6d209ecfd8ef82450 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1a6b39e31d90bcbc17943cd1f45d89ae = $(`<div id="html_1a6b39e31d90bcbc17943cd1f45d89ae" style="width: 100.0%; height: 100.0%;">Resto: Pitta Moorselbaan<br>Price: 7.25<br>Nr of options: 4</div>`)[0];
+                popup_1ea833200be0d1b6d209ecfd8ef82450.setContent(html_1a6b39e31d90bcbc17943cd1f45d89ae);
+            
+        
+
+        circle_marker_83254c68494ee7f3ee8c6dbe8aa3d5f0.bindPopup(popup_1ea833200be0d1b6d209ecfd8ef82450)
+        ;
+
+        
+    
+    
+            var circle_marker_5bc79c13ce775b92740f11466e1b6880 = L.circleMarker(
+                [50.8726117, 4.3907899],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bd3ff79d338435c7b593fef709593d63);
+        
+    
+        var popup_2d28fd0a598474aaaa05689e251eb05f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4d3564ff3eb6e89d9e7718764c1791ac = $(`<div id="html_4d3564ff3eb6e89d9e7718764c1791ac" style="width: 100.0%; height: 100.0%;">Resto: Snack Gürso<br>Price: 7.25<br>Nr of options: 2</div>`)[0];
+                popup_2d28fd0a598474aaaa05689e251eb05f.setContent(html_4d3564ff3eb6e89d9e7718764c1791ac);
+            
+        
+
+        circle_marker_5bc79c13ce775b92740f11466e1b6880.bindPopup(popup_2d28fd0a598474aaaa05689e251eb05f)
+        ;
+
+        
+    
+    
+            var circle_marker_af5894d3c02da32ffcaeedb4a1c311b4 = L.circleMarker(
+                [51.2094928, 4.4295403],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bd3ff79d338435c7b593fef709593d63);
+        
+    
+        var popup_cae96d375ab65d1e006cf46b88c98be6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e61c8e3e6be23ffbb74480f952bc883a = $(`<div id="html_e61c8e3e6be23ffbb74480f952bc883a" style="width: 100.0%; height: 100.0%;">Resto: Kapsalon <br>Price: 7.23<br>Nr of options: 11</div>`)[0];
+                popup_cae96d375ab65d1e006cf46b88c98be6.setContent(html_e61c8e3e6be23ffbb74480f952bc883a);
+            
+        
+
+        circle_marker_af5894d3c02da32ffcaeedb4a1c311b4.bindPopup(popup_cae96d375ab65d1e006cf46b88c98be6)
+        ;
+
+        
+    
+    
+            var circle_marker_6cba74c80251231addc43197d149fa2a = L.circleMarker(
+                [50.945308, 3.1194103],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bd3ff79d338435c7b593fef709593d63);
+        
+    
+        var popup_59bfe5d7d0c16eca02c45762a5a2d915 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c749f0cd3a957faef2ecabe53e3e0080 = $(`<div id="html_c749f0cd3a957faef2ecabe53e3e0080" style="width: 100.0%; height: 100.0%;">Resto: Max snacks<br>Price: 7.0<br>Nr of options: 3</div>`)[0];
+                popup_59bfe5d7d0c16eca02c45762a5a2d915.setContent(html_c749f0cd3a957faef2ecabe53e3e0080);
+            
+        
+
+        circle_marker_6cba74c80251231addc43197d149fa2a.bindPopup(popup_59bfe5d7d0c16eca02c45762a5a2d915)
+        ;
+
+        
+    
+    
+            var circle_marker_6313a2bb5cbccea7ce5c92e099411092 = L.circleMarker(
+                [50.8760583, 4.708988199999999],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bd3ff79d338435c7b593fef709593d63);
+        
+    
+        var popup_7e48f736574304f79688c673153813af = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ea1ad9b412e0cfebcf07247b423cd6cf = $(`<div id="html_ea1ad9b412e0cfebcf07247b423cd6cf" style="width: 100.0%; height: 100.0%;">Resto: Pizza Posto<br>Price: 7.0<br>Nr of options: 11</div>`)[0];
+                popup_7e48f736574304f79688c673153813af.setContent(html_ea1ad9b412e0cfebcf07247b423cd6cf);
+            
+        
+
+        circle_marker_6313a2bb5cbccea7ce5c92e099411092.bindPopup(popup_7e48f736574304f79688c673153813af)
+        ;
+
+        
+    
+    
+            var circle_marker_31df93c7338674978d94471b0b2493b4 = L.circleMarker(
+                [51.06086519999999, 3.7012991],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bd3ff79d338435c7b593fef709593d63);
+        
+    
+        var popup_c8e5d73a7a3028c8a4dd0335bfcb83ec = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_74e98d5d2e2473fec04e19f141ba6c2b = $(`<div id="html_74e98d5d2e2473fec04e19f141ba6c2b" style="width: 100.0%; height: 100.0%;">Resto: Ali Kebab <br>Price: 7.0<br>Nr of options: 2</div>`)[0];
+                popup_c8e5d73a7a3028c8a4dd0335bfcb83ec.setContent(html_74e98d5d2e2473fec04e19f141ba6c2b);
+            
+        
+
+        circle_marker_31df93c7338674978d94471b0b2493b4.bindPopup(popup_c8e5d73a7a3028c8a4dd0335bfcb83ec)
+        ;
+
+        
+    
+    
+            var circle_marker_f3f8e3ffb56869da470bcd00c6d9bd55 = L.circleMarker(
+                [51.1861375, 4.3874416],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bd3ff79d338435c7b593fef709593d63);
+        
+    
+        var popup_2d75495b0dd8b2feb62f3011c580013c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_082e3555991fa13d2e1345b4ac9d51b4 = $(`<div id="html_082e3555991fa13d2e1345b4ac9d51b4" style="width: 100.0%; height: 100.0%;">Resto: Steakhouse pizzaria Amsterdam<br>Price: 6.81<br>Nr of options: 19</div>`)[0];
+                popup_2d75495b0dd8b2feb62f3011c580013c.setContent(html_082e3555991fa13d2e1345b4ac9d51b4);
+            
+        
+
+        circle_marker_f3f8e3ffb56869da470bcd00c6d9bd55.bindPopup(popup_2d75495b0dd8b2feb62f3011c580013c)
+        ;
+
+        
+    
+    
+            var circle_marker_aaceddfe34a1bd215db2af5e7946ec76 = L.circleMarker(
+                [51.2076892, 4.3887578],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bd3ff79d338435c7b593fef709593d63);
+        
+    
+        var popup_2094bcbffc3a4b908bb5af65dd2eb99d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f2f0a6be8ebcd20993210549d53d0faa = $(`<div id="html_f2f0a6be8ebcd20993210549d53d0faa" style="width: 100.0%; height: 100.0%;">Resto: Muradim<br>Price: 6.69<br>Nr of options: 8</div>`)[0];
+                popup_2094bcbffc3a4b908bb5af65dd2eb99d.setContent(html_f2f0a6be8ebcd20993210549d53d0faa);
+            
+        
+
+        circle_marker_aaceddfe34a1bd215db2af5e7946ec76.bindPopup(popup_2094bcbffc3a4b908bb5af65dd2eb99d)
+        ;
+
+        
+    
+    
+            var circle_marker_500e15e6fd4111aaf3cf817345c17cae = L.circleMarker(
+                [51.2226074, 4.425693],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bd3ff79d338435c7b593fef709593d63);
+        
+    
+        var popup_d48060047e8111fb130015b39463aac3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_17c1ed4e1aa239aa3bfec90ade91f477 = $(`<div id="html_17c1ed4e1aa239aa3bfec90ade91f477" style="width: 100.0%; height: 100.0%;">Resto: Afghan Restaurant Mahya<br>Price: 6.5<br>Nr of options: 4</div>`)[0];
+                popup_d48060047e8111fb130015b39463aac3.setContent(html_17c1ed4e1aa239aa3bfec90ade91f477);
+            
+        
+
+        circle_marker_500e15e6fd4111aaf3cf817345c17cae.bindPopup(popup_d48060047e8111fb130015b39463aac3)
+        ;
+
+        
+    
+    
+            var circle_marker_4b87a0ad21a1147a5d73525294d8710f = L.circleMarker(
+                [51.2189946, 4.420245899999999],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bd3ff79d338435c7b593fef709593d63);
+        
+    
+        var popup_d41cbefc0cb567168de63e017fa70f91 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5ab4fb2948544e1a89630a1223e685fc = $(`<div id="html_5ab4fb2948544e1a89630a1223e685fc" style="width: 100.0%; height: 100.0%;">Resto: Solav Kebab<br>Price: 6.45<br>Nr of options: 1</div>`)[0];
+                popup_d41cbefc0cb567168de63e017fa70f91.setContent(html_5ab4fb2948544e1a89630a1223e685fc);
+            
+        
+
+        circle_marker_4b87a0ad21a1147a5d73525294d8710f.bindPopup(popup_d41cbefc0cb567168de63e017fa70f91)
+        ;
+
+        
+    
+    
+            var circle_marker_ad1e9ba59708cad29f9ad20bdd768557 = L.circleMarker(
+                [50.8756293, 4.7001928],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bd3ff79d338435c7b593fef709593d63);
+        
+    
+        var popup_57f41f929e92bd511b7e7537d1fd2ba9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5a38a7179ccdefbea69a5fa5e664c436 = $(`<div id="html_5a38a7179ccdefbea69a5fa5e664c436" style="width: 100.0%; height: 100.0%;">Resto: De Nijl | Leuven<br>Price: 6.25<br>Nr of options: 4</div>`)[0];
+                popup_57f41f929e92bd511b7e7537d1fd2ba9.setContent(html_5a38a7179ccdefbea69a5fa5e664c436);
+            
+        
+
+        circle_marker_ad1e9ba59708cad29f9ad20bdd768557.bindPopup(popup_57f41f929e92bd511b7e7537d1fd2ba9)
+        ;
+
+        
+    
+    
+            var circle_marker_d133514b603fe765ebe0cafce79650fb = L.circleMarker(
+                [51.0527847, 3.7463782],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bd3ff79d338435c7b593fef709593d63);
+        
+    
+        var popup_1b5884e2899b6ff3a669bbdf4c34f380 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_39c464a2892fe11afd539fa9656fea17 = $(`<div id="html_39c464a2892fe11afd539fa9656fea17" style="width: 100.0%; height: 100.0%;">Resto: Pitta Cengoo<br>Price: 6.12<br>Nr of options: 8</div>`)[0];
+                popup_1b5884e2899b6ff3a669bbdf4c34f380.setContent(html_39c464a2892fe11afd539fa9656fea17);
+            
+        
+
+        circle_marker_d133514b603fe765ebe0cafce79650fb.bindPopup(popup_1b5884e2899b6ff3a669bbdf4c34f380)
+        ;
+
+        
+    
+    
+            var circle_marker_c55272c768bf0adf734e096988441d01 = L.circleMarker(
+                [51.05631, 3.726280499999999],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bd3ff79d338435c7b593fef709593d63);
+        
+    
+        var popup_a630b3679e72e229b7122d7aa739b041 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4cdd914d9698f07c9552272264249b9d = $(`<div id="html_4cdd914d9698f07c9552272264249b9d" style="width: 100.0%; height: 100.0%;">Resto: Kebab Vrijdag<br>Price: 6.0<br>Nr of options: 2</div>`)[0];
+                popup_a630b3679e72e229b7122d7aa739b041.setContent(html_4cdd914d9698f07c9552272264249b9d);
+            
+        
+
+        circle_marker_c55272c768bf0adf734e096988441d01.bindPopup(popup_a630b3679e72e229b7122d7aa739b041)
+        ;
+
+        
+    
+    
+            var circle_marker_2eaddaf2eed51eec8896ffc2767708b8 = L.circleMarker(
+                [50.86797929999999, 4.3205671],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bd3ff79d338435c7b593fef709593d63);
+        
+    
+        var popup_61ad8679722507f0b643b408cc11c357 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5dfa96cd493ed73c68a9252260c748bc = $(`<div id="html_5dfa96cd493ed73c68a9252260c748bc" style="width: 100.0%; height: 100.0%;">Resto: Z'appétit<br>Price: 5.83<br>Nr of options: 3</div>`)[0];
+                popup_61ad8679722507f0b643b408cc11c357.setContent(html_5dfa96cd493ed73c68a9252260c748bc);
+            
+        
+
+        circle_marker_2eaddaf2eed51eec8896ffc2767708b8.bindPopup(popup_61ad8679722507f0b643b408cc11c357)
+        ;
+
+        
+    
+    
+            var circle_marker_cbb12d242567ec228d42b2b45a42d3ad = L.circleMarker(
+                [51.1899486, 4.3778715],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bd3ff79d338435c7b593fef709593d63);
+        
+    
+        var popup_80249da4d9643a6427b4f96a61c4bf74 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c889f2821da560688db78a7862700506 = $(`<div id="html_c889f2821da560688db78a7862700506" style="width: 100.0%; height: 100.0%;">Resto: ÖZ AHI<br>Price: 5.5<br>Nr of options: 7</div>`)[0];
+                popup_80249da4d9643a6427b4f96a61c4bf74.setContent(html_c889f2821da560688db78a7862700506);
+            
+        
+
+        circle_marker_cbb12d242567ec228d42b2b45a42d3ad.bindPopup(popup_80249da4d9643a6427b4f96a61c4bf74)
+        ;
+
+        
+    
+    
+            var circle_marker_d84c9c350f0578d95712a2898e98f3d8 = L.circleMarker(
+                [51.2182847, 4.418298200000001],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bd3ff79d338435c7b593fef709593d63);
+        
+    
+        var popup_52f47aed92a1b01d2e2b8349477ffabf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_35dd72eb6522f18da67ac751aa1d21ca = $(`<div id="html_35dd72eb6522f18da67ac751aa1d21ca" style="width: 100.0%; height: 100.0%;">Resto: Yamal Alsham <br>Price: 5.0<br>Nr of options: 1</div>`)[0];
+                popup_52f47aed92a1b01d2e2b8349477ffabf.setContent(html_35dd72eb6522f18da67ac751aa1d21ca);
+            
+        
+
+        circle_marker_d84c9c350f0578d95712a2898e98f3d8.bindPopup(popup_52f47aed92a1b01d2e2b8349477ffabf)
+        ;
+
+        
+    
+    
+            var circle_marker_4eedfcb09ac67858b1246582de945b61 = L.circleMarker(
+                [50.8686357, 4.3122373],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bd3ff79d338435c7b593fef709593d63);
+        
+    
+        var popup_b70f511e7f34562a2f2126cfbfab7bec = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4124e1b8d52b67314cfc950e8a255f2e = $(`<div id="html_4124e1b8d52b67314cfc950e8a255f2e" style="width: 100.0%; height: 100.0%;">Resto: Kap Saloon<br>Price: 4.97<br>Nr of options: 23</div>`)[0];
+                popup_b70f511e7f34562a2f2126cfbfab7bec.setContent(html_4124e1b8d52b67314cfc950e8a255f2e);
+            
+        
+
+        circle_marker_4eedfcb09ac67858b1246582de945b61.bindPopup(popup_b70f511e7f34562a2f2126cfbfab7bec)
+        ;
+
+        
+    
+    
+            var circle_marker_cd82cb7b3d04da5f082f7d658717e847 = L.circleMarker(
+                [50.8296651, 3.2715595],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bd3ff79d338435c7b593fef709593d63);
+        
+    
+        var popup_0f669526fb30a86c222f8d6fc3e46bb8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cafa6624a8ae44ba732ca3c2216f63c5 = $(`<div id="html_cafa6624a8ae44ba732ca3c2216f63c5" style="width: 100.0%; height: 100.0%;">Resto: Pizzeria Amore<br>Price: 4.5<br>Nr of options: 2</div>`)[0];
+                popup_0f669526fb30a86c222f8d6fc3e46bb8.setContent(html_cafa6624a8ae44ba732ca3c2216f63c5);
+            
+        
+
+        circle_marker_cd82cb7b3d04da5f082f7d658717e847.bindPopup(popup_0f669526fb30a86c222f8d6fc3e46bb8)
+        ;
+
+        
+    
+    
+            var circle_marker_cfa4c9acafdd53aa9f0b7a0a6e0c346b = L.circleMarker(
+                [51.055791, 3.7225961],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_bd3ff79d338435c7b593fef709593d63);
+        
+    
+        var popup_3b5ff635732b0d537f93176b7c5880c1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a435488b7a91a993bbf7a9a52236a64d = $(`<div id="html_a435488b7a91a993bbf7a9a52236a64d" style="width: 100.0%; height: 100.0%;">Resto: Tasty World Hoogpoort<br>Price: 4.45<br>Nr of options: 2</div>`)[0];
+                popup_3b5ff635732b0d537f93176b7c5880c1.setContent(html_a435488b7a91a993bbf7a9a52236a64d);
+            
+        
+
+        circle_marker_cfa4c9acafdd53aa9f0b7a0a6e0c346b.bindPopup(popup_3b5ff635732b0d537f93176b7c5880c1)
+        ;
+
+        
+    
+    
+    var color_map_b4fba86218603d57e87bb04522ac4daf = {};
+
+    
+    color_map_b4fba86218603d57e87bb04522ac4daf.color = d3.scale.threshold()
+              .domain([4.45, 4.47312625250501, 4.496252505010021, 4.51937875751503, 4.54250501002004, 4.56563126252505, 4.588757515030061, 4.61188376753507, 4.63501002004008, 4.65813627254509, 4.6812625250501005, 4.704388777555111, 4.72751503006012, 4.75064128256513, 4.7737675350701405, 4.796893787575151, 4.820020040080161, 4.84314629258517, 4.8662725450901805, 4.889398797595191, 4.912525050100201, 4.93565130260521, 4.9587775551102204, 4.981903807615231, 5.005030060120241, 5.028156312625251, 5.05128256513026, 5.074408817635271, 5.097535070140281, 5.120661322645291, 5.1437875751503, 5.166913827655311, 5.190040080160321, 5.213166332665331, 5.236292585170341, 5.259418837675351, 5.282545090180361, 5.305671342685371, 5.328797595190381, 5.3519238476953905, 5.375050100200401, 5.398176352705411, 5.421302605210421, 5.444428857715431, 5.467555110220441, 5.490681362725451, 5.513807615230461, 5.536933867735471, 5.560060120240481, 5.583186372745491, 5.606312625250501, 5.629438877755511, 5.6525651302605215, 5.675691382765532, 5.698817635270541, 5.721943887775551, 5.7450701402805615, 5.768196392785571, 5.791322645290581, 5.814448897795591, 5.8375751503006015, 5.860701402805612, 5.883827655310621, 5.906953907815631, 5.9300801603206414, 5.953206412825651, 5.976332665330661, 5.999458917835671, 6.022585170340681, 6.045711422845692, 6.068837675350702, 6.091963927855711, 6.115090180360721, 6.138216432865732, 6.161342685370742, 6.184468937875751, 6.207595190380761, 6.230721442885772, 6.253847695390782, 6.276973947895792, 6.300100200400801, 6.3232264529058115, 6.346352705410822, 6.369478957915832, 6.392605210420841, 6.4157314629258515, 6.438857715430862, 6.461983967935872, 6.485110220440882, 6.508236472945892, 6.531362725450902, 6.554488977955912, 6.577615230460921, 6.600741482965931, 6.623867735470942, 6.646993987975952, 6.670120240480962, 6.693246492985972, 6.716372745490982, 6.739498997995992, 6.762625250501002, 6.785751503006012, 6.808877755511022, 6.832004008016032, 6.855130260521042, 6.878256513026052, 6.9013827655310624, 6.924509018036073, 6.947635270541083, 6.970761523046092, 6.9938877755511015, 7.017014028056112, 7.040140280561122, 7.063266533066132, 7.086392785571142, 7.109519038076153, 7.132645290581163, 7.155771543086172, 7.178897795591182, 7.202024048096193, 7.225150300601202, 7.248276553106212, 7.271402805611222, 7.2945290581162325, 7.317655310621243, 7.340781563126253, 7.363907815631263, 7.3870340681362725, 7.410160320641283, 7.433286573146292, 7.456412825651302, 7.4795390781563125, 7.502665330661323, 7.525791583166333, 7.548917835671343, 7.572044088176352, 7.595170340681363, 7.618296593186372, 7.641422845691383, 7.664549098196392, 7.687675350701403, 7.710801603206413, 7.733927855711423, 7.757054108216433, 7.780180360721443, 7.803306613226453, 7.826432865731463, 7.849559118236472, 7.872685370741483, 7.895811623246493, 7.918937875751503, 7.942064128256513, 7.965190380761523, 7.988316633266534, 8.011442885771544, 8.034569138276552, 8.057695390781562, 8.080821643286573, 8.103947895791583, 8.127074148296593, 8.150200400801603, 8.173326653306614, 8.196452905811622, 8.219579158316634, 8.242705410821642, 8.265831663326653, 8.288957915831663, 8.312084168336673, 8.335210420841683, 8.358336673346694, 8.381462925851704, 8.404589178356714, 8.427715430861724, 8.450841683366733, 8.473967935871745, 8.497094188376753, 8.520220440881763, 8.543346693386773, 8.566472945891784, 8.589599198396794, 8.612725450901802, 8.635851703406814, 8.658977955911823, 8.682104208416833, 8.705230460921843, 8.728356713426853, 8.751482965931864, 8.774609218436874, 8.797735470941884, 8.820861723446894, 8.843987975951904, 8.867114228456913, 8.890240480961925, 8.913366733466933, 8.936492985971944, 8.959619238476954, 8.982745490981962, 9.005871743486974, 9.028997995991983, 9.052124248496995, 9.075250501002003, 9.098376753507015, 9.121503006012023, 9.144629258517034, 9.167755511022044, 9.190881763527054, 9.214008016032064, 9.237134268537073, 9.260260521042085, 9.283386773547093, 9.306513026052103, 9.329639278557114, 9.352765531062126, 9.375891783567134, 9.399018036072144, 9.422144288577154, 9.445270541082165, 9.468396793587175, 9.491523046092183, 9.514649298597195, 9.537775551102204, 9.560901803607214, 9.584028056112224, 9.607154308617233, 9.630280561122245, 9.653406813627255, 9.676533066132265, 9.699659318637273, 9.722785571142285, 9.745911823647294, 9.769038076152304, 9.792164328657314, 9.815290581162325, 9.838416833667335, 9.861543086172343, 9.884669338677355, 9.907795591182364, 9.930921843687376, 9.954048096192384, 9.977174348697396, 10.000300601202404, 10.023426853707415, 10.046553106212425, 10.069679358717433, 10.092805611222445, 10.115931863727454, 10.139058116232466, 10.162184368737474, 10.185310621242484, 10.208436873747495, 10.231563126252505, 10.254689378757515, 10.277815631262525, 10.300941883767536, 10.324068136272544, 10.347194388777556, 10.370320641282564, 10.393446893787575, 10.416573146292585, 10.439699398797595, 10.462825651302605, 10.485951903807614, 10.509078156312626, 10.532204408817634, 10.555330661322646, 10.578456913827655, 10.601583166332667, 10.624709418837675, 10.647835671342685, 10.670961923847695, 10.694088176352704, 10.717214428857716, 10.740340681362724, 10.763466933867734, 10.786593186372745, 10.809719438877755, 10.832845691382765, 10.855971943887775, 10.879098196392786, 10.902224448897796, 10.925350701402806, 10.948476953907814, 10.971603206412826, 10.994729458917835, 11.017855711422845, 11.040981963927855, 11.064108216432865, 11.087234468937876, 11.110360721442884, 11.133486973947896, 11.156613226452905, 11.179739478957917, 11.202865731462925, 11.225991983967937, 11.249118236472945, 11.272244488977956, 11.295370741482966, 11.318496993987974, 11.341623246492986, 11.364749498997995, 11.387875751503005, 11.411002004008015, 11.434128256513027, 11.457254509018036, 11.480380761523046, 11.503507014028056, 11.526633266533066, 11.549759519038076, 11.572885771543085, 11.596012024048097, 11.619138276553105, 11.642264529058115, 11.665390781563126, 11.688517034068136, 11.711643286573146, 11.734769539078156, 11.757895791583167, 11.781022044088175, 11.804148296593187, 11.827274549098195, 11.850400801603206, 11.873527054108216, 11.896653306613226, 11.919779559118236, 11.942905811623245, 11.966032064128257, 11.989158316633265, 12.012284569138277, 12.035410821643286, 12.058537074148298, 12.081663326653306, 12.104789579158316, 12.127915831663326, 12.151042084168337, 12.174168336673347, 12.197294589178355, 12.220420841683367, 12.243547094188376, 12.266673346693386, 12.289799599198396, 12.312925851703406, 12.336052104208417, 12.359178356713427, 12.382304609218437, 12.405430861723445, 12.428557114228457, 12.451683366733466, 12.474809619238478, 12.497935871743486, 12.521062124248495, 12.544188376753507, 12.567314629258515, 12.590440881763527, 12.613567134268536, 12.636693386773548, 12.659819639278556, 12.682945891783568, 12.706072144288576, 12.729198396793588, 12.752324649298597, 12.775450901803605, 12.798577154308617, 12.821703406813626, 12.844829659318638, 12.867955911823646, 12.891082164328658, 12.914208416833667, 12.937334669338675, 12.960460921843687, 12.983587174348695, 13.006713426853707, 13.029839679358716, 13.052965931863728, 13.076092184368736, 13.099218436873748, 13.122344689378757, 13.145470941883769, 13.168597194388777, 13.19172344689379, 13.214849699398798, 13.237975951903806, 13.261102204408818, 13.284228456913826, 13.307354709418838, 13.330480961923847, 13.353607214428859, 13.376733466933867, 13.399859719438876, 13.422985971943888, 13.446112224448896, 13.469238476953908, 13.492364729458917, 13.515490981963925, 13.538617234468937, 13.561743486973945, 13.584869739478957, 13.607995991983966, 13.631122244488978, 13.65424849699399, 13.677374749498998, 13.700501002004007, 13.723627254509019, 13.746753507014027, 13.76987975951904, 13.793006012024048, 13.81613226452906, 13.839258517034068, 13.862384769539077, 13.885511022044088, 13.908637274549097, 13.931763527054109, 13.954889779559117, 13.978016032064126, 14.001142284569138, 14.024268537074146, 14.047394789579158, 14.070521042084167, 14.093647294589179, 14.116773547094187, 14.139899799599196, 14.163026052104208, 14.186152304609216, 14.209278557114228, 14.23240480961924, 14.255531062124248, 14.27865731462926, 14.301783567134269, 14.324909819639277, 14.34803607214429, 14.371162324649298, 14.39428857715431, 14.417414829659318, 14.44054108216433, 14.463667334669339, 14.486793587174347, 14.509919839679359, 14.533046092184367, 14.55617234468938, 14.579298597194388, 14.602424849699396, 14.625551102204408, 14.648677354709417, 14.671803607214429, 14.694929859719437, 14.718056112224449, 14.741182364729458, 14.764308617234466, 14.787434869739478, 14.81056112224449, 14.833687374749498, 14.85681362725451, 14.879939879759519, 14.90306613226453, 14.92619238476954, 14.949318637274548, 14.97244488977956, 14.995571142284568, 15.01869739478958, 15.041823647294589, 15.064949899799597, 15.088076152304609, 15.111202404809617, 15.13432865731463, 15.157454909819638, 15.18058116232465, 15.203707414829658, 15.226833667334667, 15.249959919839679, 15.273086172344687, 15.2962124248497, 15.319338677354708, 15.34246492985972, 15.365591182364728, 15.388717434869736, 15.411843687374748, 15.43496993987976, 15.458096192384769, 15.48122244488978, 15.50434869739479, 15.527474949899801, 15.55060120240481, 15.573727454909818, 15.59685370741483, 15.619979959919839, 15.64310621242485, 15.666232464929859, 15.689358717434867, 15.71248496993988, 15.735611222444888, 15.7587374749499, 15.781863727454908, 15.80498997995992, 15.828116232464929, 15.851242484969937, 15.87436873747495, 15.897494989979958, 15.92062124248497, 15.943747494989978, 15.96687374749499, 15.989999999999998])
+              .range(['#008000ff', '#008000ff', '#008000ff', '#008000ff', '#008000ff', '#008000ff', '#008000ff', '#008000ff', '#008000ff', '#008000ff', '#008000ff', '#008000ff', '#008000ff', '#008000ff', '#008000ff', '#008000ff', '#008000ff', '#008000ff', '#008000ff', '#008000ff', '#008000ff', '#008000ff', '#008000ff', '#008000ff', '#008000ff', '#008000ff', '#008000ff', '#008000ff', '#008000ff', '#008000ff', '#008000ff', '#008000ff', '#008000ff', '#008000ff', '#008000ff', '#008000ff', '#008000ff', '#008000ff', '#008000ff', '#008000ff', '#008000ff', '#008000ff', '#008000ff', '#008000ff', '#008000ff', '#008000ff', '#008000ff', '#008000ff', '#008000ff', '#008000ff', '#008000ff', '#008000ff', '#008000ff', '#008000ff', '#008000ff', '#008000ff', '#008000ff', '#008000ff', '#008000ff', '#008000ff', '#008000ff', '#008000ff', '#008000ff', '#008000ff', '#008000ff', '#008000ff', '#008000ff', '#008000ff', '#008000ff', '#008000ff', '#008000ff', '#008000ff', '#008000ff', '#008000ff', '#008000ff', '#008000ff', '#008000ff', '#008000ff', '#008000ff', '#008000ff', '#008000ff', '#008000ff', '#008000ff', '#008000ff', '#008000ff', '#008000ff', '#008000ff', '#008000ff', '#008000ff', '#008000ff', '#008000ff', '#008000ff', '#008000ff', '#008000ff', '#008000ff', '#008000ff', '#008000ff', '#008000ff', '#008000ff', '#008000ff', '#008000ff', '#008000ff', '#008000ff', '#008000ff', '#008000ff', '#008000ff', '#008000ff', '#008000ff', '#008000ff', '#008000ff', '#008000ff', '#008000ff', '#008000ff', '#008000ff', '#008000ff', '#008000ff', '#008000ff', '#008000ff', '#008000ff', '#008000ff', '#008000ff', '#008000ff', '#008000ff', '#008000ff', '#008000ff', '#008000ff', '#008000ff', '#008000ff', '#008000ff', '#008000ff', '#008000ff', '#008000ff', '#008000ff', '#008000ff', '#008000ff', '#008000ff', '#008000ff', '#008000ff', '#008000ff', '#008000ff', '#008000ff', '#008000ff', '#008000ff', '#008000ff', '#008000ff', '#008000ff', '#008000ff', '#008000ff', '#008000ff', '#008000ff', '#008000ff', '#008000ff', '#008000ff', '#008000ff', '#ffa500ff', '#ffa500ff', '#ffa500ff', '#ffa500ff', '#ffa500ff', '#ffa500ff', '#ffa500ff', '#ffa500ff', '#ffa500ff', '#ffa500ff', '#ffa500ff', '#ffa500ff', '#ffa500ff', '#ffa500ff', '#ffa500ff', '#ffa500ff', '#ffa500ff', '#ffa500ff', '#ffa500ff', '#ffa500ff', '#ffa500ff', '#ffa500ff', '#ffa500ff', '#ffa500ff', '#ffa500ff', '#ffa500ff', '#ffa500ff', '#ffa500ff', '#ffa500ff', '#ffa500ff', '#ffa500ff', '#ffa500ff', '#ffa500ff', '#ffa500ff', '#ffa500ff', '#ffa500ff', '#ffa500ff', '#ffa500ff', '#ffa500ff', '#ffa500ff', '#ffa500ff', '#ffa500ff', '#ffa500ff', '#ffa500ff', '#ffa500ff', '#ffa500ff', '#ffa500ff', '#ffa500ff', '#ff0000ff', '#ff0000ff', '#ff0000ff', '#ff0000ff', '#ff0000ff', '#ff0000ff', '#ff0000ff', '#ff0000ff', '#ff0000ff', '#ff0000ff', '#ff0000ff', '#ff0000ff', '#ff0000ff', '#ff0000ff', '#ff0000ff', '#ff0000ff', '#ff0000ff', '#ff0000ff', '#ff0000ff', '#ff0000ff', '#ff0000ff', '#ff0000ff', '#ff0000ff', '#ff0000ff', '#ff0000ff', '#ff0000ff', '#ff0000ff', '#ff0000ff', '#ff0000ff', '#ff0000ff', '#ff0000ff', '#ff0000ff', '#ff0000ff', '#ff0000ff', '#ff0000ff', '#ff0000ff', '#ff0000ff', '#ff0000ff', '#ff0000ff', '#ff0000ff', '#ff0000ff', '#ff0000ff', '#ff0000ff', '#ff0000ff', '#ff0000ff', '#ff0000ff', '#ff0000ff', '#ff0000ff', '#ff0000ff', '#ff0000ff', '#ff0000ff', '#ff0000ff', '#ff0000ff', '#ff0000ff', '#ff0000ff', '#ff0000ff', '#ff0000ff', '#ff0000ff', '#ff0000ff', '#ff0000ff', '#ff0000ff', '#ff0000ff', '#ff0000ff', '#ff0000ff', '#ff0000ff', '#ff0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff', '#8b0000ff']);
+    
+
+    color_map_b4fba86218603d57e87bb04522ac4daf.x = d3.scale.linear()
+              .domain([4.45, 15.989999999999998])
+              .range([0, 450 - 50]);
+
+    color_map_b4fba86218603d57e87bb04522ac4daf.legend = L.control({position: 'topright'});
+    color_map_b4fba86218603d57e87bb04522ac4daf.legend.onAdd = function (map) {var div = L.DomUtil.create('div', 'legend'); return div};
+    color_map_b4fba86218603d57e87bb04522ac4daf.legend.addTo(map_bd3ff79d338435c7b593fef709593d63);
+
+    color_map_b4fba86218603d57e87bb04522ac4daf.xAxis = d3.svg.axis()
+        .scale(color_map_b4fba86218603d57e87bb04522ac4daf.x)
+        .orient("top")
+        .tickSize(1)
+        .tickValues([0.0, 8.0, 9.1, 10.625, 15.99]);
+
+    color_map_b4fba86218603d57e87bb04522ac4daf.svg = d3.select(".legend.leaflet-control").append("svg")
+        .attr("id", 'legend')
+        .attr("width", 450)
+        .attr("height", 40);
+
+    color_map_b4fba86218603d57e87bb04522ac4daf.g = color_map_b4fba86218603d57e87bb04522ac4daf.svg.append("g")
+        .attr("class", "key")
+        .attr("fill", "black")
+        .attr("transform", "translate(25,16)");
+
+    color_map_b4fba86218603d57e87bb04522ac4daf.g.selectAll("rect")
+        .data(color_map_b4fba86218603d57e87bb04522ac4daf.color.range().map(function(d, i) {
+          return {
+            x0: i ? color_map_b4fba86218603d57e87bb04522ac4daf.x(color_map_b4fba86218603d57e87bb04522ac4daf.color.domain()[i - 1]) : color_map_b4fba86218603d57e87bb04522ac4daf.x.range()[0],
+            x1: i < color_map_b4fba86218603d57e87bb04522ac4daf.color.domain().length ? color_map_b4fba86218603d57e87bb04522ac4daf.x(color_map_b4fba86218603d57e87bb04522ac4daf.color.domain()[i]) : color_map_b4fba86218603d57e87bb04522ac4daf.x.range()[1],
+            z: d
+          };
+        }))
+      .enter().append("rect")
+        .attr("height", 40 - 30)
+        .attr("x", function(d) { return d.x0; })
+        .attr("width", function(d) { return d.x1 - d.x0; })
+        .style("fill", function(d) { return d.z; });
+
+    color_map_b4fba86218603d57e87bb04522ac4daf.g.call(color_map_b4fba86218603d57e87bb04522ac4daf.xAxis).append("text")
+        .attr("class", "caption")
+        .attr("y", 21)
+        .attr("fill", "black")
+        .text("Average price for kapsalon in \u20ac");
+</script>
+</html>

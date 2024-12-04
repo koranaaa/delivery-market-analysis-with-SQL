@@ -1,0 +1,4297 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_24d2c2a4da60ab03bca24f1bb556f1cf {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_24d2c2a4da60ab03bca24f1bb556f1cf" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_24d2c2a4da60ab03bca24f1bb556f1cf = L.map(
+                "map_24d2c2a4da60ab03bca24f1bb556f1cf",
+                {
+                    center: [51.05622309751725, 4.120062972089655],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 9,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_1502c395fff75927ba4ac381f5be8b10 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_1502c395fff75927ba4ac381f5be8b10.addTo(map_24d2c2a4da60ab03bca24f1bb556f1cf);
+        
+    
+            var tile_layer_cd4637b4168c1013f08453a963b9ae6b = L.tileLayer(
+                "Stamen Toner",
+                {"attribution": "Map tiles by Stamen Design, CC BY 3.0 \u2014 Map data \u00a9 OpenStreetMap", "detectRetina": false, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_cd4637b4168c1013f08453a963b9ae6b.addTo(map_24d2c2a4da60ab03bca24f1bb556f1cf);
+        
+    
+            var marker_cluster_76d8127cda66f2811d7beb274892bbd7 = L.markerClusterGroup(
+                {}
+            );
+        
+    
+            var marker_196caeb7c0613782335be02e7a40d098 = L.marker(
+                [51.2181571, 4.4200142],
+                {}
+            ).addTo(marker_cluster_76d8127cda66f2811d7beb274892bbd7);
+        
+    
+        var popup_2432c4ce9f7f263bf012c56e159a2a05 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_e0e543462ad40bfcd1ecf872e6640e16 = $(`<div id="html_e0e543462ad40bfcd1ecf872e6640e16" style="width: 100.0%; height: 100.0%;">     Price: 15.99 €<br>     Nr of options: 1<br>        </div>`)[0];
+                popup_2432c4ce9f7f263bf012c56e159a2a05.setContent(html_e0e543462ad40bfcd1ecf872e6640e16);
+            
+        
+
+        marker_196caeb7c0613782335be02e7a40d098.bindPopup(popup_2432c4ce9f7f263bf012c56e159a2a05)
+        ;
+
+        
+    
+    
+            marker_196caeb7c0613782335be02e7a40d098.bindTooltip(
+                `<div>
+                     15.99
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9aae475a37c2e73376b6ed41967ecc67 = L.marker(
+                [51.02431250000001, 4.4775937],
+                {}
+            ).addTo(marker_cluster_76d8127cda66f2811d7beb274892bbd7);
+        
+    
+        var popup_dd0635c38a962eeb5fa3954ed044e5d4 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_4e7aae2c01c25014e45c923bdbfa5aa6 = $(`<div id="html_4e7aae2c01c25014e45c923bdbfa5aa6" style="width: 100.0%; height: 100.0%;">     Price: 15.9 €<br>     Nr of options: 10<br>        </div>`)[0];
+                popup_dd0635c38a962eeb5fa3954ed044e5d4.setContent(html_4e7aae2c01c25014e45c923bdbfa5aa6);
+            
+        
+
+        marker_9aae475a37c2e73376b6ed41967ecc67.bindPopup(popup_dd0635c38a962eeb5fa3954ed044e5d4)
+        ;
+
+        
+    
+    
+            marker_9aae475a37c2e73376b6ed41967ecc67.bindTooltip(
+                `<div>
+                     15.9
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9d16f9a5eadd6f27f14adb246a465292 = L.marker(
+                [51.038816, 3.7262825],
+                {}
+            ).addTo(marker_cluster_76d8127cda66f2811d7beb274892bbd7);
+        
+    
+        var popup_bd294a3df5f93d8a4f11c4516d0c14d9 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_92177adea51b77b8796fd1de241a4865 = $(`<div id="html_92177adea51b77b8796fd1de241a4865" style="width: 100.0%; height: 100.0%;">     Price: 15.0 €<br>     Nr of options: 1<br>        </div>`)[0];
+                popup_bd294a3df5f93d8a4f11c4516d0c14d9.setContent(html_92177adea51b77b8796fd1de241a4865);
+            
+        
+
+        marker_9d16f9a5eadd6f27f14adb246a465292.bindPopup(popup_bd294a3df5f93d8a4f11c4516d0c14d9)
+        ;
+
+        
+    
+    
+            marker_9d16f9a5eadd6f27f14adb246a465292.bindTooltip(
+                `<div>
+                     15.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a1fa4c40ab61e2ef35493d5522ea89cf = L.marker(
+                [51.171145, 4.127612],
+                {}
+            ).addTo(marker_cluster_76d8127cda66f2811d7beb274892bbd7);
+        
+    
+        var popup_b47b5a4245b32aa2ffd22232af9e5b37 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_b3566eadc8175ed4ac4378ac573808f3 = $(`<div id="html_b3566eadc8175ed4ac4378ac573808f3" style="width: 100.0%; height: 100.0%;">     Price: 14.9 €<br>     Nr of options: 2<br>        </div>`)[0];
+                popup_b47b5a4245b32aa2ffd22232af9e5b37.setContent(html_b3566eadc8175ed4ac4378ac573808f3);
+            
+        
+
+        marker_a1fa4c40ab61e2ef35493d5522ea89cf.bindPopup(popup_b47b5a4245b32aa2ffd22232af9e5b37)
+        ;
+
+        
+    
+    
+            marker_a1fa4c40ab61e2ef35493d5522ea89cf.bindTooltip(
+                `<div>
+                     14.9
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f7d44fc50a4e2301441186b83ee87c86 = L.marker(
+                [51.037505, 3.714077],
+                {}
+            ).addTo(marker_cluster_76d8127cda66f2811d7beb274892bbd7);
+        
+    
+        var popup_a950e5a0d1037166a8b277e295b60b99 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_9435d5a344eb07b88b7f005e34068e00 = $(`<div id="html_9435d5a344eb07b88b7f005e34068e00" style="width: 100.0%; height: 100.0%;">     Price: 14.67 €<br>     Nr of options: 3<br>        </div>`)[0];
+                popup_a950e5a0d1037166a8b277e295b60b99.setContent(html_9435d5a344eb07b88b7f005e34068e00);
+            
+        
+
+        marker_f7d44fc50a4e2301441186b83ee87c86.bindPopup(popup_a950e5a0d1037166a8b277e295b60b99)
+        ;
+
+        
+    
+    
+            marker_f7d44fc50a4e2301441186b83ee87c86.bindTooltip(
+                `<div>
+                     14.67
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5df615561ee3b55cdd2d9084abcc0afc = L.marker(
+                [51.200648, 4.4444544],
+                {}
+            ).addTo(marker_cluster_76d8127cda66f2811d7beb274892bbd7);
+        
+    
+        var popup_88eff94577d305613ebfcf2505342c5e = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_4396405c4b9ae2603605ff07adc0e09b = $(`<div id="html_4396405c4b9ae2603605ff07adc0e09b" style="width: 100.0%; height: 100.0%;">     Price: 14.25 €<br>     Nr of options: 4<br>        </div>`)[0];
+                popup_88eff94577d305613ebfcf2505342c5e.setContent(html_4396405c4b9ae2603605ff07adc0e09b);
+            
+        
+
+        marker_5df615561ee3b55cdd2d9084abcc0afc.bindPopup(popup_88eff94577d305613ebfcf2505342c5e)
+        ;
+
+        
+    
+    
+            marker_5df615561ee3b55cdd2d9084abcc0afc.bindTooltip(
+                `<div>
+                     14.25
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_801395fbb4291543031deec8e3e0cb46 = L.marker(
+                [50.82850819999999, 3.2649605],
+                {}
+            ).addTo(marker_cluster_76d8127cda66f2811d7beb274892bbd7);
+        
+    
+        var popup_78b796f029a19ded7cfa093af74b42db = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_967ccfc45493dcd3a9301ad83fd81e8b = $(`<div id="html_967ccfc45493dcd3a9301ad83fd81e8b" style="width: 100.0%; height: 100.0%;">     Price: 14.0 €<br>     Nr of options: 1<br>        </div>`)[0];
+                popup_78b796f029a19ded7cfa093af74b42db.setContent(html_967ccfc45493dcd3a9301ad83fd81e8b);
+            
+        
+
+        marker_801395fbb4291543031deec8e3e0cb46.bindPopup(popup_78b796f029a19ded7cfa093af74b42db)
+        ;
+
+        
+    
+    
+            marker_801395fbb4291543031deec8e3e0cb46.bindTooltip(
+                `<div>
+                     14.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_242ce25b26cd46558f959797841d2d96 = L.marker(
+                [51.1994999, 4.4303691],
+                {}
+            ).addTo(marker_cluster_76d8127cda66f2811d7beb274892bbd7);
+        
+    
+        var popup_2bd9864f9d4715fadfd82af715efe9bc = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_a9255a54afc87ddcb814a566086345ed = $(`<div id="html_a9255a54afc87ddcb814a566086345ed" style="width: 100.0%; height: 100.0%;">     Price: 13.67 €<br>     Nr of options: 3<br>        </div>`)[0];
+                popup_2bd9864f9d4715fadfd82af715efe9bc.setContent(html_a9255a54afc87ddcb814a566086345ed);
+            
+        
+
+        marker_242ce25b26cd46558f959797841d2d96.bindPopup(popup_2bd9864f9d4715fadfd82af715efe9bc)
+        ;
+
+        
+    
+    
+            marker_242ce25b26cd46558f959797841d2d96.bindTooltip(
+                `<div>
+                     13.67
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d479a2b6b0073267d0036a63ffbdfbba = L.marker(
+                [50.81315130000001, 3.2494097],
+                {}
+            ).addTo(marker_cluster_76d8127cda66f2811d7beb274892bbd7);
+        
+    
+        var popup_4fff038563c1d901846ce795a530793a = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_46a3057ff897dd39a7c3f10b80f7ab43 = $(`<div id="html_46a3057ff897dd39a7c3f10b80f7ab43" style="width: 100.0%; height: 100.0%;">     Price: 12.83 €<br>     Nr of options: 3<br>        </div>`)[0];
+                popup_4fff038563c1d901846ce795a530793a.setContent(html_46a3057ff897dd39a7c3f10b80f7ab43);
+            
+        
+
+        marker_d479a2b6b0073267d0036a63ffbdfbba.bindPopup(popup_4fff038563c1d901846ce795a530793a)
+        ;
+
+        
+    
+    
+            marker_d479a2b6b0073267d0036a63ffbdfbba.bindTooltip(
+                `<div>
+                     12.83
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_04e2e06f46ed34569b27ef0c70be101e = L.marker(
+                [50.9935238, 5.5186852],
+                {}
+            ).addTo(marker_cluster_76d8127cda66f2811d7beb274892bbd7);
+        
+    
+        var popup_f9a4202a88d55c42f7b40070fd7d3712 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_bed8d6f44e5a907a553f4e553cb0e966 = $(`<div id="html_bed8d6f44e5a907a553f4e553cb0e966" style="width: 100.0%; height: 100.0%;">     Price: 12.33 €<br>     Nr of options: 3<br>        </div>`)[0];
+                popup_f9a4202a88d55c42f7b40070fd7d3712.setContent(html_bed8d6f44e5a907a553f4e553cb0e966);
+            
+        
+
+        marker_04e2e06f46ed34569b27ef0c70be101e.bindPopup(popup_f9a4202a88d55c42f7b40070fd7d3712)
+        ;
+
+        
+    
+    
+            marker_04e2e06f46ed34569b27ef0c70be101e.bindTooltip(
+                `<div>
+                     12.33
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f5b84ebe66b52414dca3f33e6d0b20c8 = L.marker(
+                [51.2110818, 3.2424745],
+                {}
+            ).addTo(marker_cluster_76d8127cda66f2811d7beb274892bbd7);
+        
+    
+        var popup_a53a57385e4e28c3689276b705ceec07 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_b664c5057023d52ec012bbe8798d2a57 = $(`<div id="html_b664c5057023d52ec012bbe8798d2a57" style="width: 100.0%; height: 100.0%;">     Price: 12.25 €<br>     Nr of options: 2<br>        </div>`)[0];
+                popup_a53a57385e4e28c3689276b705ceec07.setContent(html_b664c5057023d52ec012bbe8798d2a57);
+            
+        
+
+        marker_f5b84ebe66b52414dca3f33e6d0b20c8.bindPopup(popup_a53a57385e4e28c3689276b705ceec07)
+        ;
+
+        
+    
+    
+            marker_f5b84ebe66b52414dca3f33e6d0b20c8.bindTooltip(
+                `<div>
+                     12.25
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_28dad39565b043193f913a1f663746a2 = L.marker(
+                [50.9369842, 4.0271876],
+                {}
+            ).addTo(marker_cluster_76d8127cda66f2811d7beb274892bbd7);
+        
+    
+        var popup_bf5ed5b93c91cb6cd0c83076ff7d07eb = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_ff26a153efca6fb93310ce402d2caa26 = $(`<div id="html_ff26a153efca6fb93310ce402d2caa26" style="width: 100.0%; height: 100.0%;">     Price: 12.25 €<br>     Nr of options: 4<br>        </div>`)[0];
+                popup_bf5ed5b93c91cb6cd0c83076ff7d07eb.setContent(html_ff26a153efca6fb93310ce402d2caa26);
+            
+        
+
+        marker_28dad39565b043193f913a1f663746a2.bindPopup(popup_bf5ed5b93c91cb6cd0c83076ff7d07eb)
+        ;
+
+        
+    
+    
+            marker_28dad39565b043193f913a1f663746a2.bindTooltip(
+                `<div>
+                     12.25
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_867867e2f2174521376e1e73e555a81f = L.marker(
+                [50.816322, 4.4281378],
+                {}
+            ).addTo(marker_cluster_76d8127cda66f2811d7beb274892bbd7);
+        
+    
+        var popup_bd6e6c9e64d613335036bb21e8eb365a = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_d0a19e3d5c5f00382c2c105991effd04 = $(`<div id="html_d0a19e3d5c5f00382c2c105991effd04" style="width: 100.0%; height: 100.0%;">     Price: 12.14 €<br>     Nr of options: 7<br>        </div>`)[0];
+                popup_bd6e6c9e64d613335036bb21e8eb365a.setContent(html_d0a19e3d5c5f00382c2c105991effd04);
+            
+        
+
+        marker_867867e2f2174521376e1e73e555a81f.bindPopup(popup_bd6e6c9e64d613335036bb21e8eb365a)
+        ;
+
+        
+    
+    
+            marker_867867e2f2174521376e1e73e555a81f.bindTooltip(
+                `<div>
+                     12.14
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8f97eb3ceabd29866f1730b98844192b = L.marker(
+                [51.0288925, 4.098554600000001],
+                {}
+            ).addTo(marker_cluster_76d8127cda66f2811d7beb274892bbd7);
+        
+    
+        var popup_e6063c683b4d3c531d48c8e4221fa358 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_60bc04884825935581750b360cba7d25 = $(`<div id="html_60bc04884825935581750b360cba7d25" style="width: 100.0%; height: 100.0%;">     Price: 12.0 €<br>     Nr of options: 5<br>        </div>`)[0];
+                popup_e6063c683b4d3c531d48c8e4221fa358.setContent(html_60bc04884825935581750b360cba7d25);
+            
+        
+
+        marker_8f97eb3ceabd29866f1730b98844192b.bindPopup(popup_e6063c683b4d3c531d48c8e4221fa358)
+        ;
+
+        
+    
+    
+            marker_8f97eb3ceabd29866f1730b98844192b.bindTooltip(
+                `<div>
+                     12.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b50d3300ffd061f671e1b142687f3169 = L.marker(
+                [51.0448385, 4.1056225],
+                {}
+            ).addTo(marker_cluster_76d8127cda66f2811d7beb274892bbd7);
+        
+    
+        var popup_1989d7303aed6b91d529f26e3ccb4407 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_d4b0c61fd6558537628275df12091c44 = $(`<div id="html_d4b0c61fd6558537628275df12091c44" style="width: 100.0%; height: 100.0%;">     Price: 12.0 €<br>     Nr of options: 5<br>        </div>`)[0];
+                popup_1989d7303aed6b91d529f26e3ccb4407.setContent(html_d4b0c61fd6558537628275df12091c44);
+            
+        
+
+        marker_b50d3300ffd061f671e1b142687f3169.bindPopup(popup_1989d7303aed6b91d529f26e3ccb4407)
+        ;
+
+        
+    
+    
+            marker_b50d3300ffd061f671e1b142687f3169.bindTooltip(
+                `<div>
+                     12.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_dcfde05978252121295c4b9c91a65d9e = L.marker(
+                [50.9380499, 5.3404621],
+                {}
+            ).addTo(marker_cluster_76d8127cda66f2811d7beb274892bbd7);
+        
+    
+        var popup_9917684534b06ceb9413fe110132bb03 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_3c28bf5f84d4de27221b473d24ceea31 = $(`<div id="html_3c28bf5f84d4de27221b473d24ceea31" style="width: 100.0%; height: 100.0%;">     Price: 12.0 €<br>     Nr of options: 2<br>        </div>`)[0];
+                popup_9917684534b06ceb9413fe110132bb03.setContent(html_3c28bf5f84d4de27221b473d24ceea31);
+            
+        
+
+        marker_dcfde05978252121295c4b9c91a65d9e.bindPopup(popup_9917684534b06ceb9413fe110132bb03)
+        ;
+
+        
+    
+    
+            marker_dcfde05978252121295c4b9c91a65d9e.bindTooltip(
+                `<div>
+                     12.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6a62120c4accc07133e215be5f9573ac = L.marker(
+                [50.93804249999999, 4.0319657],
+                {}
+            ).addTo(marker_cluster_76d8127cda66f2811d7beb274892bbd7);
+        
+    
+        var popup_6b6eeec7bd83a3c8376791b6cc9bab08 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_46e2fc1aea08958ca36cdd9a0316c3ea = $(`<div id="html_46e2fc1aea08958ca36cdd9a0316c3ea" style="width: 100.0%; height: 100.0%;">     Price: 12.0 €<br>     Nr of options: 3<br>        </div>`)[0];
+                popup_6b6eeec7bd83a3c8376791b6cc9bab08.setContent(html_46e2fc1aea08958ca36cdd9a0316c3ea);
+            
+        
+
+        marker_6a62120c4accc07133e215be5f9573ac.bindPopup(popup_6b6eeec7bd83a3c8376791b6cc9bab08)
+        ;
+
+        
+    
+    
+            marker_6a62120c4accc07133e215be5f9573ac.bindTooltip(
+                `<div>
+                     12.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_59a575f23acbe1cb0f3f9c5ea050d9a5 = L.marker(
+                [50.92572759999999, 5.3260064],
+                {}
+            ).addTo(marker_cluster_76d8127cda66f2811d7beb274892bbd7);
+        
+    
+        var popup_ea68e09d2f1b3216ea5b253cf138e568 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_1b0fb1cef5482ade25d44042789408c9 = $(`<div id="html_1b0fb1cef5482ade25d44042789408c9" style="width: 100.0%; height: 100.0%;">     Price: 12.0 €<br>     Nr of options: 2<br>        </div>`)[0];
+                popup_ea68e09d2f1b3216ea5b253cf138e568.setContent(html_1b0fb1cef5482ade25d44042789408c9);
+            
+        
+
+        marker_59a575f23acbe1cb0f3f9c5ea050d9a5.bindPopup(popup_ea68e09d2f1b3216ea5b253cf138e568)
+        ;
+
+        
+    
+    
+            marker_59a575f23acbe1cb0f3f9c5ea050d9a5.bindTooltip(
+                `<div>
+                     12.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4fc89d24f3828bacd91fdd2c083e3c03 = L.marker(
+                [51.206015, 3.2177265],
+                {}
+            ).addTo(marker_cluster_76d8127cda66f2811d7beb274892bbd7);
+        
+    
+        var popup_431795bab660d3711cc88d0ab6d4a45e = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_eec90777ecd07738bd70a88f51f2ff3f = $(`<div id="html_eec90777ecd07738bd70a88f51f2ff3f" style="width: 100.0%; height: 100.0%;">     Price: 12.0 €<br>     Nr of options: 2<br>        </div>`)[0];
+                popup_431795bab660d3711cc88d0ab6d4a45e.setContent(html_eec90777ecd07738bd70a88f51f2ff3f);
+            
+        
+
+        marker_4fc89d24f3828bacd91fdd2c083e3c03.bindPopup(popup_431795bab660d3711cc88d0ab6d4a45e)
+        ;
+
+        
+    
+    
+            marker_4fc89d24f3828bacd91fdd2c083e3c03.bindTooltip(
+                `<div>
+                     12.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_12121724aef92e5451bf5bd9a9bada70 = L.marker(
+                [50.9292419, 5.3373425],
+                {}
+            ).addTo(marker_cluster_76d8127cda66f2811d7beb274892bbd7);
+        
+    
+        var popup_db93a153527b3437a694d08cee93d8a4 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_cd4b9c05bd690c44c8e1041458cccf3e = $(`<div id="html_cd4b9c05bd690c44c8e1041458cccf3e" style="width: 100.0%; height: 100.0%;">     Price: 11.99 €<br>     Nr of options: 1<br>        </div>`)[0];
+                popup_db93a153527b3437a694d08cee93d8a4.setContent(html_cd4b9c05bd690c44c8e1041458cccf3e);
+            
+        
+
+        marker_12121724aef92e5451bf5bd9a9bada70.bindPopup(popup_db93a153527b3437a694d08cee93d8a4)
+        ;
+
+        
+    
+    
+            marker_12121724aef92e5451bf5bd9a9bada70.bindTooltip(
+                `<div>
+                     11.99
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2d6f393a207d52787a0dfa627c38177e = L.marker(
+                [50.8260794, 3.2378919],
+                {}
+            ).addTo(marker_cluster_76d8127cda66f2811d7beb274892bbd7);
+        
+    
+        var popup_440379a7a8caf943c9bdcf9d721c81fc = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_df66399647575056ee75e13f500a1b97 = $(`<div id="html_df66399647575056ee75e13f500a1b97" style="width: 100.0%; height: 100.0%;">     Price: 11.9 €<br>     Nr of options: 3<br>        </div>`)[0];
+                popup_440379a7a8caf943c9bdcf9d721c81fc.setContent(html_df66399647575056ee75e13f500a1b97);
+            
+        
+
+        marker_2d6f393a207d52787a0dfa627c38177e.bindPopup(popup_440379a7a8caf943c9bdcf9d721c81fc)
+        ;
+
+        
+    
+    
+            marker_2d6f393a207d52787a0dfa627c38177e.bindTooltip(
+                `<div>
+                     11.9
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_63f499c5bcc37284e2652804c2b0a2d2 = L.marker(
+                [51.049376, 3.730604],
+                {}
+            ).addTo(marker_cluster_76d8127cda66f2811d7beb274892bbd7);
+        
+    
+        var popup_1dc5aa123bdfe85f78aa845af199aa22 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_fe1b313e10442513bcf83a719e681a73 = $(`<div id="html_fe1b313e10442513bcf83a719e681a73" style="width: 100.0%; height: 100.0%;">     Price: 11.9 €<br>     Nr of options: 3<br>        </div>`)[0];
+                popup_1dc5aa123bdfe85f78aa845af199aa22.setContent(html_fe1b313e10442513bcf83a719e681a73);
+            
+        
+
+        marker_63f499c5bcc37284e2652804c2b0a2d2.bindPopup(popup_1dc5aa123bdfe85f78aa845af199aa22)
+        ;
+
+        
+    
+    
+            marker_63f499c5bcc37284e2652804c2b0a2d2.bindTooltip(
+                `<div>
+                     11.9
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a19992826b11167487ae33255a88aca7 = L.marker(
+                [51.1968333, 4.4580978],
+                {}
+            ).addTo(marker_cluster_76d8127cda66f2811d7beb274892bbd7);
+        
+    
+        var popup_34942efd17e8a0d7df912c1156cc07d8 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_6381252058a363822d05aa21fd9fa8ae = $(`<div id="html_6381252058a363822d05aa21fd9fa8ae" style="width: 100.0%; height: 100.0%;">     Price: 11.62 €<br>     Nr of options: 9<br>        </div>`)[0];
+                popup_34942efd17e8a0d7df912c1156cc07d8.setContent(html_6381252058a363822d05aa21fd9fa8ae);
+            
+        
+
+        marker_a19992826b11167487ae33255a88aca7.bindPopup(popup_34942efd17e8a0d7df912c1156cc07d8)
+        ;
+
+        
+    
+    
+            marker_a19992826b11167487ae33255a88aca7.bindTooltip(
+                `<div>
+                     11.62
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9ef1e0b7debf5aa9680e9ca79ad32c84 = L.marker(
+                [51.1987497, 3.1889283],
+                {}
+            ).addTo(marker_cluster_76d8127cda66f2811d7beb274892bbd7);
+        
+    
+        var popup_e98df94bbd0992940553473e5abf0f49 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_a955afa0de4a9dc9d9de798c34c55be9 = $(`<div id="html_a955afa0de4a9dc9d9de798c34c55be9" style="width: 100.0%; height: 100.0%;">     Price: 11.5 €<br>     Nr of options: 6<br>        </div>`)[0];
+                popup_e98df94bbd0992940553473e5abf0f49.setContent(html_a955afa0de4a9dc9d9de798c34c55be9);
+            
+        
+
+        marker_9ef1e0b7debf5aa9680e9ca79ad32c84.bindPopup(popup_e98df94bbd0992940553473e5abf0f49)
+        ;
+
+        
+    
+    
+            marker_9ef1e0b7debf5aa9680e9ca79ad32c84.bindTooltip(
+                `<div>
+                     11.5
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c7c8a877b6b8ef4edf99f0c9c348e23d = L.marker(
+                [50.9313569, 5.3401621],
+                {}
+            ).addTo(marker_cluster_76d8127cda66f2811d7beb274892bbd7);
+        
+    
+        var popup_f6044b70cebe6ecaa9288594978e1988 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_aecab48bb624252b91536f621df0a84e = $(`<div id="html_aecab48bb624252b91536f621df0a84e" style="width: 100.0%; height: 100.0%;">     Price: 11.5 €<br>     Nr of options: 2<br>        </div>`)[0];
+                popup_f6044b70cebe6ecaa9288594978e1988.setContent(html_aecab48bb624252b91536f621df0a84e);
+            
+        
+
+        marker_c7c8a877b6b8ef4edf99f0c9c348e23d.bindPopup(popup_f6044b70cebe6ecaa9288594978e1988)
+        ;
+
+        
+    
+    
+            marker_c7c8a877b6b8ef4edf99f0c9c348e23d.bindTooltip(
+                `<div>
+                     11.5
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5abae0eb4a767b24300da1883f0f3abc = L.marker(
+                [50.93069190000001, 5.3396605],
+                {}
+            ).addTo(marker_cluster_76d8127cda66f2811d7beb274892bbd7);
+        
+    
+        var popup_116a0b4b60b9a15ec7a81c5e4ffbd67f = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_1f252d42a1fd35def4923beab9c33657 = $(`<div id="html_1f252d42a1fd35def4923beab9c33657" style="width: 100.0%; height: 100.0%;">     Price: 11.5 €<br>     Nr of options: 3<br>        </div>`)[0];
+                popup_116a0b4b60b9a15ec7a81c5e4ffbd67f.setContent(html_1f252d42a1fd35def4923beab9c33657);
+            
+        
+
+        marker_5abae0eb4a767b24300da1883f0f3abc.bindPopup(popup_116a0b4b60b9a15ec7a81c5e4ffbd67f)
+        ;
+
+        
+    
+    
+            marker_5abae0eb4a767b24300da1883f0f3abc.bindTooltip(
+                `<div>
+                     11.5
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c33c8960007ce68c1584b1cadeae67a8 = L.marker(
+                [51.0268966, 3.7218444],
+                {}
+            ).addTo(marker_cluster_76d8127cda66f2811d7beb274892bbd7);
+        
+    
+        var popup_45be33e1e071dfc362a78ad5c900ee56 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_ad26bf51bf70ce0b35d06f60137319a5 = $(`<div id="html_ad26bf51bf70ce0b35d06f60137319a5" style="width: 100.0%; height: 100.0%;">     Price: 11.45 €<br>     Nr of options: 3<br>        </div>`)[0];
+                popup_45be33e1e071dfc362a78ad5c900ee56.setContent(html_ad26bf51bf70ce0b35d06f60137319a5);
+            
+        
+
+        marker_c33c8960007ce68c1584b1cadeae67a8.bindPopup(popup_45be33e1e071dfc362a78ad5c900ee56)
+        ;
+
+        
+    
+    
+            marker_c33c8960007ce68c1584b1cadeae67a8.bindTooltip(
+                `<div>
+                     11.45
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2a468130d3a3f6b8a6ce645ec266891c = L.marker(
+                [50.98023200000001, 5.4917294],
+                {}
+            ).addTo(marker_cluster_76d8127cda66f2811d7beb274892bbd7);
+        
+    
+        var popup_dbfe3e2be6d252c44605e19db3dc26c2 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_e3ea8dbac014a010bd88abeb18c1f7ea = $(`<div id="html_e3ea8dbac014a010bd88abeb18c1f7ea" style="width: 100.0%; height: 100.0%;">     Price: 11.33 €<br>     Nr of options: 3<br>        </div>`)[0];
+                popup_dbfe3e2be6d252c44605e19db3dc26c2.setContent(html_e3ea8dbac014a010bd88abeb18c1f7ea);
+            
+        
+
+        marker_2a468130d3a3f6b8a6ce645ec266891c.bindPopup(popup_dbfe3e2be6d252c44605e19db3dc26c2)
+        ;
+
+        
+    
+    
+            marker_2a468130d3a3f6b8a6ce645ec266891c.bindTooltip(
+                `<div>
+                     11.33
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9d4bda0f29351bee46ea2bdc95aff82f = L.marker(
+                [51.1735923, 4.4444482],
+                {}
+            ).addTo(marker_cluster_76d8127cda66f2811d7beb274892bbd7);
+        
+    
+        var popup_a13fa9109eab425272f4a616f1a3490a = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_c751559d3050a3c1e3e464dd0a886f82 = $(`<div id="html_c751559d3050a3c1e3e464dd0a886f82" style="width: 100.0%; height: 100.0%;">     Price: 11.2 €<br>     Nr of options: 2<br>        </div>`)[0];
+                popup_a13fa9109eab425272f4a616f1a3490a.setContent(html_c751559d3050a3c1e3e464dd0a886f82);
+            
+        
+
+        marker_9d4bda0f29351bee46ea2bdc95aff82f.bindPopup(popup_a13fa9109eab425272f4a616f1a3490a)
+        ;
+
+        
+    
+    
+            marker_9d4bda0f29351bee46ea2bdc95aff82f.bindTooltip(
+                `<div>
+                     11.2
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ec11f9004e0887b9d0eda3df92604ed2 = L.marker(
+                [51.0535273, 3.7217288],
+                {}
+            ).addTo(marker_cluster_76d8127cda66f2811d7beb274892bbd7);
+        
+    
+        var popup_3c94eb894f0cf6c3df751cf521dc6ef8 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_edbdbaaeba7e419d65910cd557ea1522 = $(`<div id="html_edbdbaaeba7e419d65910cd557ea1522" style="width: 100.0%; height: 100.0%;">     Price: 11.17 €<br>     Nr of options: 3<br>        </div>`)[0];
+                popup_3c94eb894f0cf6c3df751cf521dc6ef8.setContent(html_edbdbaaeba7e419d65910cd557ea1522);
+            
+        
+
+        marker_ec11f9004e0887b9d0eda3df92604ed2.bindPopup(popup_3c94eb894f0cf6c3df751cf521dc6ef8)
+        ;
+
+        
+    
+    
+            marker_ec11f9004e0887b9d0eda3df92604ed2.bindTooltip(
+                `<div>
+                     11.17
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_71f18423640ffc20f019afc2545eec24 = L.marker(
+                [51.06218699999999, 3.7498953],
+                {}
+            ).addTo(marker_cluster_76d8127cda66f2811d7beb274892bbd7);
+        
+    
+        var popup_edba7c616761e8d37af603db601a4518 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_c9f91610de8d1a15c09f8e92cb20103b = $(`<div id="html_c9f91610de8d1a15c09f8e92cb20103b" style="width: 100.0%; height: 100.0%;">     Price: 11.0 €<br>     Nr of options: 2<br>        </div>`)[0];
+                popup_edba7c616761e8d37af603db601a4518.setContent(html_c9f91610de8d1a15c09f8e92cb20103b);
+            
+        
+
+        marker_71f18423640ffc20f019afc2545eec24.bindPopup(popup_edba7c616761e8d37af603db601a4518)
+        ;
+
+        
+    
+    
+            marker_71f18423640ffc20f019afc2545eec24.bindTooltip(
+                `<div>
+                     11.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ca320328d55f18df2b9591458ade7fcf = L.marker(
+                [51.20622773, 3.218068992],
+                {}
+            ).addTo(marker_cluster_76d8127cda66f2811d7beb274892bbd7);
+        
+    
+        var popup_f15de04a6c01e56b4f4c29e365420ff3 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_e6d1cc68ed4430238a4bd3584b1d7988 = $(`<div id="html_e6d1cc68ed4430238a4bd3584b1d7988" style="width: 100.0%; height: 100.0%;">     Price: 11.0 €<br>     Nr of options: 1<br>        </div>`)[0];
+                popup_f15de04a6c01e56b4f4c29e365420ff3.setContent(html_e6d1cc68ed4430238a4bd3584b1d7988);
+            
+        
+
+        marker_ca320328d55f18df2b9591458ade7fcf.bindPopup(popup_f15de04a6c01e56b4f4c29e365420ff3)
+        ;
+
+        
+    
+    
+            marker_ca320328d55f18df2b9591458ade7fcf.bindTooltip(
+                `<div>
+                     11.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_aff9efd1f176209f6108c7d44eb25fb8 = L.marker(
+                [51.203775, 3.208446],
+                {}
+            ).addTo(marker_cluster_76d8127cda66f2811d7beb274892bbd7);
+        
+    
+        var popup_8e4120bc715b723fef0a1aac5e97fff8 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_244e917c903533687647d9578f59c7ad = $(`<div id="html_244e917c903533687647d9578f59c7ad" style="width: 100.0%; height: 100.0%;">     Price: 11.0 €<br>     Nr of options: 1<br>        </div>`)[0];
+                popup_8e4120bc715b723fef0a1aac5e97fff8.setContent(html_244e917c903533687647d9578f59c7ad);
+            
+        
+
+        marker_aff9efd1f176209f6108c7d44eb25fb8.bindPopup(popup_8e4120bc715b723fef0a1aac5e97fff8)
+        ;
+
+        
+    
+    
+            marker_aff9efd1f176209f6108c7d44eb25fb8.bindTooltip(
+                `<div>
+                     11.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7f7f18b56be34dd1068bef99f0a7f90b = L.marker(
+                [51.2192348, 4.4203085],
+                {}
+            ).addTo(marker_cluster_76d8127cda66f2811d7beb274892bbd7);
+        
+    
+        var popup_6231d3a04128ce3306f03bc084eab2ee = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_0cb325905fe92ba8d68e7320e83a030d = $(`<div id="html_0cb325905fe92ba8d68e7320e83a030d" style="width: 100.0%; height: 100.0%;">     Price: 10.95 €<br>     Nr of options: 4<br>        </div>`)[0];
+                popup_6231d3a04128ce3306f03bc084eab2ee.setContent(html_0cb325905fe92ba8d68e7320e83a030d);
+            
+        
+
+        marker_7f7f18b56be34dd1068bef99f0a7f90b.bindPopup(popup_6231d3a04128ce3306f03bc084eab2ee)
+        ;
+
+        
+    
+    
+            marker_7f7f18b56be34dd1068bef99f0a7f90b.bindTooltip(
+                `<div>
+                     10.95
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3e25426be34def59c3d47550d8518b75 = L.marker(
+                [50.9666456, 5.5002103],
+                {}
+            ).addTo(marker_cluster_76d8127cda66f2811d7beb274892bbd7);
+        
+    
+        var popup_c774976520522e754aa34e0a1c94c77f = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_bfa5a1a7d93e08d3a28626c12c1e0034 = $(`<div id="html_bfa5a1a7d93e08d3a28626c12c1e0034" style="width: 100.0%; height: 100.0%;">     Price: 10.67 €<br>     Nr of options: 3<br>        </div>`)[0];
+                popup_c774976520522e754aa34e0a1c94c77f.setContent(html_bfa5a1a7d93e08d3a28626c12c1e0034);
+            
+        
+
+        marker_3e25426be34def59c3d47550d8518b75.bindPopup(popup_c774976520522e754aa34e0a1c94c77f)
+        ;
+
+        
+    
+    
+            marker_3e25426be34def59c3d47550d8518b75.bindTooltip(
+                `<div>
+                     10.67
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f16515e783bcb8dfadfea067944b9fb7 = L.marker(
+                [51.0415614, 3.7294274],
+                {}
+            ).addTo(marker_cluster_76d8127cda66f2811d7beb274892bbd7);
+        
+    
+        var popup_f186a71b20a53dcc95d86ed2b84f4ca2 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_8c43b565f86a1cb6687d8d6b7280e456 = $(`<div id="html_8c43b565f86a1cb6687d8d6b7280e456" style="width: 100.0%; height: 100.0%;">     Price: 10.67 €<br>     Nr of options: 12<br>        </div>`)[0];
+                popup_f186a71b20a53dcc95d86ed2b84f4ca2.setContent(html_8c43b565f86a1cb6687d8d6b7280e456);
+            
+        
+
+        marker_f16515e783bcb8dfadfea067944b9fb7.bindPopup(popup_f186a71b20a53dcc95d86ed2b84f4ca2)
+        ;
+
+        
+    
+    
+            marker_f16515e783bcb8dfadfea067944b9fb7.bindTooltip(
+                `<div>
+                     10.67
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_74376061cab9693f032ff0353b39dc8f = L.marker(
+                [51.2251981, 3.2314266],
+                {}
+            ).addTo(marker_cluster_76d8127cda66f2811d7beb274892bbd7);
+        
+    
+        var popup_20cbebdb8ff33736fa745ac557e50f27 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_cf67d8d22dad57f8a17c5f3645e04649 = $(`<div id="html_cf67d8d22dad57f8a17c5f3645e04649" style="width: 100.0%; height: 100.0%;">     Price: 10.62 €<br>     Nr of options: 4<br>        </div>`)[0];
+                popup_20cbebdb8ff33736fa745ac557e50f27.setContent(html_cf67d8d22dad57f8a17c5f3645e04649);
+            
+        
+
+        marker_74376061cab9693f032ff0353b39dc8f.bindPopup(popup_20cbebdb8ff33736fa745ac557e50f27)
+        ;
+
+        
+    
+    
+            marker_74376061cab9693f032ff0353b39dc8f.bindTooltip(
+                `<div>
+                     10.62
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f7651f2e633551072f6825ff5fad9f08 = L.marker(
+                [51.2078309, 4.389232199999999],
+                {}
+            ).addTo(marker_cluster_76d8127cda66f2811d7beb274892bbd7);
+        
+    
+        var popup_8c04e66359340aed6bfd9c6ebfea8f2b = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_c308e8411d0852caab1cd0f510c1826d = $(`<div id="html_c308e8411d0852caab1cd0f510c1826d" style="width: 100.0%; height: 100.0%;">     Price: 10.6 €<br>     Nr of options: 3<br>        </div>`)[0];
+                popup_8c04e66359340aed6bfd9c6ebfea8f2b.setContent(html_c308e8411d0852caab1cd0f510c1826d);
+            
+        
+
+        marker_f7651f2e633551072f6825ff5fad9f08.bindPopup(popup_8c04e66359340aed6bfd9c6ebfea8f2b)
+        ;
+
+        
+    
+    
+            marker_f7651f2e633551072f6825ff5fad9f08.bindTooltip(
+                `<div>
+                     10.6
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4735d66243eced83183609619c128358 = L.marker(
+                [50.8686357, 4.3122373],
+                {}
+            ).addTo(marker_cluster_76d8127cda66f2811d7beb274892bbd7);
+        
+    
+        var popup_f76e2e0f12c02bd73ce8ff9806ec0c24 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_da40477052ffb2f8d722b9193cddac47 = $(`<div id="html_da40477052ffb2f8d722b9193cddac47" style="width: 100.0%; height: 100.0%;">     Price: 10.47 €<br>     Nr of options: 14<br>        </div>`)[0];
+                popup_f76e2e0f12c02bd73ce8ff9806ec0c24.setContent(html_da40477052ffb2f8d722b9193cddac47);
+            
+        
+
+        marker_4735d66243eced83183609619c128358.bindPopup(popup_f76e2e0f12c02bd73ce8ff9806ec0c24)
+        ;
+
+        
+    
+    
+            marker_4735d66243eced83183609619c128358.bindTooltip(
+                `<div>
+                     10.47
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0f0ff99ceacae9902e965be513504dac = L.marker(
+                [51.0290669, 4.4883672],
+                {}
+            ).addTo(marker_cluster_76d8127cda66f2811d7beb274892bbd7);
+        
+    
+        var popup_5838e7116886e3b943bdc5adaac33c4e = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_b04deadbe59f18547f2037019f024c12 = $(`<div id="html_b04deadbe59f18547f2037019f024c12" style="width: 100.0%; height: 100.0%;">     Price: 10.29 €<br>     Nr of options: 7<br>        </div>`)[0];
+                popup_5838e7116886e3b943bdc5adaac33c4e.setContent(html_b04deadbe59f18547f2037019f024c12);
+            
+        
+
+        marker_0f0ff99ceacae9902e965be513504dac.bindPopup(popup_5838e7116886e3b943bdc5adaac33c4e)
+        ;
+
+        
+    
+    
+            marker_0f0ff99ceacae9902e965be513504dac.bindTooltip(
+                `<div>
+                     10.29
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_be4a5c11a52acb7f3164bd59a3c51fc8 = L.marker(
+                [50.7871651, 4.3295849],
+                {}
+            ).addTo(marker_cluster_76d8127cda66f2811d7beb274892bbd7);
+        
+    
+        var popup_c6b5d010c1f207796c35c01f01e1fe89 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_b5dc6af33043c21d3c4b8eb8e8c68552 = $(`<div id="html_b5dc6af33043c21d3c4b8eb8e8c68552" style="width: 100.0%; height: 100.0%;">     Price: 10.22 €<br>     Nr of options: 2<br>        </div>`)[0];
+                popup_c6b5d010c1f207796c35c01f01e1fe89.setContent(html_b5dc6af33043c21d3c4b8eb8e8c68552);
+            
+        
+
+        marker_be4a5c11a52acb7f3164bd59a3c51fc8.bindPopup(popup_c6b5d010c1f207796c35c01f01e1fe89)
+        ;
+
+        
+    
+    
+            marker_be4a5c11a52acb7f3164bd59a3c51fc8.bindTooltip(
+                `<div>
+                     10.22
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cddad6e53dcb5d218c25f9488feafbf3 = L.marker(
+                [51.0402795, 3.7254889],
+                {}
+            ).addTo(marker_cluster_76d8127cda66f2811d7beb274892bbd7);
+        
+    
+        var popup_229b1875807eefc4de1028d24b92274f = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_90fc69e83efaded137b7ea8bf52e7586 = $(`<div id="html_90fc69e83efaded137b7ea8bf52e7586" style="width: 100.0%; height: 100.0%;">     Price: 10.2 €<br>     Nr of options: 6<br>        </div>`)[0];
+                popup_229b1875807eefc4de1028d24b92274f.setContent(html_90fc69e83efaded137b7ea8bf52e7586);
+            
+        
+
+        marker_cddad6e53dcb5d218c25f9488feafbf3.bindPopup(popup_229b1875807eefc4de1028d24b92274f)
+        ;
+
+        
+    
+    
+            marker_cddad6e53dcb5d218c25f9488feafbf3.bindTooltip(
+                `<div>
+                     10.2
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9289d79855049553f6f480c90ca6ce61 = L.marker(
+                [51.0361601, 4.475635899999999],
+                {}
+            ).addTo(marker_cluster_76d8127cda66f2811d7beb274892bbd7);
+        
+    
+        var popup_5f80e5542708b05d3a9e496c0da3dd1f = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_68176bb037badfdccaa054bb0215fddd = $(`<div id="html_68176bb037badfdccaa054bb0215fddd" style="width: 100.0%; height: 100.0%;">     Price: 10.07 €<br>     Nr of options: 14<br>        </div>`)[0];
+                popup_5f80e5542708b05d3a9e496c0da3dd1f.setContent(html_68176bb037badfdccaa054bb0215fddd);
+            
+        
+
+        marker_9289d79855049553f6f480c90ca6ce61.bindPopup(popup_5f80e5542708b05d3a9e496c0da3dd1f)
+        ;
+
+        
+    
+    
+            marker_9289d79855049553f6f480c90ca6ce61.bindTooltip(
+                `<div>
+                     10.07
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ca5b3c3a9bae2d95eaeade5b2623f00a = L.marker(
+                [50.8252362, 3.2645729],
+                {}
+            ).addTo(marker_cluster_76d8127cda66f2811d7beb274892bbd7);
+        
+    
+        var popup_3b793b4c38968237664df93f14048e93 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_0140bd84400207ad42a82449eb237525 = $(`<div id="html_0140bd84400207ad42a82449eb237525" style="width: 100.0%; height: 100.0%;">     Price: 10.0 €<br>     Nr of options: 2<br>        </div>`)[0];
+                popup_3b793b4c38968237664df93f14048e93.setContent(html_0140bd84400207ad42a82449eb237525);
+            
+        
+
+        marker_ca5b3c3a9bae2d95eaeade5b2623f00a.bindPopup(popup_3b793b4c38968237664df93f14048e93)
+        ;
+
+        
+    
+    
+            marker_ca5b3c3a9bae2d95eaeade5b2623f00a.bindTooltip(
+                `<div>
+                     10.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7b5b0ec0ffd08da21515c1392a497053 = L.marker(
+                [50.8820908, 4.713553999999999],
+                {}
+            ).addTo(marker_cluster_76d8127cda66f2811d7beb274892bbd7);
+        
+    
+        var popup_22167a1fabcc97bf5a874666b75104c8 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_6d0adab7b9045a39ff841d624c41506f = $(`<div id="html_6d0adab7b9045a39ff841d624c41506f" style="width: 100.0%; height: 100.0%;">     Price: 10.0 €<br>     Nr of options: 3<br>        </div>`)[0];
+                popup_22167a1fabcc97bf5a874666b75104c8.setContent(html_6d0adab7b9045a39ff841d624c41506f);
+            
+        
+
+        marker_7b5b0ec0ffd08da21515c1392a497053.bindPopup(popup_22167a1fabcc97bf5a874666b75104c8)
+        ;
+
+        
+    
+    
+            marker_7b5b0ec0ffd08da21515c1392a497053.bindTooltip(
+                `<div>
+                     10.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5ff53278de54b3df99669415c5328e39 = L.marker(
+                [50.8039908, 4.3364598],
+                {}
+            ).addTo(marker_cluster_76d8127cda66f2811d7beb274892bbd7);
+        
+    
+        var popup_5c848bbdb26ff380007073806023792e = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_32918a4be37abe0814967bed2d98c24b = $(`<div id="html_32918a4be37abe0814967bed2d98c24b" style="width: 100.0%; height: 100.0%;">     Price: 10.0 €<br>     Nr of options: 1<br>        </div>`)[0];
+                popup_5c848bbdb26ff380007073806023792e.setContent(html_32918a4be37abe0814967bed2d98c24b);
+            
+        
+
+        marker_5ff53278de54b3df99669415c5328e39.bindPopup(popup_5c848bbdb26ff380007073806023792e)
+        ;
+
+        
+    
+    
+            marker_5ff53278de54b3df99669415c5328e39.bindTooltip(
+                `<div>
+                     10.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_22cd3406003710b64ec9facd732267bb = L.marker(
+                [51.2077784, 4.3887721],
+                {}
+            ).addTo(marker_cluster_76d8127cda66f2811d7beb274892bbd7);
+        
+    
+        var popup_859baed0b7424c85d1bb946ee0905bd5 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_da8bc844ae4b460e4473729efd6bfc14 = $(`<div id="html_da8bc844ae4b460e4473729efd6bfc14" style="width: 100.0%; height: 100.0%;">     Price: 10.0 €<br>     Nr of options: 7<br>        </div>`)[0];
+                popup_859baed0b7424c85d1bb946ee0905bd5.setContent(html_da8bc844ae4b460e4473729efd6bfc14);
+            
+        
+
+        marker_22cd3406003710b64ec9facd732267bb.bindPopup(popup_859baed0b7424c85d1bb946ee0905bd5)
+        ;
+
+        
+    
+    
+            marker_22cd3406003710b64ec9facd732267bb.bindTooltip(
+                `<div>
+                     10.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b67ea93787dee66514eabc15ef2840b1 = L.marker(
+                [51.2094748, 3.22894],
+                {}
+            ).addTo(marker_cluster_76d8127cda66f2811d7beb274892bbd7);
+        
+    
+        var popup_975941d1ad32ffed972726e4839b764c = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_a6dbf420b87f7c3c7c01f950917dcd32 = $(`<div id="html_a6dbf420b87f7c3c7c01f950917dcd32" style="width: 100.0%; height: 100.0%;">     Price: 10.0 €<br>     Nr of options: 2<br>        </div>`)[0];
+                popup_975941d1ad32ffed972726e4839b764c.setContent(html_a6dbf420b87f7c3c7c01f950917dcd32);
+            
+        
+
+        marker_b67ea93787dee66514eabc15ef2840b1.bindPopup(popup_975941d1ad32ffed972726e4839b764c)
+        ;
+
+        
+    
+    
+            marker_b67ea93787dee66514eabc15ef2840b1.bindTooltip(
+                `<div>
+                     10.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_46ba214e02e70facb0944950b1477d77 = L.marker(
+                [51.060491, 3.7103738],
+                {}
+            ).addTo(marker_cluster_76d8127cda66f2811d7beb274892bbd7);
+        
+    
+        var popup_dfdca452db36a38b03abb3ce4abbeb9b = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_18c45ea8f0360f11e9f28a45478e3084 = $(`<div id="html_18c45ea8f0360f11e9f28a45478e3084" style="width: 100.0%; height: 100.0%;">     Price: 10.0 €<br>     Nr of options: 1<br>        </div>`)[0];
+                popup_dfdca452db36a38b03abb3ce4abbeb9b.setContent(html_18c45ea8f0360f11e9f28a45478e3084);
+            
+        
+
+        marker_46ba214e02e70facb0944950b1477d77.bindPopup(popup_dfdca452db36a38b03abb3ce4abbeb9b)
+        ;
+
+        
+    
+    
+            marker_46ba214e02e70facb0944950b1477d77.bindTooltip(
+                `<div>
+                     10.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_beb5a06444c741f79d764807108d1121 = L.marker(
+                [51.2190249, 2.9078665],
+                {}
+            ).addTo(marker_cluster_76d8127cda66f2811d7beb274892bbd7);
+        
+    
+        var popup_b2b9328f0f6b47d1efde098c29d7f378 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_477771df393a045dd0de8022d87b0554 = $(`<div id="html_477771df393a045dd0de8022d87b0554" style="width: 100.0%; height: 100.0%;">     Price: 10.0 €<br>     Nr of options: 1<br>        </div>`)[0];
+                popup_b2b9328f0f6b47d1efde098c29d7f378.setContent(html_477771df393a045dd0de8022d87b0554);
+            
+        
+
+        marker_beb5a06444c741f79d764807108d1121.bindPopup(popup_b2b9328f0f6b47d1efde098c29d7f378)
+        ;
+
+        
+    
+    
+            marker_beb5a06444c741f79d764807108d1121.bindTooltip(
+                `<div>
+                     10.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7c2846a1810c8361ae4c9a2f2fd56cea = L.marker(
+                [51.23376400000001, 2.9161473],
+                {}
+            ).addTo(marker_cluster_76d8127cda66f2811d7beb274892bbd7);
+        
+    
+        var popup_720c013ee8d6840df7d7507ecca97d93 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_511b99236b3a99ed3a68c08cdb97bbbf = $(`<div id="html_511b99236b3a99ed3a68c08cdb97bbbf" style="width: 100.0%; height: 100.0%;">     Price: 10.0 €<br>     Nr of options: 1<br>        </div>`)[0];
+                popup_720c013ee8d6840df7d7507ecca97d93.setContent(html_511b99236b3a99ed3a68c08cdb97bbbf);
+            
+        
+
+        marker_7c2846a1810c8361ae4c9a2f2fd56cea.bindPopup(popup_720c013ee8d6840df7d7507ecca97d93)
+        ;
+
+        
+    
+    
+            marker_7c2846a1810c8361ae4c9a2f2fd56cea.bindTooltip(
+                `<div>
+                     10.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_63613e546b2d292708c14160ce56322d = L.marker(
+                [51.20080978, 3.245848471],
+                {}
+            ).addTo(marker_cluster_76d8127cda66f2811d7beb274892bbd7);
+        
+    
+        var popup_cace92a8471dbea1fca6770e7171a742 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_3f24f29fa00e9de08c6766cc03c5b523 = $(`<div id="html_3f24f29fa00e9de08c6766cc03c5b523" style="width: 100.0%; height: 100.0%;">     Price: 10.0 €<br>     Nr of options: 2<br>        </div>`)[0];
+                popup_cace92a8471dbea1fca6770e7171a742.setContent(html_3f24f29fa00e9de08c6766cc03c5b523);
+            
+        
+
+        marker_63613e546b2d292708c14160ce56322d.bindPopup(popup_cace92a8471dbea1fca6770e7171a742)
+        ;
+
+        
+    
+    
+            marker_63613e546b2d292708c14160ce56322d.bindTooltip(
+                `<div>
+                     10.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0777e1d76f0937fc9ed29ebe81938e7b = L.marker(
+                [50.8773949, 4.703391],
+                {}
+            ).addTo(marker_cluster_76d8127cda66f2811d7beb274892bbd7);
+        
+    
+        var popup_cb2518a6ff96268ce5ffd619606e55af = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_93adc1051bbf60c75df1df70ed7c3e46 = $(`<div id="html_93adc1051bbf60c75df1df70ed7c3e46" style="width: 100.0%; height: 100.0%;">     Price: 10.0 €<br>     Nr of options: 1<br>        </div>`)[0];
+                popup_cb2518a6ff96268ce5ffd619606e55af.setContent(html_93adc1051bbf60c75df1df70ed7c3e46);
+            
+        
+
+        marker_0777e1d76f0937fc9ed29ebe81938e7b.bindPopup(popup_cb2518a6ff96268ce5ffd619606e55af)
+        ;
+
+        
+    
+    
+            marker_0777e1d76f0937fc9ed29ebe81938e7b.bindTooltip(
+                `<div>
+                     10.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5cee5afe8156b33464a6ccd73b37d5f2 = L.marker(
+                [51.2100923, 3.2231422],
+                {}
+            ).addTo(marker_cluster_76d8127cda66f2811d7beb274892bbd7);
+        
+    
+        var popup_621e624aebf419d3b44ce568b7b700d4 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_b304f4ad1750124bdad60e549abb0459 = $(`<div id="html_b304f4ad1750124bdad60e549abb0459" style="width: 100.0%; height: 100.0%;">     Price: 9.88 €<br>     Nr of options: 6<br>        </div>`)[0];
+                popup_621e624aebf419d3b44ce568b7b700d4.setContent(html_b304f4ad1750124bdad60e549abb0459);
+            
+        
+
+        marker_5cee5afe8156b33464a6ccd73b37d5f2.bindPopup(popup_621e624aebf419d3b44ce568b7b700d4)
+        ;
+
+        
+    
+    
+            marker_5cee5afe8156b33464a6ccd73b37d5f2.bindTooltip(
+                `<div>
+                     9.88
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ba13dcd0fcac0c4a8b150f24224365eb = L.marker(
+                [51.2069524, 4.415094799999999],
+                {}
+            ).addTo(marker_cluster_76d8127cda66f2811d7beb274892bbd7);
+        
+    
+        var popup_0f76b919bfb12e622d547f1aa4548788 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_4d99602afe94b550f4703381a34ed170 = $(`<div id="html_4d99602afe94b550f4703381a34ed170" style="width: 100.0%; height: 100.0%;">     Price: 9.86 €<br>     Nr of options: 7<br>        </div>`)[0];
+                popup_0f76b919bfb12e622d547f1aa4548788.setContent(html_4d99602afe94b550f4703381a34ed170);
+            
+        
+
+        marker_ba13dcd0fcac0c4a8b150f24224365eb.bindPopup(popup_0f76b919bfb12e622d547f1aa4548788)
+        ;
+
+        
+    
+    
+            marker_ba13dcd0fcac0c4a8b150f24224365eb.bindTooltip(
+                `<div>
+                     9.86
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0f6cf3da69c7445949ace3da9eaed9f3 = L.marker(
+                [51.2124675, 4.4076701],
+                {}
+            ).addTo(marker_cluster_76d8127cda66f2811d7beb274892bbd7);
+        
+    
+        var popup_461f0287cf92a20024edde112f83cdfb = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_1c6d142758e48cee0d416b1d974e3dc3 = $(`<div id="html_1c6d142758e48cee0d416b1d974e3dc3" style="width: 100.0%; height: 100.0%;">     Price: 9.81 €<br>     Nr of options: 8<br>        </div>`)[0];
+                popup_461f0287cf92a20024edde112f83cdfb.setContent(html_1c6d142758e48cee0d416b1d974e3dc3);
+            
+        
+
+        marker_0f6cf3da69c7445949ace3da9eaed9f3.bindPopup(popup_461f0287cf92a20024edde112f83cdfb)
+        ;
+
+        
+    
+    
+            marker_0f6cf3da69c7445949ace3da9eaed9f3.bindTooltip(
+                `<div>
+                     9.81
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1a25ee3b3c06bed48d7b67ea441f5b27 = L.marker(
+                [51.2221673, 4.435703],
+                {}
+            ).addTo(marker_cluster_76d8127cda66f2811d7beb274892bbd7);
+        
+    
+        var popup_ad38102e6899b063258e972b34fe9f27 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_93193c8ca84a013eeb1cc807ba20e8f4 = $(`<div id="html_93193c8ca84a013eeb1cc807ba20e8f4" style="width: 100.0%; height: 100.0%;">     Price: 9.75 €<br>     Nr of options: 2<br>        </div>`)[0];
+                popup_ad38102e6899b063258e972b34fe9f27.setContent(html_93193c8ca84a013eeb1cc807ba20e8f4);
+            
+        
+
+        marker_1a25ee3b3c06bed48d7b67ea441f5b27.bindPopup(popup_ad38102e6899b063258e972b34fe9f27)
+        ;
+
+        
+    
+    
+            marker_1a25ee3b3c06bed48d7b67ea441f5b27.bindTooltip(
+                `<div>
+                     9.75
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_17bc2b4c68c06df0c0e2885824f4d8b4 = L.marker(
+                [50.9008021, 4.3607906],
+                {}
+            ).addTo(marker_cluster_76d8127cda66f2811d7beb274892bbd7);
+        
+    
+        var popup_6fd70b022a4892a35c97c5a872a4ac2a = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_fc765ae9473cc150be7315285ef5c667 = $(`<div id="html_fc765ae9473cc150be7315285ef5c667" style="width: 100.0%; height: 100.0%;">     Price: 9.75 €<br>     Nr of options: 1<br>        </div>`)[0];
+                popup_6fd70b022a4892a35c97c5a872a4ac2a.setContent(html_fc765ae9473cc150be7315285ef5c667);
+            
+        
+
+        marker_17bc2b4c68c06df0c0e2885824f4d8b4.bindPopup(popup_6fd70b022a4892a35c97c5a872a4ac2a)
+        ;
+
+        
+    
+    
+            marker_17bc2b4c68c06df0c0e2885824f4d8b4.bindTooltip(
+                `<div>
+                     9.75
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_de8de8d4443c6f917fca5c69147463b8 = L.marker(
+                [51.050273, 3.730271],
+                {}
+            ).addTo(marker_cluster_76d8127cda66f2811d7beb274892bbd7);
+        
+    
+        var popup_32df03e8c7e769548a2f84a94df717c5 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_3052bf64b66446dedbd98c3f89da048e = $(`<div id="html_3052bf64b66446dedbd98c3f89da048e" style="width: 100.0%; height: 100.0%;">     Price: 9.7 €<br>     Nr of options: 5<br>        </div>`)[0];
+                popup_32df03e8c7e769548a2f84a94df717c5.setContent(html_3052bf64b66446dedbd98c3f89da048e);
+            
+        
+
+        marker_de8de8d4443c6f917fca5c69147463b8.bindPopup(popup_32df03e8c7e769548a2f84a94df717c5)
+        ;
+
+        
+    
+    
+            marker_de8de8d4443c6f917fca5c69147463b8.bindTooltip(
+                `<div>
+                     9.7
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_295a3d93abf71952f18c25f176202ece = L.marker(
+                [50.83481310000001, 3.2514619],
+                {}
+            ).addTo(marker_cluster_76d8127cda66f2811d7beb274892bbd7);
+        
+    
+        var popup_b55c06f13803dcef68be640f7b188886 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_153d6a951be6478bcdbf9e3bedc1dfad = $(`<div id="html_153d6a951be6478bcdbf9e3bedc1dfad" style="width: 100.0%; height: 100.0%;">     Price: 9.67 €<br>     Nr of options: 3<br>        </div>`)[0];
+                popup_b55c06f13803dcef68be640f7b188886.setContent(html_153d6a951be6478bcdbf9e3bedc1dfad);
+            
+        
+
+        marker_295a3d93abf71952f18c25f176202ece.bindPopup(popup_b55c06f13803dcef68be640f7b188886)
+        ;
+
+        
+    
+    
+            marker_295a3d93abf71952f18c25f176202ece.bindTooltip(
+                `<div>
+                     9.67
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0b6d021e91d884d441d469151383537c = L.marker(
+                [51.2251116, 4.4047447],
+                {}
+            ).addTo(marker_cluster_76d8127cda66f2811d7beb274892bbd7);
+        
+    
+        var popup_def678c3c5f3808f8837da36353e4185 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_b309ff205078ae5b24e75fbd2db39857 = $(`<div id="html_b309ff205078ae5b24e75fbd2db39857" style="width: 100.0%; height: 100.0%;">     Price: 9.62 €<br>     Nr of options: 34<br>        </div>`)[0];
+                popup_def678c3c5f3808f8837da36353e4185.setContent(html_b309ff205078ae5b24e75fbd2db39857);
+            
+        
+
+        marker_0b6d021e91d884d441d469151383537c.bindPopup(popup_def678c3c5f3808f8837da36353e4185)
+        ;
+
+        
+    
+    
+            marker_0b6d021e91d884d441d469151383537c.bindTooltip(
+                `<div>
+                     9.62
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1ae673e3b02d75a19290ff009700dd55 = L.marker(
+                [51.20610413, 3.21791429],
+                {}
+            ).addTo(marker_cluster_76d8127cda66f2811d7beb274892bbd7);
+        
+    
+        var popup_5dbd993b62a44002508d350a6fd58568 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_623dac4c4e27f9c539e72d7fcc93f80a = $(`<div id="html_623dac4c4e27f9c539e72d7fcc93f80a" style="width: 100.0%; height: 100.0%;">     Price: 9.5 €<br>     Nr of options: 2<br>        </div>`)[0];
+                popup_5dbd993b62a44002508d350a6fd58568.setContent(html_623dac4c4e27f9c539e72d7fcc93f80a);
+            
+        
+
+        marker_1ae673e3b02d75a19290ff009700dd55.bindPopup(popup_5dbd993b62a44002508d350a6fd58568)
+        ;
+
+        
+    
+    
+            marker_1ae673e3b02d75a19290ff009700dd55.bindTooltip(
+                `<div>
+                     9.5
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1664edf5bc72da5527bd749a25714eca = L.marker(
+                [51.2094817, 3.2289341],
+                {}
+            ).addTo(marker_cluster_76d8127cda66f2811d7beb274892bbd7);
+        
+    
+        var popup_922598d13dd1ba547ef5e9eb6f9d800b = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_22b3caf955ffcbe8de83c09150c740df = $(`<div id="html_22b3caf955ffcbe8de83c09150c740df" style="width: 100.0%; height: 100.0%;">     Price: 9.5 €<br>     Nr of options: 2<br>        </div>`)[0];
+                popup_922598d13dd1ba547ef5e9eb6f9d800b.setContent(html_22b3caf955ffcbe8de83c09150c740df);
+            
+        
+
+        marker_1664edf5bc72da5527bd749a25714eca.bindPopup(popup_922598d13dd1ba547ef5e9eb6f9d800b)
+        ;
+
+        
+    
+    
+            marker_1664edf5bc72da5527bd749a25714eca.bindTooltip(
+                `<div>
+                     9.5
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9aaa0849e0c1b26f11ea21b9a1e7d1ff = L.marker(
+                [51.2074982, 4.4135897],
+                {}
+            ).addTo(marker_cluster_76d8127cda66f2811d7beb274892bbd7);
+        
+    
+        var popup_dde9f640c1b51088d76b8f3dcb114ef6 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_a749784d48fb57842686f09b3a797895 = $(`<div id="html_a749784d48fb57842686f09b3a797895" style="width: 100.0%; height: 100.0%;">     Price: 9.5 €<br>     Nr of options: 3<br>        </div>`)[0];
+                popup_dde9f640c1b51088d76b8f3dcb114ef6.setContent(html_a749784d48fb57842686f09b3a797895);
+            
+        
+
+        marker_9aaa0849e0c1b26f11ea21b9a1e7d1ff.bindPopup(popup_dde9f640c1b51088d76b8f3dcb114ef6)
+        ;
+
+        
+    
+    
+            marker_9aaa0849e0c1b26f11ea21b9a1e7d1ff.bindTooltip(
+                `<div>
+                     9.5
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_978b3d413e2b494df58b430c453176be = L.marker(
+                [50.8252855, 3.2649506],
+                {}
+            ).addTo(marker_cluster_76d8127cda66f2811d7beb274892bbd7);
+        
+    
+        var popup_ff655096aac4c688b682ff7edb1f308e = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_8c6781b31fafc8548969ca25ace18264 = $(`<div id="html_8c6781b31fafc8548969ca25ace18264" style="width: 100.0%; height: 100.0%;">     Price: 9.45 €<br>     Nr of options: 4<br>        </div>`)[0];
+                popup_ff655096aac4c688b682ff7edb1f308e.setContent(html_8c6781b31fafc8548969ca25ace18264);
+            
+        
+
+        marker_978b3d413e2b494df58b430c453176be.bindPopup(popup_ff655096aac4c688b682ff7edb1f308e)
+        ;
+
+        
+    
+    
+            marker_978b3d413e2b494df58b430c453176be.bindTooltip(
+                `<div>
+                     9.45
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cb25a9a7dbddaeda3ffc1f5a17b14405 = L.marker(
+                [51.203775, 3.208446],
+                {}
+            ).addTo(marker_cluster_76d8127cda66f2811d7beb274892bbd7);
+        
+    
+        var popup_72c6fca9c774112a54825af9b30d726c = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_5cc0e514b98f3d0f77fca1704e42ce09 = $(`<div id="html_5cc0e514b98f3d0f77fca1704e42ce09" style="width: 100.0%; height: 100.0%;">     Price: 9.4 €<br>     Nr of options: 4<br>        </div>`)[0];
+                popup_72c6fca9c774112a54825af9b30d726c.setContent(html_5cc0e514b98f3d0f77fca1704e42ce09);
+            
+        
+
+        marker_cb25a9a7dbddaeda3ffc1f5a17b14405.bindPopup(popup_72c6fca9c774112a54825af9b30d726c)
+        ;
+
+        
+    
+    
+            marker_cb25a9a7dbddaeda3ffc1f5a17b14405.bindTooltip(
+                `<div>
+                     9.4
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_dd9031a0270508ed6a1011ff0409a719 = L.marker(
+                [51.2085448, 3.2226075],
+                {}
+            ).addTo(marker_cluster_76d8127cda66f2811d7beb274892bbd7);
+        
+    
+        var popup_5b1a7d037652ac26737a1aa586abe48b = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_ca01232f94c7735e3bea220a140a6bfb = $(`<div id="html_ca01232f94c7735e3bea220a140a6bfb" style="width: 100.0%; height: 100.0%;">     Price: 9.33 €<br>     Nr of options: 3<br>        </div>`)[0];
+                popup_5b1a7d037652ac26737a1aa586abe48b.setContent(html_ca01232f94c7735e3bea220a140a6bfb);
+            
+        
+
+        marker_dd9031a0270508ed6a1011ff0409a719.bindPopup(popup_5b1a7d037652ac26737a1aa586abe48b)
+        ;
+
+        
+    
+    
+            marker_dd9031a0270508ed6a1011ff0409a719.bindTooltip(
+                `<div>
+                     9.33
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2cdc54f3e3cd91461e40871d5b708b18 = L.marker(
+                [51.018772, 4.4831088],
+                {}
+            ).addTo(marker_cluster_76d8127cda66f2811d7beb274892bbd7);
+        
+    
+        var popup_f55c21833953086c6559565a1bd47c61 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_b563cad7020c76be6858756ae44f8d2c = $(`<div id="html_b563cad7020c76be6858756ae44f8d2c" style="width: 100.0%; height: 100.0%;">     Price: 9.29 €<br>     Nr of options: 7<br>        </div>`)[0];
+                popup_f55c21833953086c6559565a1bd47c61.setContent(html_b563cad7020c76be6858756ae44f8d2c);
+            
+        
+
+        marker_2cdc54f3e3cd91461e40871d5b708b18.bindPopup(popup_f55c21833953086c6559565a1bd47c61)
+        ;
+
+        
+    
+    
+            marker_2cdc54f3e3cd91461e40871d5b708b18.bindTooltip(
+                `<div>
+                     9.29
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3bb6c97ffc9a07b5dbf218eaba01ec98 = L.marker(
+                [50.88036899999999, 4.7055851],
+                {}
+            ).addTo(marker_cluster_76d8127cda66f2811d7beb274892bbd7);
+        
+    
+        var popup_748ea24e39e2801b6b8a3e86f827506a = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_a1bc289737f1458e53bf6e52f02ef175 = $(`<div id="html_a1bc289737f1458e53bf6e52f02ef175" style="width: 100.0%; height: 100.0%;">     Price: 9.25 €<br>     Nr of options: 4<br>        </div>`)[0];
+                popup_748ea24e39e2801b6b8a3e86f827506a.setContent(html_a1bc289737f1458e53bf6e52f02ef175);
+            
+        
+
+        marker_3bb6c97ffc9a07b5dbf218eaba01ec98.bindPopup(popup_748ea24e39e2801b6b8a3e86f827506a)
+        ;
+
+        
+    
+    
+            marker_3bb6c97ffc9a07b5dbf218eaba01ec98.bindTooltip(
+                `<div>
+                     9.25
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_35a58a02d26d03690940d2a7546a71f2 = L.marker(
+                [51.20767739999999, 4.4650981],
+                {}
+            ).addTo(marker_cluster_76d8127cda66f2811d7beb274892bbd7);
+        
+    
+        var popup_b95bde43d627877fdeee72b8ec90f7d9 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_a93186550f5e9b14789193100c6d94c7 = $(`<div id="html_a93186550f5e9b14789193100c6d94c7" style="width: 100.0%; height: 100.0%;">     Price: 9.21 €<br>     Nr of options: 12<br>        </div>`)[0];
+                popup_b95bde43d627877fdeee72b8ec90f7d9.setContent(html_a93186550f5e9b14789193100c6d94c7);
+            
+        
+
+        marker_35a58a02d26d03690940d2a7546a71f2.bindPopup(popup_b95bde43d627877fdeee72b8ec90f7d9)
+        ;
+
+        
+    
+    
+            marker_35a58a02d26d03690940d2a7546a71f2.bindTooltip(
+                `<div>
+                     9.21
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d5fcee0d1003a0c7795c58dc5b006836 = L.marker(
+                [51.22128, 4.4026248],
+                {}
+            ).addTo(marker_cluster_76d8127cda66f2811d7beb274892bbd7);
+        
+    
+        var popup_34c55dfbb0ce25003da062c4ee27ac2b = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_f4bcf247b40c3d425588e08dc2fda67b = $(`<div id="html_f4bcf247b40c3d425588e08dc2fda67b" style="width: 100.0%; height: 100.0%;">     Price: 9.15 €<br>     Nr of options: 4<br>        </div>`)[0];
+                popup_34c55dfbb0ce25003da062c4ee27ac2b.setContent(html_f4bcf247b40c3d425588e08dc2fda67b);
+            
+        
+
+        marker_d5fcee0d1003a0c7795c58dc5b006836.bindPopup(popup_34c55dfbb0ce25003da062c4ee27ac2b)
+        ;
+
+        
+    
+    
+            marker_d5fcee0d1003a0c7795c58dc5b006836.bindTooltip(
+                `<div>
+                     9.15
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_69c2dbc1622ebbffdf65f5243c9d4eae = L.marker(
+                [51.0392768, 3.725784],
+                {}
+            ).addTo(marker_cluster_76d8127cda66f2811d7beb274892bbd7);
+        
+    
+        var popup_eb8d12361eeb407c35f38e687956549c = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_c9f0742b27dc3261d768f2cc138120fd = $(`<div id="html_c9f0742b27dc3261d768f2cc138120fd" style="width: 100.0%; height: 100.0%;">     Price: 9.12 €<br>     Nr of options: 4<br>        </div>`)[0];
+                popup_eb8d12361eeb407c35f38e687956549c.setContent(html_c9f0742b27dc3261d768f2cc138120fd);
+            
+        
+
+        marker_69c2dbc1622ebbffdf65f5243c9d4eae.bindPopup(popup_eb8d12361eeb407c35f38e687956549c)
+        ;
+
+        
+    
+    
+            marker_69c2dbc1622ebbffdf65f5243c9d4eae.bindTooltip(
+                `<div>
+                     9.12
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_de756d09315d0a5c99192d4562b863e2 = L.marker(
+                [51.2137655, 4.3978625],
+                {}
+            ).addTo(marker_cluster_76d8127cda66f2811d7beb274892bbd7);
+        
+    
+        var popup_515ff3541552ff523f3ef655e2a7c919 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_74310cd02795e111227f5c3785ae8f18 = $(`<div id="html_74310cd02795e111227f5c3785ae8f18" style="width: 100.0%; height: 100.0%;">     Price: 9.1 €<br>     Nr of options: 7<br>        </div>`)[0];
+                popup_515ff3541552ff523f3ef655e2a7c919.setContent(html_74310cd02795e111227f5c3785ae8f18);
+            
+        
+
+        marker_de756d09315d0a5c99192d4562b863e2.bindPopup(popup_515ff3541552ff523f3ef655e2a7c919)
+        ;
+
+        
+    
+    
+            marker_de756d09315d0a5c99192d4562b863e2.bindTooltip(
+                `<div>
+                     9.1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_664d892818134cce6b4dba64fa012a36 = L.marker(
+                [50.9304853, 5.343439099999999],
+                {}
+            ).addTo(marker_cluster_76d8127cda66f2811d7beb274892bbd7);
+        
+    
+        var popup_fd49b63f8a810e694e66cc7fed1094ae = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_eb560058a1e43c35df12a6b1667a5169 = $(`<div id="html_eb560058a1e43c35df12a6b1667a5169" style="width: 100.0%; height: 100.0%;">     Price: 9.0 €<br>     Nr of options: 3<br>        </div>`)[0];
+                popup_fd49b63f8a810e694e66cc7fed1094ae.setContent(html_eb560058a1e43c35df12a6b1667a5169);
+            
+        
+
+        marker_664d892818134cce6b4dba64fa012a36.bindPopup(popup_fd49b63f8a810e694e66cc7fed1094ae)
+        ;
+
+        
+    
+    
+            marker_664d892818134cce6b4dba64fa012a36.bindTooltip(
+                `<div>
+                     9.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_70afc5416a5c9b1b2b148eb407279518 = L.marker(
+                [51.3220649, 4.952329],
+                {}
+            ).addTo(marker_cluster_76d8127cda66f2811d7beb274892bbd7);
+        
+    
+        var popup_a2754769b4a2ee66416bd30e74d8afe1 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_262e6e03fb338e3847a5c1e034b10e3c = $(`<div id="html_262e6e03fb338e3847a5c1e034b10e3c" style="width: 100.0%; height: 100.0%;">     Price: 9.0 €<br>     Nr of options: 4<br>        </div>`)[0];
+                popup_a2754769b4a2ee66416bd30e74d8afe1.setContent(html_262e6e03fb338e3847a5c1e034b10e3c);
+            
+        
+
+        marker_70afc5416a5c9b1b2b148eb407279518.bindPopup(popup_a2754769b4a2ee66416bd30e74d8afe1)
+        ;
+
+        
+    
+    
+            marker_70afc5416a5c9b1b2b148eb407279518.bindTooltip(
+                `<div>
+                     9.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ef36b17534257ce7405b084c756f2381 = L.marker(
+                [50.929419, 4.4221315],
+                {}
+            ).addTo(marker_cluster_76d8127cda66f2811d7beb274892bbd7);
+        
+    
+        var popup_c1c9efe4195f41897603e71d7d032d77 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_7ad6609ab7b350cfd571ab12ab6473b1 = $(`<div id="html_7ad6609ab7b350cfd571ab12ab6473b1" style="width: 100.0%; height: 100.0%;">     Price: 9.0 €<br>     Nr of options: 1<br>        </div>`)[0];
+                popup_c1c9efe4195f41897603e71d7d032d77.setContent(html_7ad6609ab7b350cfd571ab12ab6473b1);
+            
+        
+
+        marker_ef36b17534257ce7405b084c756f2381.bindPopup(popup_c1c9efe4195f41897603e71d7d032d77)
+        ;
+
+        
+    
+    
+            marker_ef36b17534257ce7405b084c756f2381.bindTooltip(
+                `<div>
+                     9.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0ada0bd339dd50c6698651f43e2862bc = L.marker(
+                [51.22195439999999, 3.2077884],
+                {}
+            ).addTo(marker_cluster_76d8127cda66f2811d7beb274892bbd7);
+        
+    
+        var popup_8a788e7c9ddb62f3318b8a67ab324b54 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_568b620ead2b15826cf86587c165b907 = $(`<div id="html_568b620ead2b15826cf86587c165b907" style="width: 100.0%; height: 100.0%;">     Price: 9.0 €<br>     Nr of options: 1<br>        </div>`)[0];
+                popup_8a788e7c9ddb62f3318b8a67ab324b54.setContent(html_568b620ead2b15826cf86587c165b907);
+            
+        
+
+        marker_0ada0bd339dd50c6698651f43e2862bc.bindPopup(popup_8a788e7c9ddb62f3318b8a67ab324b54)
+        ;
+
+        
+    
+    
+            marker_0ada0bd339dd50c6698651f43e2862bc.bindTooltip(
+                `<div>
+                     9.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4fad5bc96379fd88019750149fbeba14 = L.marker(
+                [50.8083945, 3.279237],
+                {}
+            ).addTo(marker_cluster_76d8127cda66f2811d7beb274892bbd7);
+        
+    
+        var popup_aa11dcb3c1a7822b8845358acdfc50b8 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_91ae8ecfc6a7e63503749d3019101bd5 = $(`<div id="html_91ae8ecfc6a7e63503749d3019101bd5" style="width: 100.0%; height: 100.0%;">     Price: 9.0 €<br>     Nr of options: 1<br>        </div>`)[0];
+                popup_aa11dcb3c1a7822b8845358acdfc50b8.setContent(html_91ae8ecfc6a7e63503749d3019101bd5);
+            
+        
+
+        marker_4fad5bc96379fd88019750149fbeba14.bindPopup(popup_aa11dcb3c1a7822b8845358acdfc50b8)
+        ;
+
+        
+    
+    
+            marker_4fad5bc96379fd88019750149fbeba14.bindTooltip(
+                `<div>
+                     9.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0a6d5575bb355ba4d18af9779fd67fae = L.marker(
+                [51.2207499, 4.4266288],
+                {}
+            ).addTo(marker_cluster_76d8127cda66f2811d7beb274892bbd7);
+        
+    
+        var popup_0bcc4898e1be648cfb25c94cad3a2510 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_b1f5b968b2e3c83421af44c5f42b66c7 = $(`<div id="html_b1f5b968b2e3c83421af44c5f42b66c7" style="width: 100.0%; height: 100.0%;">     Price: 8.99 €<br>     Nr of options: 3<br>        </div>`)[0];
+                popup_0bcc4898e1be648cfb25c94cad3a2510.setContent(html_b1f5b968b2e3c83421af44c5f42b66c7);
+            
+        
+
+        marker_0a6d5575bb355ba4d18af9779fd67fae.bindPopup(popup_0bcc4898e1be648cfb25c94cad3a2510)
+        ;
+
+        
+    
+    
+            marker_0a6d5575bb355ba4d18af9779fd67fae.bindTooltip(
+                `<div>
+                     8.99
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2a63fdc3e5d96b115b0766d6afd5f7d7 = L.marker(
+                [50.8252119, 3.2646587],
+                {}
+            ).addTo(marker_cluster_76d8127cda66f2811d7beb274892bbd7);
+        
+    
+        var popup_2da91097a8026412ee26a41220712d0c = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_3f3423e42b7079f6dad96f1945ea2aaf = $(`<div id="html_3f3423e42b7079f6dad96f1945ea2aaf" style="width: 100.0%; height: 100.0%;">     Price: 8.95 €<br>     Nr of options: 1<br>        </div>`)[0];
+                popup_2da91097a8026412ee26a41220712d0c.setContent(html_3f3423e42b7079f6dad96f1945ea2aaf);
+            
+        
+
+        marker_2a63fdc3e5d96b115b0766d6afd5f7d7.bindPopup(popup_2da91097a8026412ee26a41220712d0c)
+        ;
+
+        
+    
+    
+            marker_2a63fdc3e5d96b115b0766d6afd5f7d7.bindTooltip(
+                `<div>
+                     8.95
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a666071040d673f0ec9dc314a167a481 = L.marker(
+                [50.94920579999999, 3.1317448],
+                {}
+            ).addTo(marker_cluster_76d8127cda66f2811d7beb274892bbd7);
+        
+    
+        var popup_2288b852a9cd527c3bdb82dcf66b6014 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_131f892614b49fc9be7047de3a76e1ff = $(`<div id="html_131f892614b49fc9be7047de3a76e1ff" style="width: 100.0%; height: 100.0%;">     Price: 8.92 €<br>     Nr of options: 6<br>        </div>`)[0];
+                popup_2288b852a9cd527c3bdb82dcf66b6014.setContent(html_131f892614b49fc9be7047de3a76e1ff);
+            
+        
+
+        marker_a666071040d673f0ec9dc314a167a481.bindPopup(popup_2288b852a9cd527c3bdb82dcf66b6014)
+        ;
+
+        
+    
+    
+            marker_a666071040d673f0ec9dc314a167a481.bindTooltip(
+                `<div>
+                     8.92
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_aee97530a942c7c4d38b87fa59f2b2e9 = L.marker(
+                [50.878939, 4.700267999999999],
+                {}
+            ).addTo(marker_cluster_76d8127cda66f2811d7beb274892bbd7);
+        
+    
+        var popup_117c776c320915974bd3d5ff4c30e08d = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_58c4bfe2363e707fd4ae1546f39dc003 = $(`<div id="html_58c4bfe2363e707fd4ae1546f39dc003" style="width: 100.0%; height: 100.0%;">     Price: 8.9 €<br>     Nr of options: 5<br>        </div>`)[0];
+                popup_117c776c320915974bd3d5ff4c30e08d.setContent(html_58c4bfe2363e707fd4ae1546f39dc003);
+            
+        
+
+        marker_aee97530a942c7c4d38b87fa59f2b2e9.bindPopup(popup_117c776c320915974bd3d5ff4c30e08d)
+        ;
+
+        
+    
+    
+            marker_aee97530a942c7c4d38b87fa59f2b2e9.bindTooltip(
+                `<div>
+                     8.9
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8afe6b6e07cdd043b317d99bf035ec57 = L.marker(
+                [51.0268966, 3.7218444],
+                {}
+            ).addTo(marker_cluster_76d8127cda66f2811d7beb274892bbd7);
+        
+    
+        var popup_610c379011cbc31331d9390676fd8818 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_0b0e021b0b514b60f92b2522a28e86c7 = $(`<div id="html_0b0e021b0b514b60f92b2522a28e86c7" style="width: 100.0%; height: 100.0%;">     Price: 8.88 €<br>     Nr of options: 4<br>        </div>`)[0];
+                popup_610c379011cbc31331d9390676fd8818.setContent(html_0b0e021b0b514b60f92b2522a28e86c7);
+            
+        
+
+        marker_8afe6b6e07cdd043b317d99bf035ec57.bindPopup(popup_610c379011cbc31331d9390676fd8818)
+        ;
+
+        
+    
+    
+            marker_8afe6b6e07cdd043b317d99bf035ec57.bindTooltip(
+                `<div>
+                     8.88
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_309b5f8d3409a15725ecaf054dd8f22d = L.marker(
+                [50.8788881, 4.700082999999999],
+                {}
+            ).addTo(marker_cluster_76d8127cda66f2811d7beb274892bbd7);
+        
+    
+        var popup_bb1906814d748348122ace130cf5f100 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_d6fe5bc70c5413ff487acf30e1315177 = $(`<div id="html_d6fe5bc70c5413ff487acf30e1315177" style="width: 100.0%; height: 100.0%;">     Price: 8.88 €<br>     Nr of options: 8<br>        </div>`)[0];
+                popup_bb1906814d748348122ace130cf5f100.setContent(html_d6fe5bc70c5413ff487acf30e1315177);
+            
+        
+
+        marker_309b5f8d3409a15725ecaf054dd8f22d.bindPopup(popup_bb1906814d748348122ace130cf5f100)
+        ;
+
+        
+    
+    
+            marker_309b5f8d3409a15725ecaf054dd8f22d.bindTooltip(
+                `<div>
+                     8.88
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9276a92214b33c6ed54311a3dc637927 = L.marker(
+                [50.94283, 3.124207],
+                {}
+            ).addTo(marker_cluster_76d8127cda66f2811d7beb274892bbd7);
+        
+    
+        var popup_d439835378debdf80dc1b8aa4acdf612 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_999bfce6243730eda853197258983f16 = $(`<div id="html_999bfce6243730eda853197258983f16" style="width: 100.0%; height: 100.0%;">     Price: 8.75 €<br>     Nr of options: 4<br>        </div>`)[0];
+                popup_d439835378debdf80dc1b8aa4acdf612.setContent(html_999bfce6243730eda853197258983f16);
+            
+        
+
+        marker_9276a92214b33c6ed54311a3dc637927.bindPopup(popup_d439835378debdf80dc1b8aa4acdf612)
+        ;
+
+        
+    
+    
+            marker_9276a92214b33c6ed54311a3dc637927.bindTooltip(
+                `<div>
+                     8.75
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_042bec3cd8393a87a3b5d17c1ccbdc49 = L.marker(
+                [51.2179812, 4.428862899999999],
+                {}
+            ).addTo(marker_cluster_76d8127cda66f2811d7beb274892bbd7);
+        
+    
+        var popup_c047caab24cfb5e1dd9795dee361905b = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_ff5b78ce3c9274e8591bd8c8c8db9c0e = $(`<div id="html_ff5b78ce3c9274e8591bd8c8c8db9c0e" style="width: 100.0%; height: 100.0%;">     Price: 8.68 €<br>     Nr of options: 4<br>        </div>`)[0];
+                popup_c047caab24cfb5e1dd9795dee361905b.setContent(html_ff5b78ce3c9274e8591bd8c8c8db9c0e);
+            
+        
+
+        marker_042bec3cd8393a87a3b5d17c1ccbdc49.bindPopup(popup_c047caab24cfb5e1dd9795dee361905b)
+        ;
+
+        
+    
+    
+            marker_042bec3cd8393a87a3b5d17c1ccbdc49.bindTooltip(
+                `<div>
+                     8.68
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a4b5cba08b3af2cd52f43f9ed464eced = L.marker(
+                [51.2274273, 4.4547623],
+                {}
+            ).addTo(marker_cluster_76d8127cda66f2811d7beb274892bbd7);
+        
+    
+        var popup_7e4f97c3c625879bc900387719c26716 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_a92cd540fcf6f6905f97dfe4c03bb639 = $(`<div id="html_a92cd540fcf6f6905f97dfe4c03bb639" style="width: 100.0%; height: 100.0%;">     Price: 8.62 €<br>     Nr of options: 8<br>        </div>`)[0];
+                popup_7e4f97c3c625879bc900387719c26716.setContent(html_a92cd540fcf6f6905f97dfe4c03bb639);
+            
+        
+
+        marker_a4b5cba08b3af2cd52f43f9ed464eced.bindPopup(popup_7e4f97c3c625879bc900387719c26716)
+        ;
+
+        
+    
+    
+            marker_a4b5cba08b3af2cd52f43f9ed464eced.bindTooltip(
+                `<div>
+                     8.62
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_72e11766cef98bb388b750ec520a3eb8 = L.marker(
+                [51.2152661, 4.4378506],
+                {}
+            ).addTo(marker_cluster_76d8127cda66f2811d7beb274892bbd7);
+        
+    
+        var popup_ae5d1a54ed9a890289408938b3bc0114 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_2a7b4671aecbb9a30f58f5e87d67f2ef = $(`<div id="html_2a7b4671aecbb9a30f58f5e87d67f2ef" style="width: 100.0%; height: 100.0%;">     Price: 8.56 €<br>     Nr of options: 8<br>        </div>`)[0];
+                popup_ae5d1a54ed9a890289408938b3bc0114.setContent(html_2a7b4671aecbb9a30f58f5e87d67f2ef);
+            
+        
+
+        marker_72e11766cef98bb388b750ec520a3eb8.bindPopup(popup_ae5d1a54ed9a890289408938b3bc0114)
+        ;
+
+        
+    
+    
+            marker_72e11766cef98bb388b750ec520a3eb8.bindTooltip(
+                `<div>
+                     8.56
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6197f90247c9a26ccc84fd426861a30f = L.marker(
+                [50.88035559999999, 4.7055925],
+                {}
+            ).addTo(marker_cluster_76d8127cda66f2811d7beb274892bbd7);
+        
+    
+        var popup_241da35ea66f3ccf218f0a443bc68b6b = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_8119cc79d05d2454cf6ac005caac5c75 = $(`<div id="html_8119cc79d05d2454cf6ac005caac5c75" style="width: 100.0%; height: 100.0%;">     Price: 8.5 €<br>     Nr of options: 1<br>        </div>`)[0];
+                popup_241da35ea66f3ccf218f0a443bc68b6b.setContent(html_8119cc79d05d2454cf6ac005caac5c75);
+            
+        
+
+        marker_6197f90247c9a26ccc84fd426861a30f.bindPopup(popup_241da35ea66f3ccf218f0a443bc68b6b)
+        ;
+
+        
+    
+    
+            marker_6197f90247c9a26ccc84fd426861a30f.bindTooltip(
+                `<div>
+                     8.5
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7413740c5bde0933978c2434a61eda9b = L.marker(
+                [50.7174088, 4.3962768],
+                {}
+            ).addTo(marker_cluster_76d8127cda66f2811d7beb274892bbd7);
+        
+    
+        var popup_d14db31a0749ce11966bd28620ef38a7 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_e1bc2ff0f17a8377284d7e3b0568ca46 = $(`<div id="html_e1bc2ff0f17a8377284d7e3b0568ca46" style="width: 100.0%; height: 100.0%;">     Price: 8.5 €<br>     Nr of options: 1<br>        </div>`)[0];
+                popup_d14db31a0749ce11966bd28620ef38a7.setContent(html_e1bc2ff0f17a8377284d7e3b0568ca46);
+            
+        
+
+        marker_7413740c5bde0933978c2434a61eda9b.bindPopup(popup_d14db31a0749ce11966bd28620ef38a7)
+        ;
+
+        
+    
+    
+            marker_7413740c5bde0933978c2434a61eda9b.bindTooltip(
+                `<div>
+                     8.5
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8cbebe500c34db19078c3f81cc7afb53 = L.marker(
+                [50.87126980000001, 4.399716199999999],
+                {}
+            ).addTo(marker_cluster_76d8127cda66f2811d7beb274892bbd7);
+        
+    
+        var popup_945d8e95f940e3ef2b2d31e86f784ea7 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_e5cbf7286a0a0a556651e45ea0763a50 = $(`<div id="html_e5cbf7286a0a0a556651e45ea0763a50" style="width: 100.0%; height: 100.0%;">     Price: 8.5 €<br>     Nr of options: 1<br>        </div>`)[0];
+                popup_945d8e95f940e3ef2b2d31e86f784ea7.setContent(html_e5cbf7286a0a0a556651e45ea0763a50);
+            
+        
+
+        marker_8cbebe500c34db19078c3f81cc7afb53.bindPopup(popup_945d8e95f940e3ef2b2d31e86f784ea7)
+        ;
+
+        
+    
+    
+            marker_8cbebe500c34db19078c3f81cc7afb53.bindTooltip(
+                `<div>
+                     8.5
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bae14f5ea654d4994ac2b3851a46e04b = L.marker(
+                [51.2257173, 4.4233361],
+                {}
+            ).addTo(marker_cluster_76d8127cda66f2811d7beb274892bbd7);
+        
+    
+        var popup_a66f560db436bf637f2777e19c4841cb = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_d85eeb5a9b17aa0d56e8c1fa1ea04d93 = $(`<div id="html_d85eeb5a9b17aa0d56e8c1fa1ea04d93" style="width: 100.0%; height: 100.0%;">     Price: 8.5 €<br>     Nr of options: 2<br>        </div>`)[0];
+                popup_a66f560db436bf637f2777e19c4841cb.setContent(html_d85eeb5a9b17aa0d56e8c1fa1ea04d93);
+            
+        
+
+        marker_bae14f5ea654d4994ac2b3851a46e04b.bindPopup(popup_a66f560db436bf637f2777e19c4841cb)
+        ;
+
+        
+    
+    
+            marker_bae14f5ea654d4994ac2b3851a46e04b.bindTooltip(
+                `<div>
+                     8.5
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c5c0cb7fe06d967d35c9d55efbf7e9f8 = L.marker(
+                [51.2220568, 4.4131116],
+                {}
+            ).addTo(marker_cluster_76d8127cda66f2811d7beb274892bbd7);
+        
+    
+        var popup_61f9a746050193a93abfa0454d81b290 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_cce2e40acbb22498e4de39f0a0722d5d = $(`<div id="html_cce2e40acbb22498e4de39f0a0722d5d" style="width: 100.0%; height: 100.0%;">     Price: 8.33 €<br>     Nr of options: 3<br>        </div>`)[0];
+                popup_61f9a746050193a93abfa0454d81b290.setContent(html_cce2e40acbb22498e4de39f0a0722d5d);
+            
+        
+
+        marker_c5c0cb7fe06d967d35c9d55efbf7e9f8.bindPopup(popup_61f9a746050193a93abfa0454d81b290)
+        ;
+
+        
+    
+    
+            marker_c5c0cb7fe06d967d35c9d55efbf7e9f8.bindTooltip(
+                `<div>
+                     8.33
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9f8e520bb518eaa3447d13f5a4936922 = L.marker(
+                [51.2003843, 4.4406962],
+                {}
+            ).addTo(marker_cluster_76d8127cda66f2811d7beb274892bbd7);
+        
+    
+        var popup_04ecc3f6c37b23acf3535873c92ea0d8 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_b8ef32bcf4157c8aa40a96793b3f8e7d = $(`<div id="html_b8ef32bcf4157c8aa40a96793b3f8e7d" style="width: 100.0%; height: 100.0%;">     Price: 8.25 €<br>     Nr of options: 4<br>        </div>`)[0];
+                popup_04ecc3f6c37b23acf3535873c92ea0d8.setContent(html_b8ef32bcf4157c8aa40a96793b3f8e7d);
+            
+        
+
+        marker_9f8e520bb518eaa3447d13f5a4936922.bindPopup(popup_04ecc3f6c37b23acf3535873c92ea0d8)
+        ;
+
+        
+    
+    
+            marker_9f8e520bb518eaa3447d13f5a4936922.bindTooltip(
+                `<div>
+                     8.25
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_688771a75843b0ae039765db7056acfd = L.marker(
+                [51.20390399999999, 4.394543],
+                {}
+            ).addTo(marker_cluster_76d8127cda66f2811d7beb274892bbd7);
+        
+    
+        var popup_cb116a875935dafd5b1d2f67eb49addc = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_096d46ab0aded01bb67d9f1d53f8fc4b = $(`<div id="html_096d46ab0aded01bb67d9f1d53f8fc4b" style="width: 100.0%; height: 100.0%;">     Price: 8.17 €<br>     Nr of options: 3<br>        </div>`)[0];
+                popup_cb116a875935dafd5b1d2f67eb49addc.setContent(html_096d46ab0aded01bb67d9f1d53f8fc4b);
+            
+        
+
+        marker_688771a75843b0ae039765db7056acfd.bindPopup(popup_cb116a875935dafd5b1d2f67eb49addc)
+        ;
+
+        
+    
+    
+            marker_688771a75843b0ae039765db7056acfd.bindTooltip(
+                `<div>
+                     8.17
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_22733c8ee6b855a7f7a5d41d55b8ff7e = L.marker(
+                [51.031079, 3.7061828],
+                {}
+            ).addTo(marker_cluster_76d8127cda66f2811d7beb274892bbd7);
+        
+    
+        var popup_ad0c5941cf65c85b94d152a0a51b81cc = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_a0e16a1319cd92ffbcdc4810d8000155 = $(`<div id="html_a0e16a1319cd92ffbcdc4810d8000155" style="width: 100.0%; height: 100.0%;">     Price: 8.12 €<br>     Nr of options: 4<br>        </div>`)[0];
+                popup_ad0c5941cf65c85b94d152a0a51b81cc.setContent(html_a0e16a1319cd92ffbcdc4810d8000155);
+            
+        
+
+        marker_22733c8ee6b855a7f7a5d41d55b8ff7e.bindPopup(popup_ad0c5941cf65c85b94d152a0a51b81cc)
+        ;
+
+        
+    
+    
+            marker_22733c8ee6b855a7f7a5d41d55b8ff7e.bindTooltip(
+                `<div>
+                     8.12
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ac9129ec0bacf8a00ad7509821ef539c = L.marker(
+                [51.2189432, 4.4203149],
+                {}
+            ).addTo(marker_cluster_76d8127cda66f2811d7beb274892bbd7);
+        
+    
+        var popup_96fc86e149d6a7f10fea28c8bf0a9134 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_efd5a39402f66e3e1f0a62f2b5a1e1a7 = $(`<div id="html_efd5a39402f66e3e1f0a62f2b5a1e1a7" style="width: 100.0%; height: 100.0%;">     Price: 8.12 €<br>     Nr of options: 4<br>        </div>`)[0];
+                popup_96fc86e149d6a7f10fea28c8bf0a9134.setContent(html_efd5a39402f66e3e1f0a62f2b5a1e1a7);
+            
+        
+
+        marker_ac9129ec0bacf8a00ad7509821ef539c.bindPopup(popup_96fc86e149d6a7f10fea28c8bf0a9134)
+        ;
+
+        
+    
+    
+            marker_ac9129ec0bacf8a00ad7509821ef539c.bindTooltip(
+                `<div>
+                     8.12
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_05853071b262c56f0a022fe874420840 = L.marker(
+                [51.2021287, 4.3928709],
+                {}
+            ).addTo(marker_cluster_76d8127cda66f2811d7beb274892bbd7);
+        
+    
+        var popup_9b86c16ac17c94c66cf29d9a7f3ed0d6 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_c0f660934dd50d38807884847b1ae80a = $(`<div id="html_c0f660934dd50d38807884847b1ae80a" style="width: 100.0%; height: 100.0%;">     Price: 8.0 €<br>     Nr of options: 1<br>        </div>`)[0];
+                popup_9b86c16ac17c94c66cf29d9a7f3ed0d6.setContent(html_c0f660934dd50d38807884847b1ae80a);
+            
+        
+
+        marker_05853071b262c56f0a022fe874420840.bindPopup(popup_9b86c16ac17c94c66cf29d9a7f3ed0d6)
+        ;
+
+        
+    
+    
+            marker_05853071b262c56f0a022fe874420840.bindTooltip(
+                `<div>
+                     8.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1d4fa6e85b1d3f634d33727b62c89f58 = L.marker(
+                [50.8107376, 3.2995754],
+                {}
+            ).addTo(marker_cluster_76d8127cda66f2811d7beb274892bbd7);
+        
+    
+        var popup_dabc59e8c05d00ca0bc4f826ed51bd6c = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_e9326cbb6cacd32424354bf94531a668 = $(`<div id="html_e9326cbb6cacd32424354bf94531a668" style="width: 100.0%; height: 100.0%;">     Price: 8.0 €<br>     Nr of options: 3<br>        </div>`)[0];
+                popup_dabc59e8c05d00ca0bc4f826ed51bd6c.setContent(html_e9326cbb6cacd32424354bf94531a668);
+            
+        
+
+        marker_1d4fa6e85b1d3f634d33727b62c89f58.bindPopup(popup_dabc59e8c05d00ca0bc4f826ed51bd6c)
+        ;
+
+        
+    
+    
+            marker_1d4fa6e85b1d3f634d33727b62c89f58.bindTooltip(
+                `<div>
+                     8.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fa50d47d7dfb238fdc36608ac580e259 = L.marker(
+                [51.196372, 4.4434889],
+                {}
+            ).addTo(marker_cluster_76d8127cda66f2811d7beb274892bbd7);
+        
+    
+        var popup_b9c5b551325da0e8544992f4ccfb6715 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_c0bcaad507a7404d149be746b18b767b = $(`<div id="html_c0bcaad507a7404d149be746b18b767b" style="width: 100.0%; height: 100.0%;">     Price: 8.0 €<br>     Nr of options: 5<br>        </div>`)[0];
+                popup_b9c5b551325da0e8544992f4ccfb6715.setContent(html_c0bcaad507a7404d149be746b18b767b);
+            
+        
+
+        marker_fa50d47d7dfb238fdc36608ac580e259.bindPopup(popup_b9c5b551325da0e8544992f4ccfb6715)
+        ;
+
+        
+    
+    
+            marker_fa50d47d7dfb238fdc36608ac580e259.bindTooltip(
+                `<div>
+                     8.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ec5751482423729023875011f8af7b73 = L.marker(
+                [50.9399256, 4.0258409],
+                {}
+            ).addTo(marker_cluster_76d8127cda66f2811d7beb274892bbd7);
+        
+    
+        var popup_f785414095067b755c4bb8e808b0cec2 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_c18fab19b7b013499861ae37c4fdf9f8 = $(`<div id="html_c18fab19b7b013499861ae37c4fdf9f8" style="width: 100.0%; height: 100.0%;">     Price: 8.0 €<br>     Nr of options: 8<br>        </div>`)[0];
+                popup_f785414095067b755c4bb8e808b0cec2.setContent(html_c18fab19b7b013499861ae37c4fdf9f8);
+            
+        
+
+        marker_ec5751482423729023875011f8af7b73.bindPopup(popup_f785414095067b755c4bb8e808b0cec2)
+        ;
+
+        
+    
+    
+            marker_ec5751482423729023875011f8af7b73.bindTooltip(
+                `<div>
+                     8.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1b03a46fd2cad915ffeb4e3b5133699c = L.marker(
+                [50.9332903, 5.3331392],
+                {}
+            ).addTo(marker_cluster_76d8127cda66f2811d7beb274892bbd7);
+        
+    
+        var popup_2cf4b0c3be256ded9c024853526a12b5 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_57f59fbf5e80683bbb16d9bbf56621ca = $(`<div id="html_57f59fbf5e80683bbb16d9bbf56621ca" style="width: 100.0%; height: 100.0%;">     Price: 8.0 €<br>     Nr of options: 1<br>        </div>`)[0];
+                popup_2cf4b0c3be256ded9c024853526a12b5.setContent(html_57f59fbf5e80683bbb16d9bbf56621ca);
+            
+        
+
+        marker_1b03a46fd2cad915ffeb4e3b5133699c.bindPopup(popup_2cf4b0c3be256ded9c024853526a12b5)
+        ;
+
+        
+    
+    
+            marker_1b03a46fd2cad915ffeb4e3b5133699c.bindTooltip(
+                `<div>
+                     8.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_22973862e5c6e37c4c7f066867cbe0f2 = L.marker(
+                [51.06084329999999, 3.7102631],
+                {}
+            ).addTo(marker_cluster_76d8127cda66f2811d7beb274892bbd7);
+        
+    
+        var popup_a07e9f8b857f8bf6c5c3aa07387c42ee = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_4e34ebb723fc96d3fb5a7ccb4adc49ab = $(`<div id="html_4e34ebb723fc96d3fb5a7ccb4adc49ab" style="width: 100.0%; height: 100.0%;">     Price: 8.0 €<br>     Nr of options: 2<br>        </div>`)[0];
+                popup_a07e9f8b857f8bf6c5c3aa07387c42ee.setContent(html_4e34ebb723fc96d3fb5a7ccb4adc49ab);
+            
+        
+
+        marker_22973862e5c6e37c4c7f066867cbe0f2.bindPopup(popup_a07e9f8b857f8bf6c5c3aa07387c42ee)
+        ;
+
+        
+    
+    
+            marker_22973862e5c6e37c4c7f066867cbe0f2.bindTooltip(
+                `<div>
+                     8.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5f67c223673955163edccb3d6954e9f7 = L.marker(
+                [51.2078277, 4.4643244],
+                {}
+            ).addTo(marker_cluster_76d8127cda66f2811d7beb274892bbd7);
+        
+    
+        var popup_8a6324aae0e9d709bf27b9ae5e3d6668 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_701089ac81eeea15ab70d9428db2a1e6 = $(`<div id="html_701089ac81eeea15ab70d9428db2a1e6" style="width: 100.0%; height: 100.0%;">     Price: 8.0 €<br>     Nr of options: 3<br>        </div>`)[0];
+                popup_8a6324aae0e9d709bf27b9ae5e3d6668.setContent(html_701089ac81eeea15ab70d9428db2a1e6);
+            
+        
+
+        marker_5f67c223673955163edccb3d6954e9f7.bindPopup(popup_8a6324aae0e9d709bf27b9ae5e3d6668)
+        ;
+
+        
+    
+    
+            marker_5f67c223673955163edccb3d6954e9f7.bindTooltip(
+                `<div>
+                     8.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1c48e73354192f79b5d441b5c65e707e = L.marker(
+                [51.2176988, 4.427042999999999],
+                {}
+            ).addTo(marker_cluster_76d8127cda66f2811d7beb274892bbd7);
+        
+    
+        var popup_e86c637fee9d388e38c2e3af76ad0794 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_90001764a5651714a703e335214ba6b3 = $(`<div id="html_90001764a5651714a703e335214ba6b3" style="width: 100.0%; height: 100.0%;">     Price: 8.0 €<br>     Nr of options: 2<br>        </div>`)[0];
+                popup_e86c637fee9d388e38c2e3af76ad0794.setContent(html_90001764a5651714a703e335214ba6b3);
+            
+        
+
+        marker_1c48e73354192f79b5d441b5c65e707e.bindPopup(popup_e86c637fee9d388e38c2e3af76ad0794)
+        ;
+
+        
+    
+    
+            marker_1c48e73354192f79b5d441b5c65e707e.bindTooltip(
+                `<div>
+                     8.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_aec7ac76190a086cd58a94bda341b780 = L.marker(
+                [51.2131824, 3.2182781],
+                {}
+            ).addTo(marker_cluster_76d8127cda66f2811d7beb274892bbd7);
+        
+    
+        var popup_9e427671de8fe35e44abded38fb89568 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_232f42db86c079c365e20459c7ff59df = $(`<div id="html_232f42db86c079c365e20459c7ff59df" style="width: 100.0%; height: 100.0%;">     Price: 8.0 €<br>     Nr of options: 2<br>        </div>`)[0];
+                popup_9e427671de8fe35e44abded38fb89568.setContent(html_232f42db86c079c365e20459c7ff59df);
+            
+        
+
+        marker_aec7ac76190a086cd58a94bda341b780.bindPopup(popup_9e427671de8fe35e44abded38fb89568)
+        ;
+
+        
+    
+    
+            marker_aec7ac76190a086cd58a94bda341b780.bindTooltip(
+                `<div>
+                     8.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_16251c8695217857f0dd7d97970da979 = L.marker(
+                [51.0405731, 3.725505],
+                {}
+            ).addTo(marker_cluster_76d8127cda66f2811d7beb274892bbd7);
+        
+    
+        var popup_bb71543d425b80e93eeca95e2897e0d9 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_13930c6ed3e55438940b6af9b21f250f = $(`<div id="html_13930c6ed3e55438940b6af9b21f250f" style="width: 100.0%; height: 100.0%;">     Price: 8.0 €<br>     Nr of options: 2<br>        </div>`)[0];
+                popup_bb71543d425b80e93eeca95e2897e0d9.setContent(html_13930c6ed3e55438940b6af9b21f250f);
+            
+        
+
+        marker_16251c8695217857f0dd7d97970da979.bindPopup(popup_bb71543d425b80e93eeca95e2897e0d9)
+        ;
+
+        
+    
+    
+            marker_16251c8695217857f0dd7d97970da979.bindTooltip(
+                `<div>
+                     8.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bfd33bb13b55831cb37459c05c804f03 = L.marker(
+                [50.868771, 4.6990148],
+                {}
+            ).addTo(marker_cluster_76d8127cda66f2811d7beb274892bbd7);
+        
+    
+        var popup_f9c6fcd561ae5ab7a1c641ede69986ca = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_48d2a24b3ffcbe9272f864e5076d1683 = $(`<div id="html_48d2a24b3ffcbe9272f864e5076d1683" style="width: 100.0%; height: 100.0%;">     Price: 8.0 €<br>     Nr of options: 4<br>        </div>`)[0];
+                popup_f9c6fcd561ae5ab7a1c641ede69986ca.setContent(html_48d2a24b3ffcbe9272f864e5076d1683);
+            
+        
+
+        marker_bfd33bb13b55831cb37459c05c804f03.bindPopup(popup_f9c6fcd561ae5ab7a1c641ede69986ca)
+        ;
+
+        
+    
+    
+            marker_bfd33bb13b55831cb37459c05c804f03.bindTooltip(
+                `<div>
+                     8.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_889817a347d2f2f2bd1a81998f501310 = L.marker(
+                [50.868771, 4.6990148],
+                {}
+            ).addTo(marker_cluster_76d8127cda66f2811d7beb274892bbd7);
+        
+    
+        var popup_d3f49d5219e6862cc810aa2f0a30ac69 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_4a15e530ac5fc470766b00d96cad24f7 = $(`<div id="html_4a15e530ac5fc470766b00d96cad24f7" style="width: 100.0%; height: 100.0%;">     Price: 8.0 €<br>     Nr of options: 4<br>        </div>`)[0];
+                popup_d3f49d5219e6862cc810aa2f0a30ac69.setContent(html_4a15e530ac5fc470766b00d96cad24f7);
+            
+        
+
+        marker_889817a347d2f2f2bd1a81998f501310.bindPopup(popup_d3f49d5219e6862cc810aa2f0a30ac69)
+        ;
+
+        
+    
+    
+            marker_889817a347d2f2f2bd1a81998f501310.bindTooltip(
+                `<div>
+                     8.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_327ef37e454d3e0b6f96304b1e6349a6 = L.marker(
+                [50.8249196, 3.2722017],
+                {}
+            ).addTo(marker_cluster_76d8127cda66f2811d7beb274892bbd7);
+        
+    
+        var popup_28cb9b38715d5c0a3a256c74ae7b38a1 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_749a515bafe2f8d0ab8a80c819eef637 = $(`<div id="html_749a515bafe2f8d0ab8a80c819eef637" style="width: 100.0%; height: 100.0%;">     Price: 7.9 €<br>     Nr of options: 3<br>        </div>`)[0];
+                popup_28cb9b38715d5c0a3a256c74ae7b38a1.setContent(html_749a515bafe2f8d0ab8a80c819eef637);
+            
+        
+
+        marker_327ef37e454d3e0b6f96304b1e6349a6.bindPopup(popup_28cb9b38715d5c0a3a256c74ae7b38a1)
+        ;
+
+        
+    
+    
+            marker_327ef37e454d3e0b6f96304b1e6349a6.bindTooltip(
+                `<div>
+                     7.9
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_78cdc7d633c413dfcf1febf21f558d28 = L.marker(
+                [51.06783069999999, 3.7290914],
+                {}
+            ).addTo(marker_cluster_76d8127cda66f2811d7beb274892bbd7);
+        
+    
+        var popup_d72dc117796ab6de5c91e17041f6676a = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_923ddbb11659030af5392dfa826045ed = $(`<div id="html_923ddbb11659030af5392dfa826045ed" style="width: 100.0%; height: 100.0%;">     Price: 7.75 €<br>     Nr of options: 4<br>        </div>`)[0];
+                popup_d72dc117796ab6de5c91e17041f6676a.setContent(html_923ddbb11659030af5392dfa826045ed);
+            
+        
+
+        marker_78cdc7d633c413dfcf1febf21f558d28.bindPopup(popup_d72dc117796ab6de5c91e17041f6676a)
+        ;
+
+        
+    
+    
+            marker_78cdc7d633c413dfcf1febf21f558d28.bindTooltip(
+                `<div>
+                     7.75
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_25a3275dc860732db283d671635a8b0d = L.marker(
+                [51.0497458, 3.7322255],
+                {}
+            ).addTo(marker_cluster_76d8127cda66f2811d7beb274892bbd7);
+        
+    
+        var popup_ea06aba2938066b3b645d4501974b3da = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_726e2463ef40be02fb4ccfdbdffb1569 = $(`<div id="html_726e2463ef40be02fb4ccfdbdffb1569" style="width: 100.0%; height: 100.0%;">     Price: 7.67 €<br>     Nr of options: 3<br>        </div>`)[0];
+                popup_ea06aba2938066b3b645d4501974b3da.setContent(html_726e2463ef40be02fb4ccfdbdffb1569);
+            
+        
+
+        marker_25a3275dc860732db283d671635a8b0d.bindPopup(popup_ea06aba2938066b3b645d4501974b3da)
+        ;
+
+        
+    
+    
+            marker_25a3275dc860732db283d671635a8b0d.bindTooltip(
+                `<div>
+                     7.67
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1e9007ddcebaa94e3d4c57b5eb52b716 = L.marker(
+                [51.072137, 3.7100586],
+                {}
+            ).addTo(marker_cluster_76d8127cda66f2811d7beb274892bbd7);
+        
+    
+        var popup_e21c3f3aaea99237517d24b5b73aee0b = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_830771450ef7700a42d3e64393793d46 = $(`<div id="html_830771450ef7700a42d3e64393793d46" style="width: 100.0%; height: 100.0%;">     Price: 7.67 €<br>     Nr of options: 6<br>        </div>`)[0];
+                popup_e21c3f3aaea99237517d24b5b73aee0b.setContent(html_830771450ef7700a42d3e64393793d46);
+            
+        
+
+        marker_1e9007ddcebaa94e3d4c57b5eb52b716.bindPopup(popup_e21c3f3aaea99237517d24b5b73aee0b)
+        ;
+
+        
+    
+    
+            marker_1e9007ddcebaa94e3d4c57b5eb52b716.bindTooltip(
+                `<div>
+                     7.67
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_80457442fd1c72f03af68bd3b40d4784 = L.marker(
+                [51.208929, 4.4491621],
+                {}
+            ).addTo(marker_cluster_76d8127cda66f2811d7beb274892bbd7);
+        
+    
+        var popup_a89535469e561af1c37ac07074cbdeaa = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_c292385ab0552fcc83353c5b5e0717d1 = $(`<div id="html_c292385ab0552fcc83353c5b5e0717d1" style="width: 100.0%; height: 100.0%;">     Price: 7.65 €<br>     Nr of options: 2<br>        </div>`)[0];
+                popup_a89535469e561af1c37ac07074cbdeaa.setContent(html_c292385ab0552fcc83353c5b5e0717d1);
+            
+        
+
+        marker_80457442fd1c72f03af68bd3b40d4784.bindPopup(popup_a89535469e561af1c37ac07074cbdeaa)
+        ;
+
+        
+    
+    
+            marker_80457442fd1c72f03af68bd3b40d4784.bindTooltip(
+                `<div>
+                     7.65
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8f143054b3df784132507f7e31c6754c = L.marker(
+                [51.2329817, 4.4531407],
+                {}
+            ).addTo(marker_cluster_76d8127cda66f2811d7beb274892bbd7);
+        
+    
+        var popup_1af699a1b2914de9f91687c01a1da919 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_0e6a3d76cdc91e1f14055a4879db9d6e = $(`<div id="html_0e6a3d76cdc91e1f14055a4879db9d6e" style="width: 100.0%; height: 100.0%;">     Price: 7.64 €<br>     Nr of options: 7<br>        </div>`)[0];
+                popup_1af699a1b2914de9f91687c01a1da919.setContent(html_0e6a3d76cdc91e1f14055a4879db9d6e);
+            
+        
+
+        marker_8f143054b3df784132507f7e31c6754c.bindPopup(popup_1af699a1b2914de9f91687c01a1da919)
+        ;
+
+        
+    
+    
+            marker_8f143054b3df784132507f7e31c6754c.bindTooltip(
+                `<div>
+                     7.64
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7a675826927c285511b696e276e8217a = L.marker(
+                [50.8952141, 4.3720045],
+                {}
+            ).addTo(marker_cluster_76d8127cda66f2811d7beb274892bbd7);
+        
+    
+        var popup_927979509965b047889d3dbd6f238048 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_f43e048481f6e6b25542209e0309e302 = $(`<div id="html_f43e048481f6e6b25542209e0309e302" style="width: 100.0%; height: 100.0%;">     Price: 7.62 €<br>     Nr of options: 4<br>        </div>`)[0];
+                popup_927979509965b047889d3dbd6f238048.setContent(html_f43e048481f6e6b25542209e0309e302);
+            
+        
+
+        marker_7a675826927c285511b696e276e8217a.bindPopup(popup_927979509965b047889d3dbd6f238048)
+        ;
+
+        
+    
+    
+            marker_7a675826927c285511b696e276e8217a.bindTooltip(
+                `<div>
+                     7.62
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c492c81a0894d024cc1eab54b4202ce2 = L.marker(
+                [51.2191294, 4.4193314],
+                {}
+            ).addTo(marker_cluster_76d8127cda66f2811d7beb274892bbd7);
+        
+    
+        var popup_b3aa09069b465cfae5480a0fe74ffbe8 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_96a1993f7c31aecf7cae01514610b04b = $(`<div id="html_96a1993f7c31aecf7cae01514610b04b" style="width: 100.0%; height: 100.0%;">     Price: 7.5 €<br>     Nr of options: 2<br>        </div>`)[0];
+                popup_b3aa09069b465cfae5480a0fe74ffbe8.setContent(html_96a1993f7c31aecf7cae01514610b04b);
+            
+        
+
+        marker_c492c81a0894d024cc1eab54b4202ce2.bindPopup(popup_b3aa09069b465cfae5480a0fe74ffbe8)
+        ;
+
+        
+    
+    
+            marker_c492c81a0894d024cc1eab54b4202ce2.bindTooltip(
+                `<div>
+                     7.5
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_786f01a7091a112369edcefb5fc1063c = L.marker(
+                [51.1746364, 4.3662012],
+                {}
+            ).addTo(marker_cluster_76d8127cda66f2811d7beb274892bbd7);
+        
+    
+        var popup_b91f2bcb58f594d315b42f9bc7f89cb1 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_73f31e8e889c96cdd8ff0a26909b14ed = $(`<div id="html_73f31e8e889c96cdd8ff0a26909b14ed" style="width: 100.0%; height: 100.0%;">     Price: 7.5 €<br>     Nr of options: 2<br>        </div>`)[0];
+                popup_b91f2bcb58f594d315b42f9bc7f89cb1.setContent(html_73f31e8e889c96cdd8ff0a26909b14ed);
+            
+        
+
+        marker_786f01a7091a112369edcefb5fc1063c.bindPopup(popup_b91f2bcb58f594d315b42f9bc7f89cb1)
+        ;
+
+        
+    
+    
+            marker_786f01a7091a112369edcefb5fc1063c.bindTooltip(
+                `<div>
+                     7.5
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8b5f419c66b0371604ba30e2f29c4137 = L.marker(
+                [51.0375788, 3.7423194],
+                {}
+            ).addTo(marker_cluster_76d8127cda66f2811d7beb274892bbd7);
+        
+    
+        var popup_b875ee34b1facb697f8a930cd2160baf = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_4b641058d8f0ebafec4d304b21f9efe6 = $(`<div id="html_4b641058d8f0ebafec4d304b21f9efe6" style="width: 100.0%; height: 100.0%;">     Price: 7.5 €<br>     Nr of options: 1<br>        </div>`)[0];
+                popup_b875ee34b1facb697f8a930cd2160baf.setContent(html_4b641058d8f0ebafec4d304b21f9efe6);
+            
+        
+
+        marker_8b5f419c66b0371604ba30e2f29c4137.bindPopup(popup_b875ee34b1facb697f8a930cd2160baf)
+        ;
+
+        
+    
+    
+            marker_8b5f419c66b0371604ba30e2f29c4137.bindTooltip(
+                `<div>
+                     7.5
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c3795eb92acb5afe4764977fe6a2c963 = L.marker(
+                [51.0579276, 3.7067908],
+                {}
+            ).addTo(marker_cluster_76d8127cda66f2811d7beb274892bbd7);
+        
+    
+        var popup_8fa81d242ce10e1417fc03c5fd97ebbb = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_0d6bbfd223e8e97b14c4c128422b400f = $(`<div id="html_0d6bbfd223e8e97b14c4c128422b400f" style="width: 100.0%; height: 100.0%;">     Price: 7.5 €<br>     Nr of options: 7<br>        </div>`)[0];
+                popup_8fa81d242ce10e1417fc03c5fd97ebbb.setContent(html_0d6bbfd223e8e97b14c4c128422b400f);
+            
+        
+
+        marker_c3795eb92acb5afe4764977fe6a2c963.bindPopup(popup_8fa81d242ce10e1417fc03c5fd97ebbb)
+        ;
+
+        
+    
+    
+            marker_c3795eb92acb5afe4764977fe6a2c963.bindTooltip(
+                `<div>
+                     7.5
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4f6b77fbdc61a65ac54a4b466b1f37fe = L.marker(
+                [50.8771289, 4.7004385],
+                {}
+            ).addTo(marker_cluster_76d8127cda66f2811d7beb274892bbd7);
+        
+    
+        var popup_444fbd39350aa79b2e9fb5f6729e6056 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_6634526aa1bd64cd2fc9be41ba8b878e = $(`<div id="html_6634526aa1bd64cd2fc9be41ba8b878e" style="width: 100.0%; height: 100.0%;">     Price: 7.5 €<br>     Nr of options: 3<br>        </div>`)[0];
+                popup_444fbd39350aa79b2e9fb5f6729e6056.setContent(html_6634526aa1bd64cd2fc9be41ba8b878e);
+            
+        
+
+        marker_4f6b77fbdc61a65ac54a4b466b1f37fe.bindPopup(popup_444fbd39350aa79b2e9fb5f6729e6056)
+        ;
+
+        
+    
+    
+            marker_4f6b77fbdc61a65ac54a4b466b1f37fe.bindTooltip(
+                `<div>
+                     7.5
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d68210d7717b54d759a28feb451688fc = L.marker(
+                [51.2251546, 4.4048148],
+                {}
+            ).addTo(marker_cluster_76d8127cda66f2811d7beb274892bbd7);
+        
+    
+        var popup_58ff819efc353429a0219274442390ad = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_a69062d5ee0306d6a393dbc5996c0e54 = $(`<div id="html_a69062d5ee0306d6a393dbc5996c0e54" style="width: 100.0%; height: 100.0%;">     Price: 7.47 €<br>     Nr of options: 16<br>        </div>`)[0];
+                popup_58ff819efc353429a0219274442390ad.setContent(html_a69062d5ee0306d6a393dbc5996c0e54);
+            
+        
+
+        marker_d68210d7717b54d759a28feb451688fc.bindPopup(popup_58ff819efc353429a0219274442390ad)
+        ;
+
+        
+    
+    
+            marker_d68210d7717b54d759a28feb451688fc.bindTooltip(
+                `<div>
+                     7.47
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1a046c8d08f4557ca1244f011bd49b6b = L.marker(
+                [51.0611441, 3.7011711],
+                {}
+            ).addTo(marker_cluster_76d8127cda66f2811d7beb274892bbd7);
+        
+    
+        var popup_e89d4f9009c91eb6746005dda9128e36 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_85d19b5098ab3b58414b28ff406e342c = $(`<div id="html_85d19b5098ab3b58414b28ff406e342c" style="width: 100.0%; height: 100.0%;">     Price: 7.46 €<br>     Nr of options: 5<br>        </div>`)[0];
+                popup_e89d4f9009c91eb6746005dda9128e36.setContent(html_85d19b5098ab3b58414b28ff406e342c);
+            
+        
+
+        marker_1a046c8d08f4557ca1244f011bd49b6b.bindPopup(popup_e89d4f9009c91eb6746005dda9128e36)
+        ;
+
+        
+    
+    
+            marker_1a046c8d08f4557ca1244f011bd49b6b.bindTooltip(
+                `<div>
+                     7.46
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9e9c8d6aee6c345ea040958f1ad45746 = L.marker(
+                [51.3216267, 4.9368617],
+                {}
+            ).addTo(marker_cluster_76d8127cda66f2811d7beb274892bbd7);
+        
+    
+        var popup_54a763a68a4a577c95a8aeea9cfd7add = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_1f590a77876d17b356ae034ac3e4a101 = $(`<div id="html_1f590a77876d17b356ae034ac3e4a101" style="width: 100.0%; height: 100.0%;">     Price: 7.43 €<br>     Nr of options: 14<br>        </div>`)[0];
+                popup_54a763a68a4a577c95a8aeea9cfd7add.setContent(html_1f590a77876d17b356ae034ac3e4a101);
+            
+        
+
+        marker_9e9c8d6aee6c345ea040958f1ad45746.bindPopup(popup_54a763a68a4a577c95a8aeea9cfd7add)
+        ;
+
+        
+    
+    
+            marker_9e9c8d6aee6c345ea040958f1ad45746.bindTooltip(
+                `<div>
+                     7.43
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_905a1446979efa2e4e1c19e6e6a64f7a = L.marker(
+                [50.8788052, 4.7001891],
+                {}
+            ).addTo(marker_cluster_76d8127cda66f2811d7beb274892bbd7);
+        
+    
+        var popup_781c5e3afa5f84386842978ef12c45e3 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_2118852d75541280f6afb9c5a6f2e6c2 = $(`<div id="html_2118852d75541280f6afb9c5a6f2e6c2" style="width: 100.0%; height: 100.0%;">     Price: 7.38 €<br>     Nr of options: 8<br>        </div>`)[0];
+                popup_781c5e3afa5f84386842978ef12c45e3.setContent(html_2118852d75541280f6afb9c5a6f2e6c2);
+            
+        
+
+        marker_905a1446979efa2e4e1c19e6e6a64f7a.bindPopup(popup_781c5e3afa5f84386842978ef12c45e3)
+        ;
+
+        
+    
+    
+            marker_905a1446979efa2e4e1c19e6e6a64f7a.bindTooltip(
+                `<div>
+                     7.38
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ebf6f1673f5b8cc72e64e69da99a7881 = L.marker(
+                [50.8771943, 4.700696],
+                {}
+            ).addTo(marker_cluster_76d8127cda66f2811d7beb274892bbd7);
+        
+    
+        var popup_e319be1cc8dbe3ca61b368b108af7803 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_6e30e3787cf76f8acc69ac67ea80d000 = $(`<div id="html_6e30e3787cf76f8acc69ac67ea80d000" style="width: 100.0%; height: 100.0%;">     Price: 7.33 €<br>     Nr of options: 3<br>        </div>`)[0];
+                popup_e319be1cc8dbe3ca61b368b108af7803.setContent(html_6e30e3787cf76f8acc69ac67ea80d000);
+            
+        
+
+        marker_ebf6f1673f5b8cc72e64e69da99a7881.bindPopup(popup_e319be1cc8dbe3ca61b368b108af7803)
+        ;
+
+        
+    
+    
+            marker_ebf6f1673f5b8cc72e64e69da99a7881.bindTooltip(
+                `<div>
+                     7.33
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_18e383ac1389e75e7461625bb220b7c2 = L.marker(
+                [50.942187, 4.046648],
+                {}
+            ).addTo(marker_cluster_76d8127cda66f2811d7beb274892bbd7);
+        
+    
+        var popup_128776153dec1cbc136f1813b9266cf1 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_35c2fdd74ec846e065e332310e13ee82 = $(`<div id="html_35c2fdd74ec846e065e332310e13ee82" style="width: 100.0%; height: 100.0%;">     Price: 7.25 €<br>     Nr of options: 4<br>        </div>`)[0];
+                popup_128776153dec1cbc136f1813b9266cf1.setContent(html_35c2fdd74ec846e065e332310e13ee82);
+            
+        
+
+        marker_18e383ac1389e75e7461625bb220b7c2.bindPopup(popup_128776153dec1cbc136f1813b9266cf1)
+        ;
+
+        
+    
+    
+            marker_18e383ac1389e75e7461625bb220b7c2.bindTooltip(
+                `<div>
+                     7.25
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5f782262888e1d104db130a8f5c22651 = L.marker(
+                [50.8726117, 4.3907899],
+                {}
+            ).addTo(marker_cluster_76d8127cda66f2811d7beb274892bbd7);
+        
+    
+        var popup_8f19eb121f816a6c7cce89b623a62f1c = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_eab7c584b33e2788d3d63e4e71f355b8 = $(`<div id="html_eab7c584b33e2788d3d63e4e71f355b8" style="width: 100.0%; height: 100.0%;">     Price: 7.25 €<br>     Nr of options: 2<br>        </div>`)[0];
+                popup_8f19eb121f816a6c7cce89b623a62f1c.setContent(html_eab7c584b33e2788d3d63e4e71f355b8);
+            
+        
+
+        marker_5f782262888e1d104db130a8f5c22651.bindPopup(popup_8f19eb121f816a6c7cce89b623a62f1c)
+        ;
+
+        
+    
+    
+            marker_5f782262888e1d104db130a8f5c22651.bindTooltip(
+                `<div>
+                     7.25
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_dd02d8f614a348163c23a676f7a3b40e = L.marker(
+                [51.2094928, 4.4295403],
+                {}
+            ).addTo(marker_cluster_76d8127cda66f2811d7beb274892bbd7);
+        
+    
+        var popup_0c21da6ddfb5d4bfc143062c1b6c7ab4 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_ee31a4162327e427f7c006cb66834713 = $(`<div id="html_ee31a4162327e427f7c006cb66834713" style="width: 100.0%; height: 100.0%;">     Price: 7.23 €<br>     Nr of options: 11<br>        </div>`)[0];
+                popup_0c21da6ddfb5d4bfc143062c1b6c7ab4.setContent(html_ee31a4162327e427f7c006cb66834713);
+            
+        
+
+        marker_dd02d8f614a348163c23a676f7a3b40e.bindPopup(popup_0c21da6ddfb5d4bfc143062c1b6c7ab4)
+        ;
+
+        
+    
+    
+            marker_dd02d8f614a348163c23a676f7a3b40e.bindTooltip(
+                `<div>
+                     7.23
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b310d2de0d9a560481cc454b22b18250 = L.marker(
+                [50.945308, 3.1194103],
+                {}
+            ).addTo(marker_cluster_76d8127cda66f2811d7beb274892bbd7);
+        
+    
+        var popup_745cc59746aac1fe1b93989ea91d5c34 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_6d2d864a71388181d2e42ffff1417a68 = $(`<div id="html_6d2d864a71388181d2e42ffff1417a68" style="width: 100.0%; height: 100.0%;">     Price: 7.0 €<br>     Nr of options: 3<br>        </div>`)[0];
+                popup_745cc59746aac1fe1b93989ea91d5c34.setContent(html_6d2d864a71388181d2e42ffff1417a68);
+            
+        
+
+        marker_b310d2de0d9a560481cc454b22b18250.bindPopup(popup_745cc59746aac1fe1b93989ea91d5c34)
+        ;
+
+        
+    
+    
+            marker_b310d2de0d9a560481cc454b22b18250.bindTooltip(
+                `<div>
+                     7.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c6be1990e5ff5139c777836927cc39b5 = L.marker(
+                [50.8760583, 4.708988199999999],
+                {}
+            ).addTo(marker_cluster_76d8127cda66f2811d7beb274892bbd7);
+        
+    
+        var popup_85c65e1ef00f8922bc25aaf8bf6f6737 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_627d11d91089582990e931879d35bd59 = $(`<div id="html_627d11d91089582990e931879d35bd59" style="width: 100.0%; height: 100.0%;">     Price: 7.0 €<br>     Nr of options: 11<br>        </div>`)[0];
+                popup_85c65e1ef00f8922bc25aaf8bf6f6737.setContent(html_627d11d91089582990e931879d35bd59);
+            
+        
+
+        marker_c6be1990e5ff5139c777836927cc39b5.bindPopup(popup_85c65e1ef00f8922bc25aaf8bf6f6737)
+        ;
+
+        
+    
+    
+            marker_c6be1990e5ff5139c777836927cc39b5.bindTooltip(
+                `<div>
+                     7.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1dbc81e8fcd78f42c7d1eaf2088f2562 = L.marker(
+                [51.06086519999999, 3.7012991],
+                {}
+            ).addTo(marker_cluster_76d8127cda66f2811d7beb274892bbd7);
+        
+    
+        var popup_85414b594905dd6ef1605cb0e465bf09 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_4e2fd4a84e40709b938aa30ddfa6f2eb = $(`<div id="html_4e2fd4a84e40709b938aa30ddfa6f2eb" style="width: 100.0%; height: 100.0%;">     Price: 7.0 €<br>     Nr of options: 2<br>        </div>`)[0];
+                popup_85414b594905dd6ef1605cb0e465bf09.setContent(html_4e2fd4a84e40709b938aa30ddfa6f2eb);
+            
+        
+
+        marker_1dbc81e8fcd78f42c7d1eaf2088f2562.bindPopup(popup_85414b594905dd6ef1605cb0e465bf09)
+        ;
+
+        
+    
+    
+            marker_1dbc81e8fcd78f42c7d1eaf2088f2562.bindTooltip(
+                `<div>
+                     7.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9f539c87212fd52ea6439af12e19bf20 = L.marker(
+                [51.1861375, 4.3874416],
+                {}
+            ).addTo(marker_cluster_76d8127cda66f2811d7beb274892bbd7);
+        
+    
+        var popup_dec1d68d66e6df82f168be3960d94216 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_b414f8e9d6d0f2214d5b0c69b4bb15bb = $(`<div id="html_b414f8e9d6d0f2214d5b0c69b4bb15bb" style="width: 100.0%; height: 100.0%;">     Price: 6.81 €<br>     Nr of options: 19<br>        </div>`)[0];
+                popup_dec1d68d66e6df82f168be3960d94216.setContent(html_b414f8e9d6d0f2214d5b0c69b4bb15bb);
+            
+        
+
+        marker_9f539c87212fd52ea6439af12e19bf20.bindPopup(popup_dec1d68d66e6df82f168be3960d94216)
+        ;
+
+        
+    
+    
+            marker_9f539c87212fd52ea6439af12e19bf20.bindTooltip(
+                `<div>
+                     6.81
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0a916f12c53af32dadf9f35a538675bc = L.marker(
+                [51.2076892, 4.3887578],
+                {}
+            ).addTo(marker_cluster_76d8127cda66f2811d7beb274892bbd7);
+        
+    
+        var popup_27ae0bfd2fad2a24f03dfccb53135025 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_0316f39bd523a7f88af17f5317fc7c99 = $(`<div id="html_0316f39bd523a7f88af17f5317fc7c99" style="width: 100.0%; height: 100.0%;">     Price: 6.69 €<br>     Nr of options: 8<br>        </div>`)[0];
+                popup_27ae0bfd2fad2a24f03dfccb53135025.setContent(html_0316f39bd523a7f88af17f5317fc7c99);
+            
+        
+
+        marker_0a916f12c53af32dadf9f35a538675bc.bindPopup(popup_27ae0bfd2fad2a24f03dfccb53135025)
+        ;
+
+        
+    
+    
+            marker_0a916f12c53af32dadf9f35a538675bc.bindTooltip(
+                `<div>
+                     6.69
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f7302e874d48f5a9d8c2352730bd8d96 = L.marker(
+                [51.2226074, 4.425693],
+                {}
+            ).addTo(marker_cluster_76d8127cda66f2811d7beb274892bbd7);
+        
+    
+        var popup_d3b43ad17e5539a30ab17f89fafbe6e5 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_b3467d4cf8bf55c467a11450368b1e52 = $(`<div id="html_b3467d4cf8bf55c467a11450368b1e52" style="width: 100.0%; height: 100.0%;">     Price: 6.5 €<br>     Nr of options: 4<br>        </div>`)[0];
+                popup_d3b43ad17e5539a30ab17f89fafbe6e5.setContent(html_b3467d4cf8bf55c467a11450368b1e52);
+            
+        
+
+        marker_f7302e874d48f5a9d8c2352730bd8d96.bindPopup(popup_d3b43ad17e5539a30ab17f89fafbe6e5)
+        ;
+
+        
+    
+    
+            marker_f7302e874d48f5a9d8c2352730bd8d96.bindTooltip(
+                `<div>
+                     6.5
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a64cb45eebd2936e99a0caa901e978a4 = L.marker(
+                [51.2189946, 4.420245899999999],
+                {}
+            ).addTo(marker_cluster_76d8127cda66f2811d7beb274892bbd7);
+        
+    
+        var popup_dc1641f9e62172b2cacdda71f8b7ec33 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_e06c5e3b4b97cc891e9209a7f2f206f5 = $(`<div id="html_e06c5e3b4b97cc891e9209a7f2f206f5" style="width: 100.0%; height: 100.0%;">     Price: 6.45 €<br>     Nr of options: 1<br>        </div>`)[0];
+                popup_dc1641f9e62172b2cacdda71f8b7ec33.setContent(html_e06c5e3b4b97cc891e9209a7f2f206f5);
+            
+        
+
+        marker_a64cb45eebd2936e99a0caa901e978a4.bindPopup(popup_dc1641f9e62172b2cacdda71f8b7ec33)
+        ;
+
+        
+    
+    
+            marker_a64cb45eebd2936e99a0caa901e978a4.bindTooltip(
+                `<div>
+                     6.45
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f086300f6c86a9bb2c1c24753cd9efad = L.marker(
+                [50.8756293, 4.7001928],
+                {}
+            ).addTo(marker_cluster_76d8127cda66f2811d7beb274892bbd7);
+        
+    
+        var popup_681b12d44b5362e319d08ea898f31d29 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_36b4cefe3281fb169b2aa043ecef8605 = $(`<div id="html_36b4cefe3281fb169b2aa043ecef8605" style="width: 100.0%; height: 100.0%;">     Price: 6.25 €<br>     Nr of options: 4<br>        </div>`)[0];
+                popup_681b12d44b5362e319d08ea898f31d29.setContent(html_36b4cefe3281fb169b2aa043ecef8605);
+            
+        
+
+        marker_f086300f6c86a9bb2c1c24753cd9efad.bindPopup(popup_681b12d44b5362e319d08ea898f31d29)
+        ;
+
+        
+    
+    
+            marker_f086300f6c86a9bb2c1c24753cd9efad.bindTooltip(
+                `<div>
+                     6.25
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4a747fa284bab7262e6403601d29e04b = L.marker(
+                [51.0527847, 3.7463782],
+                {}
+            ).addTo(marker_cluster_76d8127cda66f2811d7beb274892bbd7);
+        
+    
+        var popup_2c5e4f565ee031be4a0ebcb1c085655f = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_0de8fd8a3404c851fd1ae73716a94333 = $(`<div id="html_0de8fd8a3404c851fd1ae73716a94333" style="width: 100.0%; height: 100.0%;">     Price: 6.12 €<br>     Nr of options: 8<br>        </div>`)[0];
+                popup_2c5e4f565ee031be4a0ebcb1c085655f.setContent(html_0de8fd8a3404c851fd1ae73716a94333);
+            
+        
+
+        marker_4a747fa284bab7262e6403601d29e04b.bindPopup(popup_2c5e4f565ee031be4a0ebcb1c085655f)
+        ;
+
+        
+    
+    
+            marker_4a747fa284bab7262e6403601d29e04b.bindTooltip(
+                `<div>
+                     6.12
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ddc0fb0b48df682fb7aca8fa88d1bd41 = L.marker(
+                [51.05631, 3.726280499999999],
+                {}
+            ).addTo(marker_cluster_76d8127cda66f2811d7beb274892bbd7);
+        
+    
+        var popup_e53215422e32307ce5e29ea1f10fe921 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_e082a8740083bae7cf39824b0dc167b7 = $(`<div id="html_e082a8740083bae7cf39824b0dc167b7" style="width: 100.0%; height: 100.0%;">     Price: 6.0 €<br>     Nr of options: 2<br>        </div>`)[0];
+                popup_e53215422e32307ce5e29ea1f10fe921.setContent(html_e082a8740083bae7cf39824b0dc167b7);
+            
+        
+
+        marker_ddc0fb0b48df682fb7aca8fa88d1bd41.bindPopup(popup_e53215422e32307ce5e29ea1f10fe921)
+        ;
+
+        
+    
+    
+            marker_ddc0fb0b48df682fb7aca8fa88d1bd41.bindTooltip(
+                `<div>
+                     6.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9653fc377cc81ecaf4e0d51b99385166 = L.marker(
+                [50.86797929999999, 4.3205671],
+                {}
+            ).addTo(marker_cluster_76d8127cda66f2811d7beb274892bbd7);
+        
+    
+        var popup_a8bfd0889cd17736e91e61c4e9269467 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_57724dd20f24510181311818a53e503a = $(`<div id="html_57724dd20f24510181311818a53e503a" style="width: 100.0%; height: 100.0%;">     Price: 5.83 €<br>     Nr of options: 3<br>        </div>`)[0];
+                popup_a8bfd0889cd17736e91e61c4e9269467.setContent(html_57724dd20f24510181311818a53e503a);
+            
+        
+
+        marker_9653fc377cc81ecaf4e0d51b99385166.bindPopup(popup_a8bfd0889cd17736e91e61c4e9269467)
+        ;
+
+        
+    
+    
+            marker_9653fc377cc81ecaf4e0d51b99385166.bindTooltip(
+                `<div>
+                     5.83
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3d167da519644b5dd9cb52387b1aa3d4 = L.marker(
+                [51.1899486, 4.3778715],
+                {}
+            ).addTo(marker_cluster_76d8127cda66f2811d7beb274892bbd7);
+        
+    
+        var popup_fcc3c7e0c6f2ddcc1fb2aaa18a250ffb = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_2b41103f73787e0d9b1bfb41d54d86f5 = $(`<div id="html_2b41103f73787e0d9b1bfb41d54d86f5" style="width: 100.0%; height: 100.0%;">     Price: 5.5 €<br>     Nr of options: 7<br>        </div>`)[0];
+                popup_fcc3c7e0c6f2ddcc1fb2aaa18a250ffb.setContent(html_2b41103f73787e0d9b1bfb41d54d86f5);
+            
+        
+
+        marker_3d167da519644b5dd9cb52387b1aa3d4.bindPopup(popup_fcc3c7e0c6f2ddcc1fb2aaa18a250ffb)
+        ;
+
+        
+    
+    
+            marker_3d167da519644b5dd9cb52387b1aa3d4.bindTooltip(
+                `<div>
+                     5.5
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ffa5d8c3c5e903d2c7116ae777d632d0 = L.marker(
+                [51.2182847, 4.418298200000001],
+                {}
+            ).addTo(marker_cluster_76d8127cda66f2811d7beb274892bbd7);
+        
+    
+        var popup_3b96f41209365dfca96323f27e7e65a2 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_4c2ae4c2db7a4261971f95ced691ec34 = $(`<div id="html_4c2ae4c2db7a4261971f95ced691ec34" style="width: 100.0%; height: 100.0%;">     Price: 5.0 €<br>     Nr of options: 1<br>        </div>`)[0];
+                popup_3b96f41209365dfca96323f27e7e65a2.setContent(html_4c2ae4c2db7a4261971f95ced691ec34);
+            
+        
+
+        marker_ffa5d8c3c5e903d2c7116ae777d632d0.bindPopup(popup_3b96f41209365dfca96323f27e7e65a2)
+        ;
+
+        
+    
+    
+            marker_ffa5d8c3c5e903d2c7116ae777d632d0.bindTooltip(
+                `<div>
+                     5.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e7e966b9fcda2a67ed632658fbce1019 = L.marker(
+                [50.8686357, 4.3122373],
+                {}
+            ).addTo(marker_cluster_76d8127cda66f2811d7beb274892bbd7);
+        
+    
+        var popup_af7edb3d4d80b2c7120c37f02e05cda8 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_9a21b4e8188558050f57a6f663b71687 = $(`<div id="html_9a21b4e8188558050f57a6f663b71687" style="width: 100.0%; height: 100.0%;">     Price: 4.97 €<br>     Nr of options: 23<br>        </div>`)[0];
+                popup_af7edb3d4d80b2c7120c37f02e05cda8.setContent(html_9a21b4e8188558050f57a6f663b71687);
+            
+        
+
+        marker_e7e966b9fcda2a67ed632658fbce1019.bindPopup(popup_af7edb3d4d80b2c7120c37f02e05cda8)
+        ;
+
+        
+    
+    
+            marker_e7e966b9fcda2a67ed632658fbce1019.bindTooltip(
+                `<div>
+                     4.97
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6f48335608a29ef5d1abc2d721c48ca2 = L.marker(
+                [50.8296651, 3.2715595],
+                {}
+            ).addTo(marker_cluster_76d8127cda66f2811d7beb274892bbd7);
+        
+    
+        var popup_0598085c084c552e252108140b7a7ce4 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_6d56943d87aafad86cf6acc568c3c67d = $(`<div id="html_6d56943d87aafad86cf6acc568c3c67d" style="width: 100.0%; height: 100.0%;">     Price: 4.5 €<br>     Nr of options: 2<br>        </div>`)[0];
+                popup_0598085c084c552e252108140b7a7ce4.setContent(html_6d56943d87aafad86cf6acc568c3c67d);
+            
+        
+
+        marker_6f48335608a29ef5d1abc2d721c48ca2.bindPopup(popup_0598085c084c552e252108140b7a7ce4)
+        ;
+
+        
+    
+    
+            marker_6f48335608a29ef5d1abc2d721c48ca2.bindTooltip(
+                `<div>
+                     4.5
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_528aecddf3e9fdc59cd7706f49168d2c = L.marker(
+                [51.055791, 3.7225961],
+                {}
+            ).addTo(marker_cluster_76d8127cda66f2811d7beb274892bbd7);
+        
+    
+        var popup_717c468ed3af2b454900277829b7eda1 = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_3b1f1d9e7482d2e5b330b43f37209358 = $(`<div id="html_3b1f1d9e7482d2e5b330b43f37209358" style="width: 100.0%; height: 100.0%;">     Price: 4.45 €<br>     Nr of options: 2<br>        </div>`)[0];
+                popup_717c468ed3af2b454900277829b7eda1.setContent(html_3b1f1d9e7482d2e5b330b43f37209358);
+            
+        
+
+        marker_528aecddf3e9fdc59cd7706f49168d2c.bindPopup(popup_717c468ed3af2b454900277829b7eda1)
+        ;
+
+        
+    
+    
+            marker_528aecddf3e9fdc59cd7706f49168d2c.bindTooltip(
+                `<div>
+                     4.45
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            marker_cluster_76d8127cda66f2811d7beb274892bbd7.addTo(map_24d2c2a4da60ab03bca24f1bb556f1cf);
+        
+</script>
+</html>
